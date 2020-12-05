@@ -72,6 +72,10 @@
     color: black;
 }
 
+.hero-icon-container {
+    position: relative;
+}
+
 /* ---------------- SCROLL ARROW -------------- */
 .arrow {
     border: solid black;
@@ -154,7 +158,7 @@
 
 .h4__form {
     text-align: center;
-    transform: translateY(10vh);
+    transform: translateY(50vh);
 }
 
 #learn-more-link {
@@ -181,3 +185,5 @@
 .social-container {
     transform: translateY(35vh);
 }
+
+/* ICONS */
