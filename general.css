@@ -1,0 +1,516 @@
+/* GENERAL AND BACKGROUND */
+:root {
+    --mywhite: #f7f7ff;
+    --myorange: #e55812;
+    --myyellow: #e2c044;
+    --mygreen: #8ed081;
+    --myblue: #2e5266;
+    --menu-speed: 0.85s;
+  }
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: var(--mywhite);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+/* --------- FONT AND TEXT STYLES -------------- */
+p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+}
+
+
+/* Big headlines */
+h3 {
+    color: black;
+    font-size: 3rem;
+}
+
+/* Section headlines */
+h4 {
+    color: black;
+    font-size: 2.125rem;
+}
+
+/* Main page subtext */
+h6 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Body text */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+/* List styling */
+ul {
+    list-style-type: none;
+    font-size: 1.125rem;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 0.18s ease-in-out
+}
+
+/* FONT SIZE -15% ON TABLETS */
+@media screen and (max-device-width: 800px) {
+    h3 {font-size: 2.55rem;}
+
+    h4 {font-size: 1.91rem;}
+    
+    /* Main page subtext */
+    h6 {font-size: 1.275rem;}
+
+    /* Lists (mostly links */
+    ul {font-size: 0.95rem; }
+
+    /* Body text */
+    p {font-size: 0.85rem; }
+
+
+}
+/* FONT SIZE -25% ON PHONES */
+@media screen and (max-device-width: 400px) {
+    h3 {font-size: 2.25rem;}
+
+    h4 {font-size: 1.59rem;}
+    
+    /* Main page subtext */
+    h6 {font-size: 1.125rem;}
+
+    /* Lists (mostly links */
+    ul {font-size: 0.84rem; }
+
+    /* Body text */
+    p {font-size: 0.75rem; }
+
+}
+
+/* FONT SIZE ON SMALL PHONES */
+@media screen and (max-device-width: 340px) {
+    /* -50 */
+    h3 {font-size: 1.5rem;}
+
+    /* -40 */
+    h4 {font-size: 1.275rem;}
+    
+    h6 {font-size: 0.9rem;}
+}
+
+/* ---------------HEADER WITH REGULAR NAVBAR --------------------- */
+.header{
+    position: relative;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 100%;
+    font-size: 1.5rem;
+}
+
+.header__left {
+    font-family: 'Heebo', sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header__right {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header__right-1 {
+    margin-right: 25px;
+}
+
+/* MENU WRAP WITH ALL OF THE HAMBURGER STUFF -------------- */
+
+.hamburger {
+    position: static;
+    /* DIFFERENT FROM OTHER PAGES */
+    box-sizing: content-box;
+}
+.menu-wrap {
+    position: absolute;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+
+/* POSITION OF SQUARE BOX THAT CONTAINS HAMBURGER */
+.menu-wrap .hamburger {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------HAMBURGER ICON -------- */
+
+    /* Middle line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+    /* Create top and bottom line */
+.menu-wrap .hamburger >div:before,
+.menu-wrap .hamburger >div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+    top: -15px;
+    width: 100%;
+    height: 8px;
+    background: inherit;
+}
+    /* Move bottom line to bottom */
+.menu-wrap .hamburger >div:after {
+    top: 15px;
+}
+
+
+/* Toggle checkbox/hamburger animation */
+        /* + sign means: if X then style Y */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* SHOW MENU */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    /* ADD VAR FOR MENU SPEED! */
+    transition-duration: var(--menuspeed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* STYLING OF MENU */
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu-wrap .menu > div {
+    background: rgb(247, 247, 255,0.95);
+    width: 300vw;
+    height: 300vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    /* CIRCLE EFFECT */
+    transform: scale(0); 
+    transform-origin: right;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+    opacity: 0.5;
+    transition: .18s ease-in-out;
+}
+
+
+
+/* Hide Hamburger, Show regular navbar */
+.menu-wrap {display: none;}
+
+/* [HAMBURGER ON SMALL SCREENS + RESPONSIVENESS] */
+@media screen and (max-width: 550px){
+    /* HIDE SCROLL DOWN ARROW */
+    #scrolldownArrow {display: none; }
+
+    /* SHOW HAMBURGER ICON AND MENU ON SMALL SCREENS */
+    .menu-wrap {display: block;}
+
+    /* HIDE REGULAR NAVBAR ON SMALL SCREENS */
+    .header__left {display: none;}
+    .header__right {display: none; }
+}
+
+@media screen and (max-width: 700px) {
+    /* SHOW HAMBURGER ICON AND MENU ON MEDIUM SCREENS */
+    .menu-wrap {display: block;}
+
+    /* HIDE REGULAR NAVBAR EXCEPT koen raijer ON MEDIUM SCREENS */
+    .header__right {display: none;}
+}
+
+/* SOCIAL CONTAINER */
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 60vw;
+    transform: translateY(28vh);
+    margin: auto;
+}
+
+.img-1 {
+    transform-origin: bottom;
+    transform: scale(1);
+}
+
+.img-1[data-scroll='in']{
+    transition: 1s;
+    height: 8vh;
+    width: 8vh;
+    padding: 0;
+    transform: translate(-7.5vw,-25vh);
+}
+
+.img-1[data-scroll='out']{
+    transition: all 1s ease-in-out;
+    transform: translate(0,0);
+}
+
+.img-2 {
+    transform-origin: bottom;
+    transform: scale(1);
+}
+
+.img-2[data-scroll='in']{
+    transition: 1s;
+    height: 8vh;
+    width: 8vh;
+    padding: 0;
+    transform: translate(-2.5vw,-25vh);
+}
+
+.img-2[data-scroll='out']{
+    transition: all 1s ease-in-out;
+    transform: translate(0,0);
+}
+
+.img-3 {
+    transform-origin: bottom;
+    transform: scale(1);
+}
+
+.img-3[data-scroll='in']{
+    transition: 1s;
+    height: 8vh;
+    width: 8vh;
+    padding: 0;
+    transform: translate(2.5vw,-25vh);
+}
+
+.img-3[data-scroll='out']{
+    transition: all 1s ease-in-out;
+    transform: translate(0,0);
+}
+
+.img-4 {
+    transform-origin: bottom;
+    transform: scale(1);
+}
+
+.img-4[data-scroll='in']{
+    transition: 1s;
+    height: 8vh;
+    width: 8vh;
+    padding: 0;
+    transform: translate(7.5vw,-25vh);
+}
+
+.img-4[data-scroll='out']{
+    transition: all 1s ease-in-out;
+    transform: translate(0,0);
+}
+
+@media screen and (max-width: 1100px) {
+    .img-1[data-scroll='in']{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    .img-2[data-scroll='in']{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    .img-3[data-scroll='in']{
+        height: 7vh;
+        width: 7vh;
+    }
+
+    .img-4[data-scroll='in']{
+        height: 7vh;
+        width: 7vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img-1[data-scroll='in']{
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .img-2[data-scroll='in']{
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .img-3[data-scroll='in']{
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .img-4[data-scroll='in']{
+        height: 6vh;
+        width: 6vh;
+    }
+}
+
+/* FOOTER */
+footer {
+    height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+.footer-right{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-child-1 {
+    padding-right: 10px;
+}
+
+.footer-img {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+/* FOR WORK PAGE */
+.static-footer-image {
+    padding-right: 30px;
+}
+
+/* FOOTER REALIGNMENT ON SMALLER SCREENS */
+@media screen and (max-width: 900px) {
+    footer {
+        flex-flow: column-reverse nowrap;
+    }
+}
+
