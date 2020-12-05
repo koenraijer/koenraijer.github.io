@@ -1,319 +1,15 @@
-/* GENERAL AND BACKGROUND */
-html{
-    font-size: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background: #f7f7ff;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body{
-    margin: 0px;
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-Y: hidden;
-}
-
-/* GENERAL STYLES */
-h1 {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 2.5em;
-}
-
-.h1__wrapper {
-    transform: translateY(10vh);
-}
-
-.p__wrapper {
-    transform: translateY(15vh);
-}
-
-ul {
-    list-style-type: none;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-}
-
-section {
-    height: 100vh;
-}
-
-.section {
-    min-height: 100vh;
-}
-
-.content-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 1920px;
-    margin: auto;
-}
-
-/* ---------------HEADER WITH REGULAR NAVBAR */
-.header{
-    position: relative;
-    height: 10vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 1 100%;
-}
-
-.header__left {
-    font-family: 'Heebo', sans-serif;
-    margin: 10px;
-    padding: 10px;
-    font-size: 2em;
-    text-decoration: none;
-    color: black;
-}
-
-.header__left:hover{
-    opacity: 0.5;
-    transition: .18s ease-in-out;
-}
-
-.header__right {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 10px;
-    padding: 10px;
-    font-size: 2em;
-}
-
-.header__right-1 {
-    font-family: 'Heebo', sans-serif;
-    text-decoration: none;
-    color: black;
-    margin-right: 25px;
-}
-
-.header__right-1:hover {
-    opacity: 0.5;
-    transition: .18s ease-in-out;
-}
-
-.header__right-2 {
-    font-family: 'Heebo', sans-serif;
-    text-decoration: none;
-    color: black;
-}
-
-.header__right-2:hover{
-    opacity: 0.5;
-    transition: .18s ease-in-out;
-}
-
-/* MENU WRAP WITH ALL OF THE HAMBURGER STUFF -------------- */
-
-.hamburger {
-    position: static;
-}
-.menu-wrap {
-    position: absolute;
-    -webkit-overflow-scrolling: touch;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-}
-
-/* POSITION OF SQUARE BOX THAT CONTAINS HAMBURGER */
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: #f7f7ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* --------HAMBURGER ICON -------- */
-
-    /* Middle line */
-.menu-wrap .hamburger > div {
-    position: relative;
-    width: 100%;
-    height: 8px;
-    background-color: black;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-
-    /* Create top and bottom line */
-.menu-wrap .hamburger >div:before,
-.menu-wrap .hamburger >div:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    border-radius: 6px;
-    top: -15px;
-    width: 100%;
-    height: 8px;
-    background: inherit;
-}
-    /* Move bottom line to bottom */
-.menu-wrap .hamburger >div:after {
-    top: 15px;
-}
-
-
-/* Toggle checkbox/hamburger animation */
-        /* + sign means: if X then style Y */
-.menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
-}
-
-/* Turn lines into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-/* Rotate on hover when checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
-}
-
-/* SHOW MENU */
-.menu-wrap .toggler:checked ~ .menu {
-    visibility: visible;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    /* ADD VAR FOR MENU SPEED! */
-    transition-duration: 0.85s;
-}
-
-.menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 1;
-    transition: opacity 0.4s ease;
-}
-
-/* STYLING OF MENU */
-.menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.menu-wrap .menu > div {
-    background: rgb(247, 247, 255,0.95);
-    width: 300vw;
-    height: 300vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    /* CIRCLE EFFECT */
-    transform: scale(0); 
-    transform-origin: right;
-    transition: all 0.4s ease;
-}
-
-.menu-wrap .menu > div > div {
-    text-align: center;
-    max-width: 90vw;
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: black;
-    font-size: 2rem;
-    padding: 1rem;
-    font-family: 'Heebo', sans-serif;
-}
-
-.menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.menu-wrap .menu > div > div > ul > li > a:hover {
-    opacity: 0.5;
-    transition: .18s ease-in-out;
-}
-
-
-
-/* Hide Hamburger, Show regular navbar */
-.menu-wrap {visibility: hidden;}
-.header {visibility: visible;}
-
-/* [HAMBURGER ON SMALL SCREENS + RESPONSIVENESS] */
-@media screen and (max-width: 550px){
-    /* HIDE SCROLL DOWN ARROW */
-    #scrolldownArrow {display: none; }
-
-    /* SHOW HAMBURGER ICON AND MENU ON SMALL SCREENS */
-    .menu-wrap {visibility: visible;}
-
-    /* HIDE REGULAR NAVBAR ON SMALL SCREENS */
-    .header__left {visibility: hidden;}
-    .header__right {visibility: hidden}
-}
-
-@media screen and (max-width: 700px) {
-    /* SHOW HAMBURGER ICON AND MENU ON MEDIUM SCREENS */
-    .menu-wrap {visibility: visible;}
-
-    /* HIDE REGULAR NAVBAR EXCEPT koen raijer ON MEDIUM SCREENS */
-    .header__right {visibility: hidden}
-}
-
 /* WORK HERO */
 .work-hero {
-    height: 44vh;
+    height: 60vh;
 }
 
-#h1-workTitle {
-    left: 50%;
-    transform: translateY(12vh);
+#hero {
+    transform: translateY(10vh);
     text-align: center;
-    font-size: 3em;
 }
 
-#h1-workTitle-span {
-    color: #e55812;
+#hero-span {
+    color: var(--myorange);
 }
 /* CSS GRID */
 
@@ -337,9 +33,14 @@ Can be used to align the entire grid.
 }
 */
 
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15vw;
+}
 .grid {
-    margin: auto;
-    width: 75vw;
+    width: 90vw;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
@@ -349,54 +50,54 @@ Can be used to align the entire grid.
 .grid > div {
     padding: 1em;
 }
-.h1-work:hover {
+.box-title:hover {
     transform: scale(1.02);
     transition: 0.5s ease-in-out;
 }
 
-.h1-work {
+.box-title {
     transform: scale(1);
     transition: 0.2s ease-in-out;
 }
 
 .box1{
-    background: #8ED081;
+    background: var(--mygreen);
 }
 
 .box2{
-    background: #E2c044;
+    background: var(--myyellow);
 }
 
 .box3{
-    background: #e55812;
+    background: var(--myorange);
 }
 
 .box4{
-    background: #2e5266;
+    background: var(--myblue);
 }
 
 .box5{
-    background: #8ED081;
+    background: var(--mygreen);
 }
 
 .box6{
-    background: #E2c044;
+    background: var(--myyellow);
 }
 
 .box7{
-    background: #e55812;
+    background: var(--myorange);
 }
 
 .box8{
-    background: #2e5266;
+    background: var(--myblue);
 }
 
-.h1-work4 {
-    color: white;
+.box-title4 {
+    color: var(--mywhite);
 }
 
-.h1-work8 {
-    color: white;
+.box-title8 {
+    color: var(--mywhite);
 }
 @media only screen and (min-width: 641px) {
     .grid {
@@ -418,6 +119,7 @@ Can be used to align the entire grid.
     .box2 {
         grid-column:4;
         grid-row: 1/3;
+        border-top-right-radius: 25px;
     }
 
     .box3 {
@@ -428,6 +130,7 @@ Can be used to align the entire grid.
     .box4 {
         grid-column: 1/2;
         grid-row: 1/4;
+        border-top-left-radius: 25px;
     }
 
     .box5 {
@@ -442,10 +145,12 @@ Can be used to align the entire grid.
 
     .box7 {
         grid-column: 1/4;
+        border-bottom-left-radius: 25px;
     }
 
     .box8 {
         grid-row: 4/7;
+        border-bottom-right-radius: 25px;
     }
 }
 
@@ -453,53 +158,4 @@ Can be used to align the entire grid.
     .grid {
         max-width: 1920px;
     }
-
-/* FOOTER */
-footer {
-    text-align: left;
-    vertical-align: middle;
-    position: relative;
-    height: 10vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 1 100%;
-    height: 10vh;
-    margin: auto;
-}
-
-.child2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#child-right-1 {
-    padding-right: 10px;
-}
-
-#child-right-2 {
-    padding-right: 10px;
-}
-
-.footerlink:hover{
-    opacity: 0.5;
-    transition: .18s ease-in-out;
-}
-
-.footerlink {
-    font-family: 'Heebo', sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    color: black;
-}
-
-.footertext {
-    text-align: left;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: black;
 }
