@@ -11,11 +11,25 @@
 }
 
 #hero-span {
-    color: var(--myorange);
+    color: var(--sapphire);
+}
+
+#hero__span1 {
+    color: var(--emerald);
+}
+
+#hero-span2 {
+    color: var(--emerald);
 }
 
 .section-headline {
     text-align: center;
+}
+
+/* SECTION BACKGROUNDS */
+.greybackground {
+    background: var(--white2);
+    padding-top: 25vh;
 }
 /* ------------------------------- TIMELINE --------------------------------------------- */
 
@@ -39,14 +53,14 @@ body {
 
 /* TIMELINE COLORING (NOT THE BOXES THEMSELVES) */
 .timeline {
-    color: var(--mywhite);
+    color: var(--white);
 }
 
 .timeline ul {
-    background: var(--mywhite);
+    background: var(--white);
 }
 .timeline ul > li {
-   background: var(--myorange);
+   background: var(--black);
     position: relative;
     margin: 0 auto;
     width: 7px;
@@ -67,7 +81,7 @@ body {
 
 .timeline ul li::before {
     content: '';
-    background: var(--mywhite);
+    background: var(--white);
     position: absolute;
     left: 50%;
     top: 0;
@@ -81,31 +95,31 @@ body {
 }
 
 .item1::before {
-   border: 5px solid var(--myblue);
+   border: 5px solid var(--emerald);
 }
 
 .item2::before{
-   border: 5px solid var(--myyellow)
+   border: 5px solid var(--grey2)
 }
 
 .item3::before{
-   border: 5px solid var(--mygreen);
+   border: 5px solid var(--sapphire);
 }
 
 .item4::before {
-   border: 5px solid var(--myblue);
+   border: 5px solid var(--emerald);
 }
 
 .item5::before{
-   border: 5px solid var(--myyellow);
+   border: 5px solid var(--grey2);
 }
 
 .item6::before{
-   border: 5px solid var(--mygreen);
+   border: 5px solid var(--sapphire);
 }
 
 .item7::before {
-   border: 5px solid var(--myblue);
+   border: 5px solid var(--emerald);
 }
 
 .timeline ul li .hidden {
@@ -114,12 +128,13 @@ body {
 
 /* CONTENT BOX STYLING */
 
-.timeline ul li:nth-child(3n-2) .content p {
-    color: var(--mywhite);
+.timeline ul li:nth-child(3n) .content p {
+    color: var(--white);
 }
 
-.timeline ul li:nth-child(3n-2) .content h6 {
-    color: var(--mywhite);
+.timeline ul li:nth-child(3n) .content h3 {
+    color: var(--white);
+    text-align: left;
 }
 
 .timeline ul li p{
@@ -136,36 +151,36 @@ body {
 }
 
 .content1 {
-   background:  var(--myblue);
+   background:  var(--emerald);
    left: 50px;
 }
 
 .content2 {
-   background: var(--myyellow);
+   background: var(--grey2);
    left: calc(-450px - 45px);
 }
 
 .content3 {
-   background: var(--mygreen);
+   background: var(--sapphire);
    left: 50px;
 }
 
 .content4 {
-   background:  var(--myblue);
+   background:  var(--emerald);
    left: calc(-450px - 45px);
 }
 .content5 {
-   background: var(--myyellow);
+   background: var(--grey2);
    left: 50px;
 }
 
 .content6 {
-   background: var(--mygreen);
+   background: var(--sapphire);
    left: calc(-450px - 45px);
 }
 
 .content7 {
-   background:  var(--myblue);
+   background:  var(--emerald);
    left: 50px;
 }
 
@@ -194,7 +209,7 @@ body {
 
 .timeline ul li .content1:before {
    content: '';
-   background: var(--myblue);
+   background: var(--emerald);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -203,7 +218,7 @@ body {
 
 .timeline ul li .content2:before {
    content: '';
-   background: var(--myyellow);
+   background: var(--grey2);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -212,7 +227,7 @@ body {
 
 .timeline ul li .content3:before {
    content: '';
-   background: var(--mygreen);
+   background: var(--sapphire);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -221,7 +236,7 @@ body {
 
 .timeline ul li .content4:before {
    content: '';
-   background: var(--myblue);
+   background: var(--emerald);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -230,7 +245,7 @@ body {
 
 .timeline ul li .content5:before {
    content: '';
-   background: var(--myyellow);
+   background: var(--grey2);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -239,7 +254,7 @@ body {
 
 .timeline ul li .content6:before {
    content: '';
-   background: var(--mygreen);
+   background: var(--sapphire);
    position: absolute;
    top: 0px;
    width: 38px;
@@ -248,22 +263,11 @@ body {
 
 .timeline ul li .content7:before {
    content: '';
-   background: var(--myblue);
+   background: var(--emerald);
    position: absolute;
    top: 0px;
    width: 38px;
    height: 5px;
-}
-
-/* CONTENT BOX CONTENTS */
-.timeline ul li .content p {
-    color: black;
-    padding-bottom: 10px;
-    text-align: left;
-}
-
-.timeline ul li:nth-child(3n-2) h6{
-    color: var(--mywhite);
 }
 
 /* CONTENT HIDER PSEUDOELEMENT */
@@ -275,7 +279,7 @@ body {
     left: 5%;
     width: 90%;
     height: 90%;
-    background: var(--myblue);
+    background: var(--emerald);
     transform-origin: right;
     transform: scaleX(1);
 }
@@ -287,7 +291,7 @@ body {
     left: 3%;
     width: 90%;
     height: 90%;
-    background: var(--myyellow);
+    background: var(--grey2);
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -299,7 +303,7 @@ body {
     left: 5%;
     width: 90%;
     height: 90%;
-    background: var(--mygreen);
+    background: var(--sapphire);
     transform-origin: right;
     transform: scaleX(1);
     border-top-right-radius: 15px;
@@ -314,7 +318,7 @@ body {
     left: 3%;
     width: 95%;
     height: 90%;
-    background: var(--myblue);
+    background: var(--emerald);
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -326,7 +330,7 @@ body {
     left: 5%;
     width: 90%;
     height: 90%;
-    background: var(--myyellow);
+    background: var(--grey2);
     transform-origin: right;
     transform: scaleX(1);
 }
@@ -338,7 +342,7 @@ body {
     left: 3%;
     width: 90%;
     height: 90%;
-    background: var(--mygreen);
+    background: var(--sapphire);
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -350,7 +354,7 @@ body {
     left: 5%;
     width: 95%;
     height: 90%;
-    background: var(--myblue);
+    background: var(--emerald);
     transform-origin: right;
     transform: scaleX(1);
 }
@@ -444,11 +448,11 @@ body {
         margin-left: 20px;
    }
     .timeline ul li .content {
-        width: calc(100vw - 150px);
+        width: calc(100vw - 100px);
         transition: none;
    }
-    .timeline ul li .content h2 {
-        text-align: initial;
+    .timeline ul li .content h3 {
+        text-align: left;
    }
     .timeline ul li:nth-child(even) .content {
         left: 50px;
@@ -512,6 +516,10 @@ body {
        text-align: left;
     }
 
+    .timeline h3 {
+        padding: 0;
+    }
+
     /* Correcting border radius */
     .content2, .content4, .content6 {
         border-top-left-radius: 0px;
@@ -522,14 +530,21 @@ body {
 
 }
 /* ---------------------- QUOTE ----------------------------------*/
+.quote-skew {
+    background: transparent;
+    transform: translateY(135px);
+}
 
-
-.quotesection {
-    margin-top: 30vh;
-    margin-bottom: 30vh;
-    max-width: 85vw;
-    margin-left: auto;
-    margin-right: auto;
+.quote-skew::after {
+    transform-origin: right top;
+    transform: skewY(5deg);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: var(--grey);
+    top: 0;
+    z-index: -1;
+    content: '';
 }
 
 .big-quote{
@@ -538,33 +553,34 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.big-quote:hover{
-    transform: scale(1.05);
-    transition: 1s ease-in-out;
-}
-
 .big-quote-span {
-    color: var(--myorange);
+    color: var(--sapphire);
 }
 
 
 .quoted-by {
     margin-top: 3vh;
     margin-left: 40%;
+    font-weight: normal;
     transform: scale(1.0);
     transition: 0.5s ease-in-out;
-}
-
-
-.quoted-by:hover {
-    transform: scale(1.05);
-    transition: 1s ease-in-out;
 }
 
 .quotesection-quote {
     transform-origin: center;
     transform: scale(0.7);
     transition: 1.5s;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40vh;
+}
+
+.quotesection-wrapper {
+    transform: translateY(20vh);
 }
 
 .quotesection-quote[data-scroll='in']{
@@ -620,7 +636,7 @@ body {
 
 .skill-100 {
     border-radius: 10px;
-    background: var(--mygreen);
+    background: var(--emerald);
     height: 100%;
     width: 100%;
     transform-origin: left;
@@ -628,7 +644,7 @@ body {
 }
 .skill-75 {
     border-radius: 10px;
-    background: var(--myblue);
+    background: rgba(98, 195, 112,.75);
     height: 100%;
     width: 75%;
     transform-origin: left;
@@ -636,7 +652,7 @@ body {
 }
 .skill-50 {
     border-radius: 10px;
-    background: var(--myyellow);
+    background: var(--sapphire);
     height: 100%;
     width: 50%;
     transform-origin: left;
@@ -644,7 +660,7 @@ body {
 }
 .skill-25 {
     border-radius: 10px;
-    background: var(--myorange);
+    background: rgba(66, 87, 173,.75);
     height: 100%;
     width: 25%;
     transform-origin: left;
@@ -660,117 +676,13 @@ body {
 /* ----------------------------- SUMMARY SECTION ----------------------------------*/
 
 .summarygrid {
-    margin: auto;
     max-height: 200vh;
-    padding-bottom: 5vw;
     width: 50vw;
-    justify-content: center;
-    align-self: center;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-columns: minmax(10vw, auto);
     grid-auto-rows: minmax(25vh,auto);
-}
-
-.summary-quote2:before {
-    content: '';
-    position: absolute;
-    width: 15vw;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--mywhite);
-    transform-origin: left center;
-    transform: scaleX(1);
-}
-
-.summary-quote2[data-scroll='in']:before{
-    transform: scaleX(0);
-    transition: 1s ease-in;
-}
-
-.summary-quote3:before {
-    content: '';
-    position: absolute;
-    width: 15vw;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background: var(--mywhite);
-    transform-origin: right center;
-    transform: scaleX(1);
-}
-
-.summary-quote3[data-scroll='in']:before{
-    transform: scaleX(0);
-    transition: 1s ease-in;
-}
-
-.summary-quote4:before {
-    content: '';
-    position: absolute;
-    width: 15vw;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--mywhite);
-    transform-origin: left center;
-    transform: scaleX(1);
-}
-
-.summary-quote4[data-scroll='in']:before{
-    transform: scaleX(0);
-    transition: 1s ease-in;
-}
-
-.summary-quote5:before {
-    content: '';
-    position: absolute;
-    width: 15vw;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background: var(--mywhite);
-    transform-origin: right center;
-    transform: scaleX(1);
-}
-
-.summary-quote5[data-scroll='in']:before{
-    transform: scaleX(0);
-    transition: 1s ease-in;
-}
-
-.summary-quote6:before {
-    content: '';
-    position: absolute;
-    width: 22.5vw;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background: var(--mywhite);
-    transform-origin: right;
-    transform: scaleX(1);
-}
-
-.summary-quote6:after {
-    content: '';
-    position: absolute;
-    width: 22.5vw;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--mywhite);
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.summary-quote6[data-scroll='in']:before{
-    transform: scaleX(0);
-    transition: 1s ease-in;
-}
-
-.summary-quote6[data-scroll='in']:after{
-    transform: scaleX(0);
-    transition: 1s ease-in;
 }
 
 .summary-quote1-container {
@@ -792,19 +704,19 @@ body {
 .summary-quote2-container:before {
     content: '';
     position: absolute;
-    width: 30vw;
-    height: 7.5px;
-    top: 100%;
-    left: 0;
-    background: var(--myorange);
+    width: 7.5px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    background: var(--sapphire);
     border-radius: 15px;
-    transform-origin: center;
-    transform: scaleX(0);
+    transform-origin: bottom;
+    transform: scaleY(0);
 }
 
 .summary-quote2-container[data-scroll='in']:before{
-    transform: scaleX(1);
-    transition: 1s ease-in;
+    transform: scaleY(1);
+    transition: 0.5s ease-in;
 }
 
 .summary-quote3-container {
@@ -818,19 +730,19 @@ body {
 .summary-quote3-container:before {
     content: '';
     position: absolute;
-    width: 30vw;
-    height: 7.5px;
-    top: 100%;
-    right: 0;
-    background: var(--myyellow);
+    width: 7.5px;
+    height: 100%;
+    top: 0;
+    right: -15px;
+    background: var(--emerald);
     border-radius: 15px;
-    transform-origin: center;
-    transform: scaleX(0);
+    transform-origin: bottom;
+    transform: scaleY(0);
 }
 
 .summary-quote3-container[data-scroll='in']:before{
-    transform: scaleX(1);
-    transition: 1s ease-in;
+    transform: scaleY(1);
+    transition: 0.5s ease-in;
 }
 
 .summary-quote4-container {
@@ -844,19 +756,19 @@ body {
 .summary-quote4-container:before {
     content: '';
     position: absolute;
-    width: 30vw;
-    height: 7.5px;
-    top: 100%;
-    left: 0;
-    background: var(--mygreen);
+    width: 7.5px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    background: var(--sapphire);
     border-radius: 15px;
-    transform-origin: center;
-    transform: scaleX(0);
+    transform-origin: bottom;
+    transform: scaleY(0);
 }
 
 .summary-quote4-container[data-scroll='in']:before{
-    transform: scaleX(1);
-    transition: 1s ease-in;
+    transform: scaleY(1);
+    transition: 0.5s ease-in;
 }
 
 .summary-quote5-container {
@@ -870,19 +782,19 @@ body {
 .summary-quote5-container:before {
     content: '';
     position: absolute;
-    width: 30vw;
-    height: 7.5px;
-    top: 100%;
-    right: 0;
-    background: var(--myblue);
+    width: 7.5px;
+    height: 100%;
+    top: 0;
+    right: -15px;
+    background: var(--emerald);
     border-radius: 15px;
-    transform-origin: center;
-    transform: scaleX(0);
+    transform-origin: bottom;
+    transform: scaleY(0);
 }
 
 .summary-quote5-container[data-scroll='in']:before{
-    transform: scaleX(1);
-    transition: 1s ease-in;
+    transform: scaleY(1);
+    transition: 0.5s ease-in;
 }
 
 .summary-quote6-container {
@@ -893,33 +805,14 @@ body {
     grid-row: 6/7;
 }
 
-.summary-quote6-container:before {
-    content: '';
-    position: absolute;
-    width: 50vw;
-    height: 7.5px;
-    top: 105%;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    background: var(--myorange);
-    border-radius: 15px;
-    transform-origin: center;
-    transform: scaleX(0);
-}
-
-.summary-quote6-container[data-scroll='in']:before{
-    transform: scaleX(1);
-    transition: 1s ease-in;
-}
-
 /* -------------------------- CONTACT FORM ---------------------------------------- */
 .contactsection {
-    height: 60vh;
+    height: 80vh;
     margin-top: 60vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
 }
+
+.h2__form-about {
+    color: var(--black);
+}
+
 
