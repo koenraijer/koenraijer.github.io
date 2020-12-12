@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raijer.me</title>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link href='general.css' rel='stylesheet' type='text/css'>
+    <link href='programming.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id='section1'>
+        <div class='content-wrapper'>
+            <header class="header">
+                <a class="header__left" href="index.html">koen raijer</a>
+                <div class='header__right'>
+                    <a class="header__right-1" href='about.html'>resumé</a>
+                </div> 
+            </header>   
+            <div class='menu-wrap'>
+                <input type='checkbox' class='toggler'>
+                <div class='hamburger'><div></div></div>
+
+                <div id='menu' class='menu'>
+                    <div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="index.html">home</a>
+                                </li>
+                                <li>
+                                    <a href='about.html'>about</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+             
+            <h1 id='hero'>I'm practicing <span id='hero__span1'>data analysis in R </span>and <br>I'm doing Harvard's <span id='hero__span2'>CS50 Course</span>.</h1>
+            <a href='#section2' id='scrollDownLink'>
+                <label id='scrolldownArrow' for='scrolldownLink'>
+                    <span class='arrow'></span>
+                </label>
+                </a>
+        </div>
+    </section>
+    <div id='section2' class='moodSection'>
+        <div class='content-wrapper'>
+            <div class='grid-wrapper'>
+                <div class='graphgrid'>
+                    <div class='ele1'>
+                        <h2 class='programtitle'>Programming</h2>
+                    </div>
+                    <div class='ele2'>
+                        <p>
+                            Programming wasn’t something I had anticipated learning in 2020. Not a surprise, considering no one anticipated anything in 2020. My travels to both Indonesia and India were scrapped off the agenda, so I tried finding a research project to help with. That ended up not happening either, so I decided to use the time I’d taken off for research to learn some programming!
+                        </p>
+                    </div>
+                    <div class='ele3'>
+                        <h4>What's the point?</h4>
+                        <ul>
+                            <li><p>Technology will play an undeniably big role in the future of healthcare.</p></li> 
+                            <li><p>Coding ability gives new perspective to problem-solving.</p></li>
+                            <li><p>Develop your own ideas!</p></li>
+                        </ul>
+                    </div>
+                    <div class='ele4'>
+                        <p>
+                            I first wrote a simple tool to help me rebalance my stocks in Python. It's simple and ugly, but it works! I turned it into a web application using a Python framework called Flask, and then I realized it was going to be an expensive undertaking to host it... So I abandoned Python and started focussing on HTML, CSS and JS to build this website. 
+                        </p>
+                    </div>
+                    <div class='ele5'>
+                        <img src='Rebalancegif.gif'>
+                    </div>
+                    <div class='ele6'>
+                        <h2 class='programtitle'>Data analysis</h2>
+                    </div>
+                    <div class='ele7'>
+                        <p>
+                            Then I got interested in the possibilities of doing data analysis. I picked R for its popularity in academia. R is open-source software that doesn't have a user interface like SPSS does; it's a programming language that works by typing commands in a console. Its active userbase maintains and releases a large amount of packages that do anything you want. There's a package for everything. That's what makes it so versatile. I got the hang of a popular plotting package called ggplot2 pretty quicky, using free datasets that R comes equipped with. 
+                        </p>
+                    </div>
+                    <div class='ele8'>
+                        <h4>Why it's important</h4>
+                        <ul>
+                            <li><p>The value of science in applied fields hinges on its ability to improve human behaviour.</p></li> 
+                            <li><p>We have more data than ever. It's all worthless without meaningful visualization.</p></li>
+                            <li><p>The world is becoming increasingly confusing. We're in need of clarity.</p></li>
+                        </ul>
+                    </div>
+                    <div class='ele9'>
+                        <h2 class='programtitle'>What's next?</h2>
+                    </div>
+                    <div class='ele10'>
+                        <ul>
+                            <li><p><span class='boldspan'>Complete Harvard's CS50 Introduction to Computer Science.</span> Completing this course will give me a sturdy theoretical basis for any future coding endeavour.</p></li>
+                            <li><p><span class='boldspan'>Get proficient in data analysis using both Python and R.</span> Get good at interactive data visualization; data exploration, manipulation and analysis.</p></li>
+                            <li><p><span class='boldspan'>Develop my skills in mathematics.</span> Mathematics are a fundemental tool in programming.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class='content-wrapper'>
+            <div id='footer-left' class='footer-left'>
+                <p>&copy 2020 <a class='footerlink' href='index.html'>Koen Raijer</a>. All rights reserved.</p>
+            </div>
+            <div id='footer-right' class='footer-right'>
+                <ul>
+                    <a class='footer-child-1' href="index.html">home</a>
+                    <a class='footer-child-1' href='about.html'>resumé</a>
+                </ul>
+            </div>
+    </footer>  
+
+    <script src='java.js'></script>
+    <script scr='text/javascript'>
+        ScrollOut({
+            targets:''
+        })
+    </script>
+</body>
+</html>

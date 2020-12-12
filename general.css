@@ -98,6 +98,12 @@ a:hover {
     width: 2rem;
 }
 
+.sup {
+    position: relative;
+    bottom: 1ex;
+    font-size: 80%;
+}
+
 /* ---------------HEADER WITH REGULAR NAVBAR --------------------- */
 .header{
     position: relative;
@@ -326,6 +332,10 @@ footer {
     font-family: 'Heebo', sans-serif;
 }
 
+footer a {
+    font-size: 0.8rem;
+}
+
 footer p {
     font-size: 0.8rem;
 }
@@ -340,9 +350,14 @@ footer p {
 }
 
 .footer-img {
+    height: 70px;
+    width: 70px;
+    padding-right: 15px;
+}
+
+.img-3 {
+    padding-right: 0px;
     height: 60px;
-    width: 60px;
-    padding-right: 10px;
 }
 
 /* FOR WORK PAGE */
