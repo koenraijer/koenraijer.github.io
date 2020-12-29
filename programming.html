@@ -12,42 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id='section1'>
-        <div class='content-wrapper'>
-            <header class="header">
-                <a class="header__left" href="index.html">koen raijer</a>
-                <div class='header__right'>
-                    <a class="header__right-1" href='about.html'>resumé</a>
-                </div> 
-            </header>   
+    <div class='content-wrapper'>
+        <header class="header">
+            <a class="header__left" href="index.html">koen raijer</a>
+            <div class='header__right'>
+                <a class="header__right-1" href='about.html'>resumé</a>
+                <a href='programming.html'>programming</a>
+            </div>  
+
             <div class='menu-wrap'>
                 <input type='checkbox' class='toggler'>
                 <div class='hamburger'><div></div></div>
-
                 <div id='menu' class='menu'>
                     <div>
                         <div>
                             <ul>
-                                <li>
-                                    <a href="index.html">home</a>
-                                </li>
-                                <li>
-                                    <a href='about.html'>about</a>
-                                </li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href='about.html'>resumé</a></li>
+                                <li><a href='programming.html'>programming</a></li>
                             </ul>
                         </div>
                     </div> 
                 </div>
-            </div> 
-             
-            <h1 id='hero'>I'm practicing <span id='hero__span1'>data analysis in R </span>and <br>I'm doing Harvard's <span id='hero__span2'>CS50 Course</span>.</h1>
-            <a href='#section2' id='scrollDownLink'>
-                <label id='scrolldownArrow' for='scrolldownLink'>
-                    <span class='arrow'></span>
-                </label>
-                </a>
-        </div>
-    </section>
+            </div>
+        </header>  
+    </div> 
+            
     <div id='section2' class='moodSection'>
         <div class='content-wrapper'>
             <div class='grid-wrapper'>
@@ -107,17 +97,11 @@
         </div>
     </div>
 
-    <footer class='content-wrapper'>
-            <div id='footer-left' class='footer-left'>
-                <p>&copy 2020 <a class='footerlink' href='index.html'>Koen Raijer</a>. All rights reserved.</p>
-            </div>
-            <div id='footer-right' class='footer-right'>
-                <ul>
-                    <a class='footer-child-1' href="index.html">home</a>
-                    <a class='footer-child-1' href='about.html'>resumé</a>
-                </ul>
-            </div>
-    </footer>  
+    <div class='content-wrapper'>
+        <footer>
+            <p>&copy 2020 <a class='footerlink' href='index.html'>Koen Raijer</a>.</p>
+        </footer>   
+    </div>     
 
     <script src='java.js'></script>
     <script scr='text/javascript'>
