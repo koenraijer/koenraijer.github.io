@@ -2,11 +2,10 @@
 
 #hero {
     height: 68vh;
-    transform: translateY(18vh);
-    padding-left: 30px;
-    padding-right: 30px;
+    transform: translateY(10vh);
     text-align: center;
 }
+
 #hero__span1 {
     color: var(--emerald);
 }
@@ -79,8 +78,8 @@
 }
 
 .graphgrid {
+    margin-top: 100px;
     display: grid;
-    max-width: 95vw;
     grid-column: 1fr 1fr;
     grid-auto-columns: 50%;
     justify-content: center;
@@ -106,9 +105,9 @@
 .ele3 {
     grid-row: 3/4;
     grid-column: 1/3;
+    width: 75vw;
     justify-self: center;
     padding: 5vh auto 5vh;
-    width: 75%;
     position: relative;
     text-align: left;
 }
@@ -121,7 +120,7 @@
     content: '';
     position: absolute;
     background: var(--emerald);
-    height: 8px;
+    height: 5px;
     width: 100%;
     top: 0;
     left: 0;
@@ -132,7 +131,7 @@
     content: '';
     position: absolute;
     background: var(--emerald);
-    height: 8px;
+    height: 5px;
     width: 100%;
     top: 100%;
     left: 0;
@@ -171,9 +170,9 @@
 .ele8 {
     grid-row: 7/8;
     grid-column: 1/3;
+    width: 75vw;
     justify-self: center;
     padding: 5vh auto 5vh;
-    width: 75%;
     position: relative;
     text-align: left;
 }
@@ -182,7 +181,7 @@
     content: '';
     position: absolute;
     background: var(--sapphire);
-    height: 8px;
+    height: 5px;
     width: 100%;
     top: 0;
     left: 0;
@@ -193,7 +192,7 @@
     content: '';
     position: absolute;
     background: var(--sapphire);
-    height: 8px;
+    height: 5px;
     width: 100%;
     top: 100%;
     left: 0;

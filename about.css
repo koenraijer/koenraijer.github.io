@@ -1,24 +1,14 @@
 /* ----------------------------- HERO -------------------------------------------------- */
 
-.about-hero {
-    height: 68vh;
-    margin-bottom: 5vh;
+.about-wrapper {
+    height: 20vh;
 }
 
-#hero {
-    transform: translateY(18vh);
-    text-align: center;
-}
-
-#hero-span {
+#hero-span1 {
     color: var(--sapphire);
 }
 
-#hero__span1 {
-    color: var(--emerald);
-}
-
-#hero-span2 {
+#hero__span2 {
     color: var(--emerald);
 }
 
@@ -31,508 +21,303 @@
     background: var(--white2);
     padding-top: 25vh;
 }
-/* ------------------------------- TIMELINE --------------------------------------------- */
 
-.timeline-headline {
-    margin-top: 40vh;
-    text-align: center;
+#section1, #section2 {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: calc(5% + 100px);
+    margin-bottom: 0;
 }
 
+.section3 {
+    position: relative;
+    margin-left: 5%;
+    margin-right: calc(5% + 100px);
+    margin-bottom: 0;
+}
+/* -------------section menu ------------------ */
+
+.sectionmenu a {
+    font-size: 0.6rem;
+}
+
+.sectionmenu {
+    position: fixed;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    z-index: 1;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.fixed-wrapper {
+    width: 75px;
+    position: absolute;
+    top: 30vh;
+    right: 6.5%;
+}
+
+/* ------------------------------ PROFILE ------------------------------------------*/
+.profilegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(10vh, auto);
+    column-gap: 2rem;
+    padding: 2%;
+    background: var(--grey2);
+    border-radius: 25px;
+}
+
+.profilegrid > div {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.profilegrid > div:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+    align-content: center;
+}
+
+.profilegrid > div:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: start;
+}
+
+.profilegrid > div:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+@media screen and (min-width: 850px){
+    .profilegrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .profilegrid > div:first-child {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-self: start;
+    }
+    
+    .profilegrid > div:nth-child(2) {
+        grid-row: 1/3;
+        grid-column: 1/3;
+    }
+    
+    .profilegrid > div:nth-child(3) {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+}
+
+
+.personaliagrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.7rem;
+    font-weight: normal;
+    row-gap: 0.2rem;
+    padding: 2.5vh;
+}
+
+.profilepic {
+    object-fit: cover;
+    display: block;
+    position: relative;
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+    border: 4px solid var(--grey3);
+}
+
+/* ----------------------------- Experience grid ------------------------------ */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+.experiencegrid {
+    display: grid;
+    grid-template-columns: 75px 4fr;
+    row-gap: 1rem;
+    grid-auto-columns: minmax(5px, auto);
 }
 
-/* TIMELINE COLORING (NOT THE BOXES THEMSELVES) */
-.timeline {
-    color: var(--white);
+    /* line styling */
+.experiencegrid > div:first-child {
+    width: 5px;
+    border-radius: 5px;
+    background: var(--black);
+    grid-column: 1/2;
+    grid-row: 1/9;
 }
 
-.timeline ul {
-    background: var(--white);
-}
-.timeline ul > li {
-   background: var(--black);
+    /* general content box styling */
+.experiencegrid > div:nth-child(n+2) {
+    padding: 1rem;
+    border-radius: 15px;
     position: relative;
-    margin: 0 auto;
-    width: 7px;
-    padding-bottom: 40px;
-    list-style-type: none;
 }
 
-.timeline ul li:last-child {
-    padding-bottom: 7px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /* content box coloring */
+.experiencegrid > div:nth-child(6), .experiencegrid > div:nth-child(9) {
+    background: var(--emerald);
 }
 
-.timeline ul li:first-child {
-   border-top-left-radius: 5px;
-   border-top-right-radius: 5px;
+.experiencegrid > div:nth-child(3), .experiencegrid > div:nth-child(7) {
+    background: var(--grey2);
 }
 
-.timeline ul li::before {
-    content: '';
-    background: var(--white);
+.experiencegrid > div:nth-child(2), .experiencegrid > div:nth-child(4), .experiencegrid > div:nth-child(5), .experiencegrid > div:nth-child(8) {
+    background: var(--sapphire);
+}
+
+    /* sapphire content box text coloring */
+    .experiencegrid > div:nth-child(2) > p, .experiencegrid > div:nth-child(2) > h6, .experiencegrid > div:nth-child(4) > p, .experiencegrid > div:nth-child(4) > h6, .experiencegrid > div:nth-child(5) > p, .experiencegrid > div:nth-child(5) > h6, .experiencegrid > div:nth-child(8) > p, .experiencegrid > div:nth-child(8) > h6 {
+    color: white;
+}
+
+/* ----------- DOTS */
+.experiencegrid > div:nth-child(n+2)::before {
     position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    content: '';
     width: 30px;
     height: 30px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 15px;
+    background: var(--white);
+    top: -12.5px;
+    left: calc(-75px - 12.5px);
 }
 
-.item1::before {
-   border: 5px solid var(--emerald);
-}
+    /* DOTS coloring */
 
-.item2::before{
-   border: 5px solid var(--grey2)
-}
+    .experiencegrid > div:nth-child(6)::before, .experiencegrid > div:nth-child(9)::before {
+        border: 5px solid var(--emerald);
+    }
+    
+    .experiencegrid > div:nth-child(3)::before, .experiencegrid > div:nth-child(7)::before {
+        border: 5px solid var(--grey2);
+    }
+    
+    .experiencegrid > div:nth-child(2)::before, .experiencegrid > div:nth-child(4)::before, .experiencegrid > div:nth-child(5)::before, .experiencegrid > div:nth-child(8)::before {
+        border: 5px solid var(--sapphire);
+    }
 
-.item3::before{
-   border: 5px solid var(--sapphire);
-}
-
-.item4::before {
-   border: 5px solid var(--emerald);
-}
-
-.item5::before{
-   border: 5px solid var(--grey2);
-}
-
-.item6::before{
-   border: 5px solid var(--sapphire);
-}
-
-.item7::before {
-   border: 5px solid var(--emerald);
-}
-
-.timeline ul li .hidden {
-    opacity: 0;
-}
-
-/* CONTENT BOX STYLING */
-
-.timeline ul li:nth-child(3n) .content p {
-    color: var(--white);
-}
-
-.timeline ul li:nth-child(3n) .content h3 {
-    color: var(--white);
-    text-align: left;
-}
-
-.timeline ul li p{
-    color: #000000;
-}
-.timeline ul li .content {
-    position: relative;
-    top: 7px;
-    width: 450px;
-    padding: 20px;
-    transition: 0.75s;
-    transform-origin: top;
-    transform: scaleY(0);
-}
-
-.content1 {
-   background:  var(--emerald);
-   left: 50px;
-}
-
-.content2 {
-   background: var(--grey2);
-   left: calc(-450px - 45px);
-}
-
-.content3 {
-   background: var(--sapphire);
-   left: 50px;
-}
-
-.content4 {
-   background:  var(--emerald);
-   left: calc(-450px - 45px);
-}
-.content5 {
-   background: var(--grey2);
-   left: 50px;
-}
-
-.content6 {
-   background: var(--sapphire);
-   left: calc(-450px - 45px);
-}
-
-.content7 {
-   background:  var(--emerald);
-   left: 50px;
-}
-
-.content1, .content3, .content5, .content7 {
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.content2, .content4, .content6 {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-/* LINE FROM CONTENT BOX TO TIMELINE */
-
-.timeline ul li:nth-child(odd) .content:before {
-   left: -38px;
-   border-bottom-left-radius: 5px;
-}
-
-.timeline ul li:nth-child(even) .content:before {
-  right: -38px;
-}
-
-.timeline ul li .content1:before {
-   content: '';
-   background: var(--emerald);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content2:before {
-   content: '';
-   background: var(--grey2);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content3:before {
-   content: '';
-   background: var(--sapphire);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content4:before {
-   content: '';
-   background: var(--emerald);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content5:before {
-   content: '';
-   background: var(--grey2);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content6:before {
-   content: '';
-   background: var(--sapphire);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-.timeline ul li .content7:before {
-   content: '';
-   background: var(--emerald);
-   position: absolute;
-   top: 0px;
-   width: 38px;
-   height: 5px;
-}
-
-/* CONTENT HIDER PSEUDOELEMENT */
-
-.text1::before{
-    content: '';
+/* ------- line to DOTS */
+.experiencegrid > div:nth-child(n+2)::after {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    content: '';
+    width: 85px;
+    height: 5px;
+    top: 0px;
+    left: -61px;
+}
+
+.experiencegrid > div:nth-child(6)::after, .experiencegrid > div:nth-child(9)::after {
     background: var(--emerald);
-    transform-origin: right;
-    transform: scaleX(1);
 }
 
-.text2::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    width: 90%;
-    height: 90%;
+.experiencegrid > div:nth-child(3)::after, .experiencegrid > div:nth-child(7)::after {
     background: var(--grey2);
-    transform-origin: left;
-    transform: scaleX(1);
 }
 
-.text3::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+.experiencegrid > div:nth-child(2)::after, .experiencegrid > div:nth-child(4)::after, .experiencegrid > div:nth-child(5)::after, .experiencegrid > div:nth-child(8)::after {
     background: var(--sapphire);
-    transform-origin: right;
-    transform: scaleX(1);
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
-.text4::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    width: 95%;
-    height: 90%;
-    background: var(--emerald);
-    transform-origin: left;
-    transform: scaleX(1);
-}
+@media screen and (min-width: 700px) {
+    .experiencegrid {
+        grid-template-columns: 2fr 150px 2fr;
+    }
 
-.text5::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    background: var(--grey2);
-    transform-origin: right;
-    transform: scaleX(1);
-}
+    .experiencegrid > div:first-child {
+        grid-column: 2/3;
+        align-content: center;
+        justify-self: center;
+    }
 
-.text6::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    width: 90%;
-    height: 90%;
-    background: var(--sapphire);
-    transform-origin: left;
-    transform: scaleX(1);
-}
+    /* Assigning right column */
+    .experiencegrid > div:nth-child(n+2):nth-child(even) {
+        grid-column: 1/2;
+    }
 
-.text7::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 95%;
-    height: 90%;
-    background: var(--emerald);
-    transform-origin: right;
-    transform: scaleX(1);
-}
+    .experiencegrid > div:nth-child(n+2):nth-child(odd) {
+        grid-column: 3/4;
+    }
 
-/* JAVASCRIPT */
-.timeline ul li .content[data-scroll='in']{
-    transition-delay: 1s;
-    transition: 0.75s;
-    transform-origin: top;
-    transform: scaleY(1);
-}
+    /* Assigning right row to even elements */
+    .experiencegrid > div:nth-child(2) {
+        grid-row: 1/2;
+    }
 
-.text1[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: right center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(4) {
+        grid-row: 3/4;
+    }
 
-.text3[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: right center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(6) {
+        grid-row: 5/6;
+    }
 
-.text5[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: right center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(8) {
+        grid-row: 7/8;
+    }
 
-.text7[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: right center;
-    transition: 1s;
-}
+    /* Assigning right row to odd elements */
+    .experiencegrid > div:nth-child(3) {
+        grid-row: 2/3;
+    }
 
-.text2[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(5) {
+        grid-row: 4/5;
+    }
 
-.text4[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(7) {
+        grid-row: 6/7;
+    }
 
-.text6[data-scroll='in']:before{
-    transition-delay: 1.75s;
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: 1s;
-}
+    .experiencegrid > div:nth-child(9) {
+        grid-row: 8/9;
+    }
 
-/* ------------------------- ----- Media Queries ----- ------------------------- */
+    /* Changing line to DOTS & DOT positioning */
+    .experiencegrid > div:nth-child(n+2):nth-child(odd)::after {
+        width: 87.5px;
+    }
 
-/* ADJUST SECTION HEIGHT FOR TALL SCREENS (LIKE IPAD PRO) */
-@media screen and (min-height: 1100px) {
-    section {
-        min-height: 75vh;
+    .experiencegrid > div:nth-child(n+2):nth-child(odd)::before {
+        left: calc(-75px - 15px);
+    }
+
+    /* Reallign even content box lines */
+    .experiencegrid > div:nth-child(n+2):nth-child(even)::after {
+        left: auto;
+        right: -61px;
+    }
+
+    /* Reallign even content box circle */
+    .experiencegrid > div:nth-child(n+2):nth-child(even)::before {
+        left: auto;
+        right: calc(-75px - 15px);
     }
 }
 
-/* TABLETS AND SMALL LAPTOPS */
-@media screen and (max-width: 1020px) {
-    .timeline ul li .content {
-        width: 41vw;
-   }
-    .timeline ul li:nth-child(even) .content {
-        left: calc(-41vw - 45px);
-   }
-}
-
-/* SMALL TABLETS AND PHONES */
-@media screen and (max-width: 750px) {
-    .timeline ul li .content {
-        transition: none;
-   }
-    
-}
-
-@media screen and (max-width: 700px) {
-    .timeline ul li {
-        margin-left: 20px;
-   }
-    .timeline ul li .content {
-        width: calc(100vw - 100px);
-        transition: none;
-   }
-    .timeline ul li .content h3 {
-        text-align: left;
-   }
-    .timeline ul li:nth-child(even) .content {
-        left: 50px;
-        transition: none;
-   }
-    .timeline ul li:nth-child(even) .content:before {
-        left: -38px;
-        border-bottom-left-radius: 5px;
-        transition: none;
-   }
-
-   /* CORRECTING PSEUDOELEMENT SCALE(X) DIRECTION FOR SMALL SCREENS */
-   .text2::before{
-       transform-origin: right;
-       transform: scaleX(1);
-   }
-
-   .text4::before{
-        transform-origin: right;
-        transform: scaleX(1);
-    }
-
-    .text6::before{
-        transform-origin: right;
-        transform: scaleX(1);
-    }
-
-    .text2[data-scroll='in']:before{
-        transition-delay: 1s;
-        transform: scaleX(0);
-        transform-origin: right center;
-        transition: 1s;
-    }
-    
-    .text4[data-scroll='in']:before{
-        transition-delay: 1s;
-        transform: scaleX(0);
-        transform-origin: right center;
-        transition: 1s;
-    }
-    
-    .text6[data-scroll='in']:before{
-        transition-delay: 1s;
-        transform: scaleX(0);
-        transform-origin: right center;
-        transition: 1s;
-    }
-
-    .timeline ul li .content[data-scroll='in']{
-        transition: 0.5s;
-        transform-origin: top;
-        transform: scaleY(1);
-    }
-
-    /* CORRECTING p text-align */
-    .timeline ul li:nth-child(odd) .content p {
-        text-align: left;
-    }
-    
-    .timeline ul li:nth-child(even) .content p {
-       text-align: left;
-    }
-
-    .timeline h3 {
-        padding: 0;
-    }
-
-    /* Correcting border radius */
-    .content2, .content4, .content6 {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-
-}
 /* ---------------------- QUOTE ----------------------------------*/
 .quote-skew {
     background: transparent;
     transform: translateY(135px);
+    z-index: -100;
 }
 
 .quote-skew::after {
@@ -540,35 +325,32 @@ body {
     transform: skewY(5deg);
     position: absolute;
     width: 100vw;
-    height: 100vh;
-    background: var(--grey);
+    height: 100%;
+    background: var(--grey2);
     top: 0;
-    z-index: -1;
+    z-index: -100 !important;
     content: '';
 }
 
-.big-quote{
+.quotesection-quote h5 {
+    font-weight: bold;
     text-align: center;
-    transform: scale(1.0);
-    transition: 0.5s ease-in-out;
 }
 
-.big-quote-span {
-    color: var(--sapphire);
+.biq-quote {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
-
-
 .quoted-by {
     margin-top: 3vh;
     margin-left: 40%;
     font-weight: normal;
-    transform: scale(1.0);
-    transition: 0.5s ease-in-out;
 }
 
 .quotesection-quote {
     transform-origin: center;
-    transform: scale(0.7);
     transition: 1.5s;
     display: flex;
     flex-flow: column nowrap;
@@ -576,41 +358,57 @@ body {
     align-content: center;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 40vh;
+    margin-top: 0;
 }
 
 .quotesection-wrapper {
-    transform: translateY(20vh);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2% 0 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: calc(5% + 75px);
+    margin-bottom: 0;
 }
 
-.quotesection-quote[data-scroll='in']{
-    transition: 1.5s;
-    transform-origin: center;
-    transform: scale(1);
+.quotesection-wrapper > div {
+    align-content: center;
+    justify-content: center;
 }
 
-.quotesection-quote[data-scroll='out']{
-    transition: 1.5s;
-    transform-origin: center;
-    transform: scale(0.7);
+.quote-title-wrapper {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: calc(5% + 100px);
+    margin-bottom: 0;
+}
+
+.titleQuote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(10vh);
 }
 
 /* ---------------------- SKILL BARS ----------------------------------- */
-
-.skillsection-subtitle {
-    text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-.grid {
-    margin: auto;
-    width: 50vw;
+.gridgrid {
     display: grid;
+    width: 75vw;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    margin: auto;
+}
+
+.skills-headline {
+    margin-top: 10vh;
+}
+
+.grid {
     justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 35fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
-    grid-auto-rows: minmax(50px,auto);
+    grid-auto-rows: minmax(50px, auto);
 }
 
 .skill-name {
@@ -625,12 +423,12 @@ body {
 
 .greybar {
     border-radius: 10px;
-    height: 15px;
+    height: 10px;
     align-self: center;
     justify-self: start;
     position: relative;
     background: rgba(0,0,0,0.1);
-    width: 100%;
+    width: 75%;
     overflow: hidden;
 }
 
@@ -673,161 +471,36 @@ body {
     transform-origin: left;
     transform: scaleX(1);
 }
-/* ----------------------------- SUMMARY SECTION ----------------------------------*/
-.section-headline-summ {
-    text-align: center;
-    margin-top: 20vh;
-    margin-bottom: 10vh;
-}
-.summarygrid {
-    max-height: 200vh;
-    width: 50vw;
-    margin: auto;
-    display: grid;
-    row-gap: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-}
 
-.summary-quote2-container {
-    align-self: center;
-    text-align: left;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.summary-quote2-container:before {
-    content: '';
-    position: absolute;
-    width: 7.5px;
-    height: 100%;
-    top: 0;
-    left: -15px;
-    background: var(--sapphire);
-    border-radius: 15px;
-    transform-origin: bottom;
-    transform: scaleY(0);
-}
-
-.summary-quote2-container[data-scroll='in']:before{
-    transform: scaleY(1);
-    transition: 0.5s ease-in;
-}
-
-.summary-quote3-container {
-    align-self: center;
-    text-align: right;
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.summary-quote3-container:before {
-    content: '';
-    position: absolute;
-    width: 7.5px;
-    height: 100%;
-    top: 0;
-    right: -15px;
-    background: var(--emerald);
-    border-radius: 15px;
-    transform-origin: bottom;
-    transform: scaleY(0);
-}
-
-.summary-quote3-container[data-scroll='in']:before{
-    transform: scaleY(1);
-    transition: 0.5s ease-in;
-}
-
-.summary-quote4-container {
-    align-self: center;
-    text-align: left;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.summary-quote4-container:before {
-    content: '';
-    position: absolute;
-    width: 7.5px;
-    height: 100%;
-    top: 0;
-    left: -15px;
-    background: var(--sapphire);
-    border-radius: 15px;
-    transform-origin: bottom;
-    transform: scaleY(0);
-}
-
-.summary-quote4-container[data-scroll='in']:before{
-    transform: scaleY(1);
-    transition: 0.5s ease-in;
-}
-
-.summary-quote5-container {
-    align-self: center;
-    text-align: right;
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.summary-quote5-container:before {
-    content: '';
-    position: absolute;
-    width: 7.5px;
-    height: 100%;
-    top: 0;
-    right: -15px;
-    background: var(--emerald);
-    border-radius: 15px;
-    transform-origin: bottom;
-    transform: scaleY(0);
-}
-
-.summary-quote5-container[data-scroll='in']:before{
-    transform: scaleY(1);
-    transition: 0.5s ease-in;
-}
-
-.summary-quote6-container {
-    align-self: center;
-    text-align: center;
-    position: relative;
-    grid-column: 1/3;
-    grid-row: 5/6;
-}
-
-@media screen and (max-width: 550px) {
-    .summarygrid {
-        grid-template-columns: 1fr;
+@media screen and (min-width: 800px) {
+    .gridgrid {
+        grid-template-columns: 1fr 1fr;
+        width: 75vw;
+        margin: auto;
+        column-gap: 1em;
     }
-    .summary-quote2-container {
+
+    .gridgrid > div:first-child {
+        grid-column: 1/2;
+    }
+
+    .gridgrid > div:nth-child(2) {
+        grid-column: 1/2;
+    }
+
+    .gridgrid > div:nth-child(3) {
+        grid-column: 2/3;
         grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    .summary-quote3-container {
-        grid-column: 1/2;
     }
 
-    .summary-quote4-container {
-        grid-column: 1/2;
-    }
-
-    .summary-quote4-container {
-        grid-column: 1/2;
-    }
-    .summary-quote5-container {
-        grid-column: 1/2;
+    .gridgrid > div:nth-child(4) {
+        grid-column: 2/3;
     }
 }
 
 /* -------------------------- CONTACT FORM ---------------------------------------- */
 .contactsection {
-    height: 80vh;
+    height: 60vh;
     margin-top: 60vh;
 }
 

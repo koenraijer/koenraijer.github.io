@@ -11,260 +11,257 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div id='section1' class='content-wrapper'>
-            <header class="header">
-                <a class="header__left" href="index.html">koen raijer</a>
-                <div class='header__right'>
-                    <a class="header__right-1" href='about.html'>resumé</a>
-                </div> 
-            </header>   
+    <div class='content-wrapper'>
+        <header class="header">
+            <a class="header__left" href="index.html">koen raijer</a>
+            <div class='header__right'>
+                <a class="header__right-1" href='about.html'>resumé</a>
+                <a href='programming.html'>programming</a>
+            </div>  
+
             <div class='menu-wrap'>
                 <input type='checkbox' class='toggler'>
                 <div class='hamburger'><div></div></div>
-
                 <div id='menu' class='menu'>
                     <div>
                         <div>
                             <ul>
-                                <li>
-                                    <a href="index.html">home</a>
-                                </li>
-                                <li>
-                                    <a href='about.html'>resumé</a>
-                                </li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href='about.html'>resumé</a></li>
+                                <li><a href='programming.html'>programming</a></li>
                             </ul>
                         </div>
                     </div> 
                 </div>
-            </div> 
-             
+            </div>
+        </header>  
+
+        <div id="backtop" data-scroll="data-v-w="300">     
+            <img class='arrow' src="arrow.svg">
+        </div>
+        
+    </div>
+
+        <div class="content-wrapper">
+            <div id="backtop" data-v-w="1000">     
+                <img class='arrow' src="arrow.svg">
+            </div>         
+        </div> 
+
             <div class='content-wrapper'>
-                <div class='about-hero'>
-                    <h1 id='hero'><span id='hero-span'>Resumé</span>.</h1>
-                    <h2 class='section-headline timeline-headline'>Experience</h1> 
+                <div class='fixed-wrapper'>
+                    <nav class='sectionmenu'>
+                        <ul>
+                            <li><a class="active" href='#section1'>about</a></li>
+                            <li><a href='#section2'>experience</a></li>
+                            <li><a href='#section3'>abilities</a></li>
+                            <li><a href='#section4'>contact</a></li>
+                        </ul>
+                    </nav>
                 </div> 
             </div>
-        
-        <div class="timeline">   
-            <ul>
-            <li class='list item1'>
-                <div class="content content1">
-                    <div class='text text1'>
-                        <h3>
-                            <time>2010-2016</time>
-                        </h3>
-                        <h3>Bilingual VWO.</h3>
-                        <p>At College Den Hulster, Venlo. Science and biology profile. Average grade 7.91.</p>
+            
+        <div class='content-wrapper'>
+            <div class='section_row' id='section1'>
+                <h2 class='title'>Resumé</h2>
+                <div class='profilegrid'>
+                    <div>
+                        <img class='profilepic' src='profilepic.jpeg'>
+                    </div>
+                    <div>
+                        <h3 class='subtitle'>About</h3>
+                        <p>Open-minded medical student interested in general practice, internal medicine, neurology and psychiatry. Passionate about improving healthcare systems through health tech, research and policy innovations. Interested in applications of data science in healthcare and advances in psychedelic research. Part time programmer, currently focussing on learning general principles in computer science. Amateur music producer, lowkey vinyl collector and avid sportsman.</p>
+                    </div>
+                    <div>
+                        <div class='personaliagrid'>
+                            <div><span id='boldspan'>Name:</span> Koen Raijer</div>
+                            <div><span id='boldspan'>Age:</span> 22</div>
+                            <div><span id='boldspan'>Location:</span> Maastricht to Eindhoven</div>
+                        </div>
                     </div>
                 </div>
-            </li>
-            <li class='list item2'>
-                <div class="content content2">
-                    <div class='text text2'>
-                        <h3>
-                            <time>2015-2016</time>
-                        </h3>
-                        <h3>Volunteering.</h3>
-                        <p>At Proteion, Beesel. Kept a nice elderly gentleman company once a week.</p>
-                    </div>
-                </div>
-            </li>
-            <li class='list item3'>
-                <div class="content content3">
-                    <div class='text text3'>
-                        <h3>
-                            <time>2016-2019</time>
-                        </h3>
-                        <h3>Bachelor of Medicine.</h3>
-                        <p>At Maastricht University.</p>
-                    </div>
-                </div>
-            </li>
-            <li class='list item4'>
-                <div class="content content4">
-                    <div class='text text4'>
-                        <h3>
-                            <time>2017-2019</time>
-                        </h3>
-                        <h3>Honour's Programme, personalized nutrition.</h3>
-                        <p>At Maastricht University, FHML. <br>Assessed RNA expression responses after dietary interventions and the influence of environmental factors on RNA integrity. Analyzed genetic data to find a model gene expression profile. Considered ethical and legal concerns of handling genetic information.</p>
-                    </div>
-                </div>
-            </li>
-            <li class='list item5'>
-                <div class="content content5">
-                    <div class='text text5'>
-                        <h3>
-                            <time>2017-2019</time>
-                        </h3>
-                        <h3>Student-member Committee Studium Generale.</h3>
-                        <p>At Maastricht University. Student representation in a committee with board members of all faculties meant to advize and guide the employees of Studium Generale.</p>
-                    </div>
-                </div>
-            </li>
-            <li class='list item6'>
-                <div class="content content6">
-                    <div class='text text6'>
-                        <h3>
-                            <time>2019-</time>
-                        </h3>
-                        <h3>Master of Medicine.</h3>
-                        <p>At Maastricht University. Clinical rotations. Currently doing surgery!</p>
-                    </div>
-                </div>
-            </li>
-            <li class='list item7'>
-                <div class="content content7">
-                    <div class='text text7'>
-                        <h3>
-                            <time>2020</time>
-                        </h3>
-                        <h3>Verzorgende IG ('auxiliary nurse').</h3>
-                        <p>At De ZorgGroep, Venlo. I was responsible for the complete day-to-day-care of varying groups of elderly people with dementia, post-stroke disabilities, and Korsakoff syndrome. Care included administering medication, treating wounds, catheters and stoma's and consulting with nurses and the geriatrician.</p>
-                    </div>
-                </div>
-            </li>
-            </ul>
+            </div>
         </div>
+        
+    <div class='content-wrapper'>
+        <div class='section_row' id='section2'>
+            <h2 class='title'>Experience</h2>
+            <div class='experiencegrid'>
+                <div></div>
+                <div>
+                    <h6>
+                        <time>2010-2016</time>
+                    </h6>
+                    <h6>Bilingual VWO.</h6>
+                    <p>Science and biology profile. Average grade 7.91.</p>
+                </div>
+                <div>
+                    <h6>
+                        <time>2015-2016</time>
+                    </h6>
+                    <h6>Volunteering.</h6>
+                    <p>Kept an elderly gentleman company once a week.</p>
+                </div>
+                <div>
+                        <h6>
+                            <time>2016-2019</time>
+                        </h6>
+                        <h6>Bachelor of Medicine.</h6>
+                        <p>At Maastricht University.</p>
+                </div>
+                <div>
+                    <h6>
+                        <time>2017-2019</time>
+                    </h6>
+                    <h6>Honour's Programme, personalized nutrition.</h6>
+                    <p>At Maastricht University.<br>Assessed the influence of several environmental factors on RNA integrity. Analyzed genetic data. Considered ethical and legal concerns of handling genetic information.</p>
+                </div>
+                <div>
+                    <h6>
+                        <time>2017-2019</time>
+                    </h6>
+                    <h6>Care assistant</h6>
+                    <p>At several nursing homes throughout Maastricht.</p>
+                </div>
+                <div>
+                    <h6>
+                        <time>2017-2019</time>
+                    </h6>
+                    <h6>Student-member Committee Studium Generale.</h6>
+                    <p>Maastricht University. Student representation in a committee with board members of all faculties meant to advize and guide the employees of Studium Generale.</p>
+                </div>
+                <div>
+                        <h6>
+                            <time>2019-</time>
+                        </h6>
+                        <h6>Master of Medicine.</h6>
+                        <p>Maastricht University. Clinical rotations. Currently doing surgery!</p>
+                </div>
+                <div>
+                    <h6>
+                        <time>2020</time>
+                    </h6>
+                    <h6>Verzorgende IG ('auxiliary nurse').</h6>
+                    <p>At De ZorgGroep.<br>I was responsible for the complete day-to-day-care of people with dementia, post-stroke disabilities, and Korsakoff syndrome. Experienced with diabetes, palliative care and adhering to covid-19 protocols.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class='content-wrapper'>
+        <div id='section3' class='section3 section_row quote-title-wrapper'>
+            <h2 class='titleQuote'>Abilities</h2>
+        </div>
+    </div>
     <div class='quote-skew'>    
-        <section>
+        <div class='content-wrapper'>
             <div class='quotesection-wrapper'>
-                    <div class='quotesection-quote'>
-                    <h2 class='big-quote'>
-                        ''Koen is a real <span class='big-quote-span'>team player</span>, his best contribution lies in his capacity to ask the right critical questions at the right moment.''
-                    </h2>
-                    <h3 class='quoted-by'>
-                        - <a target='external' href='https://www.maastrichtuniversity.nl/t.dekok'>Theo de Kok</a>, Professor of genetic toxicology, Maastricht University.
-                    </h3>
+                <div class='quotesection-quote'>
+                    <h5 class='big-quote'>
+                        'Koen is a real <span id='hero-span1'>team player</span>, his best contribution lies in his capacity to ask the right critical questions at the right moment.''
+                    </h5>
+                    <h6 class='quoted-by'>
+                        - <a target='external' href='https://www.maastrichtuniversity.nl/t.dekok'>Theo de Kok</a>, Professor of Toxicogenomics, Maastricht University.
+                    </h6>
                     </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <div class='greybackground'>
-        <div id='section3'>
             <div class='content-wrapper'>
-                <h2 class='section-headline'>Skills</h2>
-                <h3 class='skillsection-subtitle'>Languages</h3>
-                <div class='grid'>
-                    <div class='skill-name'>
-                        <h3>Dutch</h3>
+                <div class='section3'>
+                    <div class='gridgrid'>
+                        <div>
+                            <h4 class='title'>Languages</h4>
+                        </div>
+                        <div class='grid'>
+                            <div class='skill-name'>
+                                <h5>Dutch</h5>
+                            </div>
+                            <div class='greybar'>
+                                <div class='colorbar skill-100'></div>
+                            </div>
+                            <div class='skill-name'>
+                                <h5>English</h5>
+                            </div>
+                            <div class='greybar'>
+                                <div class='colorbar skill-100'></div>
+                            </div>
+                            <div class='skill-name'>
+                                <h5>German</h5>
+                            </div>
+                            <div class='greybar'>
+                                <div class='colorbar skill-50'></div>
+                            </div>
+                            <div class='skill-name'>
+                                <h5>French</h5>
+                            </div>
+                            <div class='greybar'>
+                                <div class='colorbar skill-25'></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class='title'>Programming</h4>
+                        </div>
+                        <div class='grid'>
+                                <div class='skill-name'>
+                                    <h5>HTML</h5>
+                                </div>
+                                <div class='greybar'>
+                                    <div class='colorbar skill-75'></div>
+                                </div>
+                                <div class='skill-name'>
+                                    <h5>CSS</h5>
+                                </div>
+                                <div class='greybar'>
+                                    <div class='colorbar skill-75'></div>
+                                </div>
+                                <div class='skill-name'>
+                                    <h5>R/ggplot2</h5>
+                                </div>
+                                <div class='greybar'>
+                                    <div class='colorbar skill-50'></div>
+                                </div>
+                                <div class='skill-name'>
+                                    <h5>Python</h5>
+                                </div>
+                                <div class='greybar'>
+                                    <div class='colorbar skill-50'></div>
+                                </div>
+                                <div class='skill-name'>
+                                    <h5>SPSS</h5>
+                                </div>
+                                <div class='greybar'>
+                                    <div class='colorbar skill-25'></div>
+                                </div>
+                        </div>
                     </div>
-                    <div class='greybar'>
-                        <div class='colorbar skill-100'></div>
-                    </div>
-                    <div class='skill-name'>
-                        <h3>English</h3>
-                    </div>
-                    <div class='greybar'>
-                        <div class='colorbar skill-100'></div>
-                    </div>
-                    <div class='skill-name'>
-                        <h3>German</h3>
-                    </div>
-                    <div class='greybar'>
-                        <div class='colorbar skill-50'></div>
-                    </div>
-                    <div class='skill-name'>
-                        <h3>French</h3>
-                    </div>
-                    <div class='greybar'>
-                        <div class='colorbar skill-25'></div>
-                    </div>
-                </div>
-                <h3 class='skillsection-subtitle'>Software & Programming</h3>
-                <div class='grid'>
-                        <div class='skill-name'>
-                            <h3>HTML</h3>
-                        </div>
-                        <div class='greybar'>
-                            <div class='colorbar skill-75'></div>
-                        </div>
-                        <div class='skill-name'>
-                            <h3>CSS</h3>
-                        </div>
-                        <div class='greybar'>
-                            <div class='colorbar skill-75'></div>
-                        </div>
-                        <div class='skill-name'>
-                            <h3>R/ggplot2</h3>
-                        </div>
-                        <div class='greybar'>
-                            <div class='colorbar skill-50'></div>
-                        </div>
-                        <div class='skill-name'>
-                            <h3>Python</h3>
-                        </div>
-                        <div class='greybar'>
-                            <div class='colorbar skill-50'></div>
-                        </div>
-                        <div class='skill-name'>
-                            <h3>SPSS</h3>
-                        </div>
-                        <div class='greybar'>
-                            <div class='colorbar skill-25'></div>
-                        </div>
                 </div>
             </div>
-        </div>
     
-        
-        <section id='section4'>
-            <div class='content-wrapper'>
-                <h2 class='section-headline-summ'>Core qualities</h2>
-                    <div class='summarygrid'>
-                        <div class='summary-quote2-container'>
-                            <h2 class='summary-quote2'>Adaptive</h2>
-                            <h5 class='summary-subtitle'>I regroup and retry when hell breaks loose.</h5>
-                        </div>
-                        <div class='summary-quote3-container'>
-                            <h2 class='summary-quote3'>Analytical</h2>
-                            <h5 class='summary-subtitle'>I place lonely ideas in systems and find them a solid foundation.</h5>
-                        </div>
-                        <div class='summary-quote4-container'>
-                            <h2 class='summary-quote4'>Curious</h2>
-                            <h5 class='summary-subtitle'>I read, think, and write things down. Then I utilize them.</h5>
-                        </div>
-                        <div class='summary-quote5-container'>
-                            <h2 class='summary-quote5'>Cooperative</h2>
-                            <h5 class='summary-subtitle'>Satisying results come from solid group effort.</h5>
-                        </div> 
-                        <div class='summary-quote6-container'><h2 class='summary-quote6'><span id='hero-span'>One foot</span> in medicine and <span id='hero-span2'>the other</span> in technology.</h2></div> 
-                    </div>
-            </div>
-        </section>
-        
         <section class='contactsection' id='section5'>
-            <div class='content-wrapper'>
-                    <h2 class='h2__form-about'>Get in touch!</h2>
-                <div class='social-container'>
-                    <a href='mailto:koenraijer@protonmail.com'><img class='footer-img img-1' src='envelope.svg'></a>
-                    <a target='external' href='https://wa.me/31616465755'><img class='footer-img img-2' src='whatsapp-icon-black.svg'></a>
-                    <a target='external' href='https://www.linkedin.com/in/koen-raijer-3495a7127/'><img class='footer-img img-3' src='linkedin-icon-black.svg'></a>
-                </div>
+            <div id='section4' class='section_row content-wrapper'>
+                    <h2 class='h2__form-about'>Interested? Questions? <br>Drop me a message!</h2>
+                
             </div>
         </section>
 
-        
-
-        <footer class='content-wrapper'>
-            <div class='footer-left'>
-                <p>&copy 2020 <a class='footerlink' href='index.html'>Koen Raijer</a>. All rights reserved.</p>
-            </div> 
-            <div class='footer-right'>
-                <ul>
-                    <a class='footer-child-1' href="index.html">home</a>
-                    <a class='footer-child-1' href='about.html'>resumé</a>
-                </ul>
-            </div>
-        </footer>    
+        <div class='content-wrapper'>
+            <footer>
+                <p>&copy 2020 <a class='footerlink' href='index.html'>Koen Raijer</a>.</p>
+            </footer>   
+        </div>  
     </div>
-    <script src='java.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>    <script src='java.js'></script>
+    <script type="text/javascript" src='function.js'></script>
     <script scr='text/javascript'>
         ScrollOut({
             targets:'.timeline ul li .content,.text1,.text2,.text3,.text4,.text5,.text6,.text7,.colorbar,.quotesection-quote,.summary-quote1,.summary-quote2,.summary-quote3,.summary-quote4,.summary-quote5,.summary-quote6,.summary-quote1-container,.summary-quote2-container,.summary-quote3-container,.summary-quote4-container,.summary-quote5-container,.summary-quote6-container,.footer-img,.img-1,.img-2,.img-3,.img-4'
         })
-    </script>
+        AOS.init({duration: 1200});
+        </script>
 </body>
 </html>
 
