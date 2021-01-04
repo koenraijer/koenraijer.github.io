@@ -7,9 +7,9 @@
 .dot::before {
     content: '';
     position: absolute;
-    height: 8px;
-    width: 8px;
-    left: calc(-25px - 6.5px);
+    height: 15px;
+    width: 15px;
+    left: calc(-25px - 5px);
     top: calc(0.75rem - 8px);
     border: 5px solid var(--black);
     background: var(--black);
@@ -32,6 +32,10 @@ h1, h2, h5 {
     margin: 2.5% 0 2.5%;
 }
 
+h5 {
+    font-weight: normal;
+}
+
 #hero__span1 {
     color: var(--emerald);
 }
@@ -45,23 +49,23 @@ h1, h2, h5 {
     position: relative;
 }
 
-/* REST OF WEBSITE */
-
-#section1, #section2, #section3, #section4, #section5 {
-    text-align: left;
-    position: relative;
-    padding: 0 0 5vh;
-    margin: 5% 5% 0;
-    z-index: 1 !important;
-    height: 100%;
+.icon-properties {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5rem;
     width: auto;
 }
 
+/* REST OF WEBSITE */
 
-@media screen and (max-width: 500px) {
-    #section1, #section2, #section3, #section4, #section5 {
-        margin: 5% 10% 0;
-    }
+#section-a, #section-b, #section-c, #section-d, #section-e {
+    text-align: left;
+    position: relative;
+    padding: 0 0 5vh;
+    margin: 5% 10% 0;
+    z-index: 1 !important;
+    height: 100%;
+    width: auto;
 }
 
 /* SKEWED BACKGROUND */

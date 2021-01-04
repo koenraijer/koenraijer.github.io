@@ -43,26 +43,11 @@
     padding-top: 25vh;
 }
 
-#section2, .section1, #section5, #section4, #sectionx {
+#section2, .section1, .section3 #section5, #section4, #sectionx {
     position: relative;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: calc(5% + 100px);
-    margin-bottom: 0;
+    margin: 5% 12% 0;
 }
 
-.section3 {
-    position: relative;
-    margin-left: 5%;
-    margin-right: calc(5% + 100px);
-    margin-bottom: 0;
-}
-
-@media screen and (max-width: 450px) {
-    #section2, .section1, .section3 {
-        margin-right: calc(5% + 60px);
-    }
-}
 /* -------------section menu ------------------ */
 
 .sectionmenu a {

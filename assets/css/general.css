@@ -58,12 +58,21 @@ section {
     width: 100%;
 }
 
+/* Blog page */
 #blogmargins {
     position: relative;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 0;
+    margin: 5% 10% 5%;
+}
+
+#blogpostpadding {
+    margin: 2rem 0 0;
+    padding: 1rem;
+    border: 5px solid var(--grey2);
+    border-radius: 15px;
+}
+
+#blogpostpadding h4 {
+    padding-bottom: 0.5rem;
 }
 
 /* ---------------- SCROLL ARROW -------------- */
@@ -184,14 +193,6 @@ a {
 a:hover {
     opacity: 0.5;
     transition: 0.18s ease-in-out
-}
-
-.icon-properties {
-    display: inline-block;
-    vertical-align: middle;
-    padding-bottom: 12px;
-    height: 1.5rem;
-    width: 2rem;
 }
 
 .sup {
