@@ -1,0 +1,24 @@
+<header class="header">
+    <a class="header__left" href="/" {% if page.url == "/" %}style="font-weight: bold;"{% endif %}>koen raijer</a>
+    <div class='header__right'>
+        <a class="header__right-1" href='about.html' {% if page.url == "/about.html" %}style="font-weight: bold;"{% endif %}>resumé</a>
+        <a href='blog.html' {% if page.url == "/blog.html" %}style="font-weight: bold;"{% endif %}>blog</a>
+        
+    </div>  
+
+    <div class='menu-wrap'>
+        <input type='checkbox' class='toggler'>
+        <div class='hamburger'><div></div></div>
+        <div id='menu' class='menu'>
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html" {% if page.url == "/" %}style="font-weight: bold;"{% endif %}>home</a></li>
+                        <li><a href='about.html' {% if page.url == "/about.html" %}style="font-weight: bold;"{% endif %}>resumé</a></li>
+                        <li><a href='blog.html' {% if page.url == "/blog.html" %}style="font-weight: bold;"{% endif %}>resumé</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</header>

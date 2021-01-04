@@ -1,0 +1,459 @@
+/* GENERAL AND BACKGROUND */
+:root {
+    --white: #f7f7ff;
+    --orange: #e55812;
+    --yellow: #e2c044;
+    --green: #8ed081;
+    --blue: #2e5266;
+    --paleorange:#f07c42;
+    --paleyellow:  #ead177;
+    --palegreen: #b4e0ac;
+    --paleblue:#40738f;
+    --menu-speed: 0.85s;
+
+    --white: #f7f7ff;
+    --white2: #F2F3F8;
+    --white3: #f3f4f8;
+    --grey2: #E3E5EF;
+    --emerald: #62c370;
+    --grey: #CFD3DE;
+    --grey3: #d7dce9;
+    --grey4: #414141;
+    --grey4: #353535;
+    --grey5: #898989;
+    --black: #1a1e25;
+    --sapphire: #4257ad;
+    --pale-emerald:#99d8a2;
+  }
+
+  
+
+
+html{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: var(--white);
+    overflow-x: hidden;
+    font-size: calc(1em + 1vh);
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+#blogmargins {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+/* ---------------- SCROLL ARROW -------------- */
+.arrow {
+    height: 40px;
+    width: 40px;
+    transform: rotate(180deg);
+}
+
+#backtop {
+    position: fixed;
+    right: 5%; 
+    bottom: 5%;
+    height:40px;
+    width:40px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index: 1;
+
+    opacity:1;
+    display:none;
+}
+
+#backtop.mcOut {
+    opacity:0;
+}
+
+
+.arrow:hover {
+    opacity: 0.5;
+    transition: .18s ease-in-out;
+}
+
+@media screen and (max-width: 600px){
+    .arrow {
+        display: none;
+    }
+}
+
+/* BUTTON */
+.button2 {
+    padding: 10px 15px 10px;
+    border: 0.12rem solid var(--grey4);
+    border-radius: 50px;
+    background: none;
+    margin: auto;
+    cursor: pointer;
+    color: var(--grey4);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transform: perspective(1px), translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+.button2:hover {
+    border-color: transparent;
+    transition: .50s ease-in-out;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.button2:focus {
+    outline: none;
+}
+
+.learnbtn[data-scroll='in'] {
+    opacity: 1;
+    transition: 1s;
+}
+
+.mailbtn[data-scroll='in'] {
+    opacity: 1;
+    transition: 1s;
+}
+
+/* --------- FONT AND TEXT STYLES -------------- */
+p, a, li, h1, h2, h3, h4, h5, h6, ul {
+    color: var(--grey4);
+}
+
+h1 {
+    font-size: 2em;
+}
+#h2-white, #h5-white {
+    color: var(--white);
+}
+
+/* Body text */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+#boldspan {
+    font-weight: bold;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    font-size: 1.125rem;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: var(--grey4);
+}
+
+a:hover {
+    opacity: 0.5;
+    transition: 0.18s ease-in-out
+}
+
+.icon-properties {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 12px;
+    height: 1.5rem;
+    width: 2rem;
+}
+
+.sup {
+    position: relative;
+    bottom: 1ex;
+    font-size: 80%;
+}
+
+/* Title styling */
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.subtitle {
+    margin-bottom: 2.5vh;
+}
+
+
+/* ---------------HEADER WITH REGULAR NAVBAR --------------------- */
+.header{
+    position: relative;
+    height: 100%;
+    padding: 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    background: var(--grey3);
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: px;
+}
+
+.header__left {
+    font-family: 'Heebo', sans-serif;
+    margin: 0px;
+}
+
+.header__right {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
+}
+
+.header__right-1 {
+    margin-right: 15px;
+}
+
+header a {
+    font-size: 0.9rem;
+}
+
+/* MENU WRAP CONTAINING TOGGLER AND HAMBURGER ICON */
+.menu-wrap {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------HAMBURGER ICON -------- */
+
+    /* Middle line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: var(--grey4);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+    /* Create top and bottom line */
+.menu-wrap .hamburger >div:before,
+.menu-wrap .hamburger >div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    top: -12px;
+    width: 100%;
+    height: 5px;
+    background: inherit;
+}
+    /* Move bottom line to bottom */
+.menu-wrap .hamburger >div:after {
+    top: 12px;
+}
+
+
+/* Toggle checkbox/hamburger animation */
+        /* + sign means: if X then style Y */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* SHOW MENU */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    /* ADD VAR FOR MENU SPEED! */
+    transition-duration: var(--menuspeed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* STYLING OF MENU */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu > div {
+    background: rgb(247, 247, 255,0.95);
+    width: 300vw;
+    height: 300vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    /* CIRCLE EFFECT */
+    transform: scale(0); 
+    transform-origin: right;
+    transition: all 0.4s ease;
+}
+
+.menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu > div > div > ul > li {
+    list-style: none;
+    color: var(--grey4);
+    font-family: 'Heebo', sans-serif;
+}
+
+.menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu > div > div > ul > li > a:hover {
+    opacity: 0.5;
+    transition: .18s ease-in-out;
+}
+
+
+
+/* Hide Hamburger, Show regular navbar */
+.menu-wrap {display: none;}
+
+/* [HAMBURGER ON SMALL SCREENS + RESPONSIVENESS] */
+@media screen and (max-width: 550px){
+    /* HIDE SCROLL DOWN ARROW */
+    /* SHOW HAMBURGER ICON AND MENU ON SMALL SCREENS */
+    .menu-wrap {display: block;}
+
+    /* HIDE REGULAR NAVBAR ON SMALL SCREENS */
+    .header__right {display: none; }
+}
+
+@media screen and (max-width: 700px) {
+    /* SHOW HAMBURGER ICON AND MENU ON MEDIUM SCREENS */
+    .menu-wrap {display: block;}
+    /* HIDE REGULAR NAVBAR EXCEPT koen raijer ON MEDIUM SCREENS */
+    .header__right {display: none;}
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.7rem;
+    height: 100%;
+    padding: 1rem 0 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    margin: 0 5% 0;
+}
+
+.footer-right{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-child-1 {
+    padding-right: 10px;
+}
+
+/* FOR WORK PAGE */
+.static-footer-image {
+    padding-right: 30px;
+}
