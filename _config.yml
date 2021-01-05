@@ -8,6 +8,12 @@ defaults:
     values:
       author: Koen
       layout: "default"
+      
+posts:
+  permalink: /:categories/:year/:month/:day/:slug/
+
+pagination: 5
+paginate_path: "blog/page:num"
 
 plugins:
   - jekyll-sitemap

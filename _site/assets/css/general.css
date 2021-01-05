@@ -15,15 +15,20 @@
     --white2: #F2F3F8;
     --white3: #f3f4f8;
     --grey2: #E3E5EF;
+    --grey2-50: rgba(227, 229, 239, 0.5);
     --emerald: #62c370;
+    --emerald-50: #a9deb1;
     --grey: #CFD3DE;
     --grey3: #d7dce9;
     --grey4: #414141;
     --grey4: #353535;
+    --grey6: #5f5f5f;
     --grey5: #898989;
     --black: #1a1e25;
-    --sapphire: #4257ad;
-    --pale-emerald:#99d8a2;
+    --sapphire: #3d509f;
+    --sapphire-25: rgb(66, 87, 173, 0.25);
+    --sapphire-50: #acb6df;
+    --emerald-25:rgba(98, 195, 112, 0.25);
   }
 
   
@@ -35,46 +40,109 @@ html{
     -webkit-box-sizing: border-box;
     background: var(--white);
     overflow-x: hidden;
+    margin: 0;
     font-size: calc(1em + 1vh);
+    line-height: 1.15rem;
 }
 
 body{
-    margin: 0px;
-    height: 100%;
+    margin: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
 
 .content-wrapper {
-    max-width: 1320px;
+    max-width: 1170px;
     margin: 0 auto;
     position: relative;
+    min-height:
 }
+
 
 section {
     height: 100%;
     width: 100%;
 }
 
-/* Blog page */
+#gen-padding {
+    margin: 0 0 2rem;
+    padding: 1rem;
+}
+
+.padding-left {
+  padding-left: 1rem;
+}
+
+.padding-left-paragraph {
+    padding-left: 1.5rem;
+}
+
+/* ------------------------------------ Blog page ----------------------------------------------- */
 #blogmargins {
     position: relative;
     margin: 5% 10% 5%;
 }
 
+#blogpostpaddingnoline {
+    padding: 1.5rem; 
+}
+
 #blogpostpadding {
-    margin: 2rem 0 0;
-    padding: 1rem;
-    border: 5px solid var(--grey2);
+    margin: 0 0 2rem;
+    padding: 1.5rem;
+    border-bottom: 5px solid var(--grey2);
+}
+
+#tagpadding {
+    margin: 0 0 0.75rem;
+    border-bottom: 5px solid var(--grey2);
+}
+
+#blogpostpadding div, #blogpostpaddingnoline div, #blogpostpaddingnolineslim div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+/* Page layout */
+.bloggrid {
+    display: grid;
+    grid-auto-columns: 4fr 1fr;
+    position: relative;
+    column-gap: 2rem;
+}
+
+.bloggrid div:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.bloggrid div:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/* Tags */
+.highlight {
+    background: var(--grey2);
+    padding: 0.1rem 0.3rem 0.1rem;
     border-radius: 15px;
+    display: inline;
+    float: left;
+    clear: both;
 }
 
-#blogpostpadding h4 {
-    padding-bottom: 0.5rem;
+.tags span p {
+    color: var(--black);
 }
 
+.tags {
+    padding-top: 0.5rem;
+}
 /* ---------------- SCROLL ARROW -------------- */
 .arrow {
     height: 40px;
@@ -157,7 +225,7 @@ section {
 
 /* --------- FONT AND TEXT STYLES -------------- */
 p, a, li, h1, h2, h3, h4, h5, h6, ul {
-    color: var(--grey4);
+    color: var(--black);
 }
 
 h1 {
@@ -181,18 +249,30 @@ p {
 /* List styling */
 ul {
     list-style-type: none;
-    font-size: 1.125rem;
+
 }
 
 /* Link styling */
 a {
     text-decoration: none;
-    color: var(--grey4);
+    color: var(--black);
+    position: relative;
 }
 
-a:hover {
-    opacity: 0.5;
-    transition: 0.18s ease-in-out
+a::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.3rem;
+    background: var(--emerald-25);
+}
+
+a:hover::before {
+    height: 105%;
+    transition: 0.18s ease-in-out;
 }
 
 .sup {
@@ -202,23 +282,30 @@ a:hover {
 }
 
 /* Title styling */
+.pagetitle {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
 .title {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5vh;
+    justify-content: start;
+    text-align: left;
+    margin: 2.5rem 0 1.5rem;
 }
 
 .subtitle {
-    margin-bottom: 2.5vh;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 
 /* ---------------HEADER WITH REGULAR NAVBAR --------------------- */
 .header{
     position: relative;
-    height: 100%;
-    padding: 1rem 0 1rem;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -228,7 +315,7 @@ a:hover {
 .header::after {
     content: '';
     position: absolute;
-    background: var(--grey3);
+    background: var(--grey2-50);
     height: 5px;
     width: 100%;
     bottom: 0;
@@ -237,12 +324,12 @@ a:hover {
 }
 
 .header__left {
-    font-family: 'Heebo', sans-serif;
     margin: 0px;
+    font-weight: normal;
+    font-size: 1.1rem;
 }
 
 .header__right {
-    font-family: 'Heebo', sans-serif;
     display: flex;
     flex-flow: row wrap;
     margin: 0px;
@@ -252,8 +339,9 @@ a:hover {
     margin-right: 15px;
 }
 
-header a {
+.header__right a {
     font-size: 0.9rem;
+    color: var(--black);
 }
 
 /* MENU WRAP CONTAINING TOGGLER AND HAMBURGER ICON */
@@ -435,26 +523,15 @@ header a {
 /* FOOTER */
 footer {
     font-size: 0.7rem;
-    height: 100%;
-    padding: 1rem 0 1rem;
+    height: 4rem;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Heebo', sans-serif;
-    margin: 0 5% 0;
+    margin: 0 auto;
+    bottom: 0;
 }
 
-.footer-right{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.footer-child-1 {
-    padding-right: 10px;
-}
-
-/* FOR WORK PAGE */
-.static-footer-image {
-    padding-right: 30px;
+footer p a::before {
+    background: var(--sapphire-25);
 }

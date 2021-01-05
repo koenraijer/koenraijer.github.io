@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Archive
+permalink: /blog/archive/
+---
+<div id='blogpostpaddingnoline'>
+    <ul>
+        {% for post in site.posts %}
+          <li>
+              <div>
+                  <a href="{{ post.url }}"><h4 >{{ post.title }}</h4></a>
+                  <p>{{ post.date | date: "%d-%m-%Y" }}</p>
+              </div>
+          </li>
+        {% endfor %}
+      </ul>
+</div>

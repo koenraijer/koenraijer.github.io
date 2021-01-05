@@ -10,7 +10,7 @@
     height: 15px;
     width: 15px;
     left: calc(-25px - 5px);
-    top: calc(0.75rem - 8px);
+    top: calc(0.75rem - 11px);
     border: 5px solid var(--black);
     background: var(--black);
     border-radius: 40px;
@@ -26,10 +26,6 @@
     top: 50%;
     border-left: 5px dotted var(--black);
     z-index: 1;
-}
-
-h1, h2, h5 {
-    margin: 2.5% 0 2.5%;
 }
 
 h5 {
@@ -64,32 +60,39 @@ h5 {
     padding: 0 0 5vh;
     margin: 5% 10% 0;
     z-index: 1 !important;
-    height: 100%;
+    height: calc(100vh - 9rem);
     width: auto;
 }
 
 /* SKEWED BACKGROUND */
 .skew {
     z-index: -100 !important;
-    transform: translateY(-7rem);
+    transform: translateY(1rem);
 }
 
+.skew2 {
+    transform: translateY(14rem);
+}
 
 .skew::after{
     transform-origin: right top;
-    transform: skewY(5deg);
+    transform: skewY(6.5deg);
     position: absolute;
-    height: 60vh;
+    height: 100vh;
+    bottom: -80;
     width: 100%;
     z-index: -100 !important;
     content: '';
 }
 
     .skew1::after {
-    background: var(--grey2);
+    background: var(--emerald-25);
     }
     .skew2::after {
-        background: var(--grey);
+        background: var(--sapphire-25);
+        transform-origin: left top;
+        transform: skewY(-20deg);
+
     }
     .skew3::after {
         background: var(--grey3);
@@ -97,4 +100,10 @@ h5 {
     .skew4::after {
         background: var(--white);
     }
+
+@media screen and (max-width: 1200px) {
+    .skew2 {
+        transform: translateY(5rem);
+    }
+}
 

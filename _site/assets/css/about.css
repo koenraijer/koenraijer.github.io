@@ -1,24 +1,3 @@
-/* -------- DIVIDER --------------- */
-.dividerbefore {
-    height: 5px;
-    display: inline-block;
-    width: 10%;
-    background: var(--grey4);
-    border-radius: 10px;
-    margin-top: 1rem;
-    margin-right: .5rem;
-}
-
-.dividerafter {
-    height: 5px;
-    display: inline-block;
-    width: 10%;
-    background: var(--grey4);
-    border-radius: 10px;
-    margin-top: 1rem;
-    margin-left: .5rem;
-}
-
 /* ----------------------------- HERO -------------------------------------------------- */
 
 .about-wrapper {
@@ -45,47 +24,86 @@
 
 #section2, .section1, .section3 #section5, #section4, #sectionx {
     position: relative;
-    margin: 5% 12% 0;
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 /* -------------section menu ------------------ */
 
-.sectionmenu a {
-    font-size: 0.6rem;
-}
 
 .sectionmenu {
     position: fixed;
     text-align: right;
-    margin: 0;
-    padding-right: 0.25rem;
-    width: 90px;
-    z-index: 1;
-    border-right: 5px solid var(--grey3);
-    border-radius: 10px;
+    display: block;
+    padding: 1rem;
+}
+
+.sectionmenu ul li a {
+    font-size: 0.8rem;
 }
 
 .active {
     font-weight: bold;
 }
 
-.fixed-wrapper {
-    width: 75px;
+.fixedwrapper {
     position: absolute;
-    top: 30vh;
-    right: 5%;
+    right: 3rem;
+    width: calc((100% - 20%) * 0.2);
 }
 
+/* ---------------------- ABOUT GRID -------------------------- */
+.aboutgrid {
+    display: grid;
+    grid-auto-columns: 4fr 1fr;
+    position: relative;
+    margin: 0;
+}
+
+.sectionmenu {
+    display: none;
+    width: 0;
+}
+
+.aboutgrid {
+    column-gap: 0;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .aboutgrid {
+        display: grid;
+        grid-auto-columns: 4fr 1fr;
+        position: relative;
+        margin: 0;
+    }
+    
+    .aboutgrid div:first-child {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .aboutgrid div:nth-child(2) {
+        grid-column: 1/2;
+    }
+
+    .sectionmenu {
+        display: block;
+    }
+}
 /* ------------------------------ PROFILE ------------------------------------------*/
 .profilegrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-auto-rows: auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    justify-content: stretch;
-    align-content: stretch;
     background: transparent;
+    border-bottom: 5px solid var(--grey2);
+    align-content: start;
+    justify-content: start;
+
 }
 
 .profilegrid p {
@@ -94,80 +112,63 @@
     font-weight: 500;
 }
 
-.profilegrid > div:nth-child(2) .subtitle {
-    text-align: center;
+.profilegrid > div .subtitle {
+    text-align: left;
 }
 
-.profilegrid .subtitle {
-    text-align: center;
-}
+
 
 .profilegrid > div {
-    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 
-.profilegrid > div:first-child {
-    grid-column: 1/4;
+.profilegrid > div:nth-child(1) {
+    grid-column: 1/2;
     grid-row: 1/2;
-    text-align: center;
-    border: 5px solid var(--grey2);
-    border-radius: 25px;
+    text-align: left;
+    justify-self: start;
 }
 
 .profilegrid > div:nth-child(2) {
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 2/3;
-    border: 5px solid var(--grey2);
-    text-align: center;
-    justify-self: center;
-    border-radius: 15px;
+    text-align: left;
+    justify-self: start;
 }
 
-@media screen and (min-width: 850px){
-    .profilegrid {
-        grid-template-columns: 2fr 2fr 1fr;
-    }
-
-    .profilegrid > div:first-child {
-        grid-row: 1/2;
-        grid-column: 1/3;
-        justify-self: stretch;
-        align-self: stretch;
-        text-align: left;
-    }
-    
-    .profilegrid > div:nth-child(2) {
-        grid-row: 1/2;
-        grid-column: 3/4;
-        text-align: left;
-        justify-self: start;
-        border-radius: 15px;
-    }
-
-    .profilegrid > div:nth-child(n) .subtitle {
-        text-align: left;
-    }
+.profilegrid > div:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: left;
+    justify-self: start;
 }
-
 
 .personaliagrid {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: normal;
     row-gap: 0.2rem;
+}
+
+.personaliagrid:nth-child(odd){
+    grid-column: 1/2;
+}
+
+.personaliagrid:nth-child(even){
+    grid-column: 2/3;
 }
 
 .profilepic {
     object-fit: cover;
     display: block;
     position: relative;
-    border-radius: 100%;
     width: 7rem;
+    border-radius: 100%;
     height: auto;
-    margin: 5% auto 5%;
-    border: 5px solid var(--grey2);
+    border: 2.5px solid var(--black);
 }
 
 /* ----------------------------- Experience grid ------------------------------ */
@@ -176,10 +177,10 @@
     display: inline-block;
     height: 1rem;
     width: 1rem;
-    margin-top: 0.17rem;
     margin-left: -1.17rem;
-    background: var(--sapphire);
-    border: 1.5px solid var(--grey4);
+    background: var(--sapphire-50);
+    border-radius: 1rem;
+    border: 1.5px solid var(--black);
 }
 
 #inlineblock-2 {
@@ -187,10 +188,10 @@
     display: inline-block;
     height: 1rem;
     width: 1rem;
-    margin-top: 0.17rem;
     margin-left: -1.17rem;
-    background: var(--emerald);
-    border: 1.5px solid var(--grey4);
+    background: var(--emerald-50);
+    border-radius: 1rem;
+    border: 1.5px solid var(--black);
 }
 
 #inlineblock-3 {
@@ -198,11 +199,17 @@
     display: inline-block;
     height: 1rem;
     width: 1rem;
-    margin-top: 0.17rem;
     margin-left: -1.17rem;
     background: var(--grey2);
-    border: 1.5px solid var(--grey4);
+    border-radius: 1rem;
+    border: 1.5px solid var(--black);
 }
+
+/* Custom left margin for subtitles in experiencegrid */
+.titlegrid .subtitle {
+    margin-left: 1.17rem;
+}
+    
 .titlegrid {
     display: none;
     grid-auto-columns: 1fr 1fr;
@@ -227,7 +234,7 @@
     grid-template-columns: 50px 4fr;
     row-gap: 1rem;
     grid-auto-columns: minmax(5px, auto);
-    border-radius: 25px;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -251,13 +258,13 @@
     /* general content box styling */
 .experiencegrid > div:nth-child(n+3) {
     padding: 1rem;
-    border-radius: 15px;
+    border-radius: 5px;
     position: relative;
 }
 
     /* content box coloring */
 .experiencegrid > div:nth-child(6), .experiencegrid > div:nth-child(10) {
-    background: var(--emerald);
+    background: var(--emerald-50);
 }
 
 .experiencegrid > div:nth-child(4), .experiencegrid > div:nth-child(8) {
@@ -265,12 +272,12 @@
 }
 
 .experiencegrid > div:nth-child(3), .experiencegrid > div:nth-child(5), .experiencegrid > div:nth-child(7), .experiencegrid > div:nth-child(9) {
-    background: var(--sapphire);
+    background: var(--sapphire-50);
 }
 
     /* sapphire content box text coloring */
     .experiencegrid > div:nth-child(3) > p, .experiencegrid > div:nth-child(3) > h5, .experiencegrid > div:nth-child(5) > p, .experiencegrid > div:nth-child(5) > h5, .experiencegrid > div:nth-child(7) > p, .experiencegrid > div:nth-child(7) > h5, .experiencegrid > div:nth-child(9) > p, .experiencegrid > div:nth-child(9) > h5 {
-    color: white;
+    color: var(--black);
 }
 
 /* Content box positioning */
@@ -321,7 +328,7 @@
     /* DOTS coloring */
 
     .experiencegrid > div:nth-child(6)::before, .experiencegrid > div:nth-child(10)::before {
-        border: 5px solid var(--emerald);
+        border: 5px solid var(--emerald-50);
     }
     
     .experiencegrid > div:nth-child(4)::before, .experiencegrid > div:nth-child(8)::before {
@@ -329,7 +336,7 @@
     }
     
     .experiencegrid > div:nth-child(3)::before, .experiencegrid > div:nth-child(5)::before, .experiencegrid > div:nth-child(7)::before, .experiencegrid > div:nth-child(9)::before {
-        border: 5px solid var(--sapphire);
+        border: 5px solid var(--sapphire-50);
     }
 
 /* ------- line to DOTS */
@@ -343,7 +350,7 @@
 }
 
 .experiencegrid > div:nth-child(6)::after, .experiencegrid > div:nth-child(10)::after {
-    background: var(--emerald);
+    background: var(--emerald-50);
 }
 
 .experiencegrid > div:nth-child(4)::after, .experiencegrid > div:nth-child(8)::after {
@@ -351,18 +358,18 @@
 }
 
 .experiencegrid > div:nth-child(3)::after, .experiencegrid > div:nth-child(5)::after, .experiencegrid > div:nth-child(7)::after, .experiencegrid > div:nth-child(9)::after {
-    background: var(--sapphire);
+    background: var(--sapphire-50);
 }
 
 @media screen and (min-width: 700px) {
     .experiencegrid {
-        grid-template-columns: 2fr 150px 2fr;
+        grid-template-columns: 2fr 100px 2fr;
     }
 
     .experiencegrid > div:nth-child(n+3)::after {
-        width: 85px;
+        width: 60px;
         height: 5px;
-        left: -61px;
+        left: -36px;
     }
 
     .experiencegrid > div:first-child {
@@ -422,23 +429,23 @@
 
     /* Changing line to DOTS & DOT positioning */
     .experiencegrid > div:nth-child(n+3):nth-child(even)::after {
-        width: 87.5px;
+        width: 62.5px;
     }
 
     .experiencegrid > div:nth-child(n+3):nth-child(even)::before {
-        left: calc(-75px - 15px);
+        left: calc(-50px - 15px);
     }
 
     /* Reallign even content box lines */
     .experiencegrid > div:nth-child(n+3):nth-child(odd)::after {
         left: auto;
-        right: -61px;
+        right: -36px;
     }
 
     /* Reallign even content box circle */
     .experiencegrid > div:nth-child(n+3):nth-child(odd)::before {
         left: auto;
-        right: calc(-75px - 15px);
+        right: calc(-50px - 15px);
     }
 
     /* Hide legendgrid */
@@ -450,6 +457,10 @@
         display: grid;
     }
     
+}
+
+.experiencegrid h5 {
+    font-weight: bold;
 }
 
 /* Creating LEGEND */
@@ -473,12 +484,12 @@
     border: 1.5px solid var(--grey4);
 }
     .legendgrid > div:nth-child(1) {
-        background: var(--sapphire);
+        background: var(--sapphire-50);
         grid-row: 1/2;
     }
 
     .legendgrid > div:nth-child(2) {
-        background: var(--emerald);
+        background: var(--emerald-50);
         grid-row: 2/3;
     }
 
@@ -510,81 +521,92 @@
 /* ---------------------- QUOTE ----------------------------------*/
 .quote-skew {
     background: transparent;
-    transform: translateY(135px);
     z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    bottom: 200vh;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .quote-skew::after {
     transform-origin: right top;
     transform: skewY(5deg);
     position: absolute;
-    width: 100vw;
-    height: 125%;
-    background: var(--grey2);
+    width: 100%;
+    height: 100vh;
+    background: var(--sapphire-25);
     top: 0;
     z-index: -100 !important;
     content: '';
 }
 
+.quote-skew2 {
+    background: transparent;
+    z-index: -100;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    bottom: 225vh;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.quote-skew2::after {
+    transform-origin: right top;
+    transform: skewY(-5deg);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: var(--emerald-25);
+    top: 0;
+    z-index: -100 !important;
+    content: '';
+}
+
+
 .quotesection-quote h4 {
     font-weight: bold;
-    text-align: center;
 }
 
 .biq-quote {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-content: center;
-    text-align: center;
+    text-align: left;
 }
 .quoted-by {
-    margin-top: 3vh;
-    margin-left: 40%;
+    margin-top: 0.25rem;
+    margin-left: 0.75rem;
     font-weight: normal;
 }
 
 .quotesection-quote {
-    transform-origin: center;
-    transition: 1.5s;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-self: center;
-    align-self: center;
+    justify-self: start;
+    align-self: start;
     margin-top: 0;
-    margin-bottom: 7.5%;
-    padding: 2.5% 2.5% 2.5%;
+    margin-left: 1.5rem;
+    padding: 1.5rem;
     position: relative;
     z-index: 100;
 }
 
-.quotesection-quote::after {
-    position: absolute;
-    bottom: -2.5%;
-    top: auto;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    content: '';
-    border-radius: 10px;
-    height: 11px;
-    width: 70%;
-    background: var(--white);
-    border: 5px solid var(--grey3);
-}
-
 .quotesection-quote::before {
     position: absolute;
-    top: -2.5%;
-    display: flex;
-    align-self: center;
-    justify-self: center;
     content: '';
-    border-radius: 10px;
-    height: 11px;
-    width: 70%;
-    background: var(--white);
-    border: 5px solid var(--grey3);
+    left: 0.75rem;
+    top: 1.5rem;
+    height: calc(100% - 3rem);
+    width: 5px;
+    background: var(--grey3);
+    border-radius: 5px;
 }
 
 .quotesection-wrapper {
@@ -593,45 +615,83 @@
 }
 
 .quotesection-wrapper > div {
-    align-content: center;
-    justify-content: center;
-}
-
-.titleQuote {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%
+    align-content: start;
+    justify-content: start;
 }
 
 /* ---------------------- SKILL BARS ----------------------------------- */
 .gridgrid {
     display: grid;
-    max-width: 100%;
     align-content: stretch;
     justify-content: stretch;
     grid-template-columns: 1fr;
     grid-auto-columns: auto;
-    column-gap: 1em;
+    padding-left: 1.5rem;
+    column-gap: 1rem;
 }
 
-.skills-headline {
-    margin-top: 10vh;
+.gridgrid > div:nth-child(odd) {
+    justify-self: start;
+}
+
+.gridgrid > div:nth-child(even) {
+
+}
+
+.gridgrid > div:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.gridgrid > div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.gridgrid > div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    
+}
+
+.gridgrid > div:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.gridgrid > div:nth-child(5) {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.gridgrid > div:nth-child(6) {
+    grid-row: 6/7;
+    grid-column: 1/2;
 }
 
 .grid {
-    justify-content: center;
+    justify-content: stretch;
     display: grid;
-    grid-template-columns: .25fr .75fr;
-    grid-gap: 1em;
+    grid-template-columns: .3fr .7fr;
     grid-auto-rows: minmax(50px, auto);
-    background: var(--white);
-    border: 5px solid var(--grey3);
-    padding: 5% 2.5% 5%;
-    margin-bottom: 5%;
-    border-radius: 25px;
 }
+
+
+.grid div:nth-child(odd) {
+    grid-column: 1/2;
+    justify-self: start;
+}
+
+.grid div:nth-child(2){
+    grid-column: 2/3;
+}
+
+.grid div:nth-child(even) {
+    grid-column: 2/3;
+    justify-self: stretch;
+}
+
+
 
 .skill-name {
     align-self: center;
@@ -698,20 +758,15 @@
 .softskillsgrid {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1em;
-    background: var(--white);
-    border: 5px solid var(--grey3);
-    padding: 5% 2.5% 5%;
-    margin-bottom: 5%;
+    row-gap: 0.75rem;
     border-radius: 25px;
 }
+
 
 @media screen and (min-width: 800px) {
     .gridgrid {
         grid-template-columns: 1fr 1fr;
-        width: auto;
         margin: auto;
-        column-gap: 1em;
     }
 
     .gridgrid > div:first-child {
@@ -729,6 +784,8 @@
 
     .gridgrid > div:nth-child(4) {
         grid-column: 2/3;
+        grid-row: 2/3;
+        position: relative;
     }
 
     .gridgrid > div:nth-child(5) {
