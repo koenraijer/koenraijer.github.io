@@ -1,4 +1,12 @@
-baseurl: "https://raijer.me" # the base hostname & protocol for your site
+baseurl: "" # the base hostname & protocol for your site
+
+title: Koen Raijer's blog
+description: Blog and personal website about healthcare, science, programming and more. 
+url: "https://raijer.me/"
+author: Koen Raijer
+
+feed:
+  posts_limit: 20
 
 defaults:
   -
@@ -17,3 +25,4 @@ paginate_path: "blog/page:num"
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
