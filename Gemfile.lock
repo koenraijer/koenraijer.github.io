@@ -260,6 +260,7 @@ DEPENDENCIES
   github-pages (~> 209)
   jekyll
   jekyll-feed
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH

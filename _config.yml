@@ -1,10 +1,16 @@
 baseurl: "" # the base hostname & protocol for your site
 
-title: Koen Raijer's blog
-description: Blog and personal website about healthcare, science, programming and more. 
+title: Koen Raijer
+tagline: An online hub
+description: Blog and personal website about healthcare, science, programming and more.  
 url: "https://raijer.me/"
 author: Koen Raijer
-
+social: 
+  name: Koen Raijer
+  links:
+    - https://www.linkedin.com/in/koen-raijer-3495a7127/
+webmaster_verifications:
+  google: 
 feed:
   posts_limit: 20
 
@@ -26,3 +32,4 @@ paginate_path: "blog/page:num"
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
