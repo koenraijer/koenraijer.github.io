@@ -1,17 +1,6 @@
 /* GENERAL AND BACKGROUND */
 :root {
     --white: #f7f7ff;
-    --orange: #e55812;
-    --yellow: #e2c044;
-    --green: #8ed081;
-    --blue: #2e5266;
-    --paleorange:#f07c42;
-    --paleyellow:  #ead177;
-    --palegreen: #b4e0ac;
-    --paleblue:#40738f;
-    --menu-speed: 0.85s;
-
-    --white: #f7f7ff;
     --white2: #F2F3F8;
     --white3: #f3f4f8;
     --grey2: #E3E5EF;
@@ -70,19 +59,13 @@ section {
     padding: 1rem;
 }
 
-.padding-left {
-  padding-left: 1rem;
-}
 
-.padding-left-paragraph {
-    padding-left: 1.5rem;
-}
+
+
 
 /* ------------------- POST Kramdown layout ------------------ */
 .TOC {
-    border-left: 5px solid var(--grey2);
     padding: 0.75rem;
-    margin: 0 -0.75rem 0.5rem;
     line-height: 1.25rem;
     display: inline-block;
 }
@@ -91,7 +74,13 @@ section {
     margin: 1.5rem 0 1.5rem;
 }
 
-.post-toc {
+.post-h4-toc {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-left: 0.75rem;
+}
+
+.post-h4 {
     font-weight: bold;
     margin-top: 1rem;
 
@@ -101,6 +90,13 @@ ol {
     padding: 0.5rem 1.5rem 0.5rem;
     line-height: 1.25rem;
     font-size: 0.8rem;
+}
+
+#blogbox {
+    border: solid 5px var(--grey2);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.75rem 0 0.75rem;
 }
 
 /* ------------------------------------ Blog page ----------------------------------------------- */
@@ -115,7 +111,7 @@ ol {
 
 #blogpostpadding {
     margin: 0 0 2rem;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1.5rem;
     border-bottom: 5px solid var(--grey2);
 }
 
