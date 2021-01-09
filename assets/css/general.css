@@ -4,7 +4,7 @@
     --white2: #F2F3F8;
     --white3: #f3f4f8;
     --grey2: #E3E5EF;
-    --grey2-50: rgba(227, 229, 239, 0.5);
+    --grey2-50: rgba(230, 234, 253, 0.5);
     --emerald: #62c370;
     --emerald-50: #a9deb1;
     --grey: #CFD3DE;
@@ -30,6 +30,8 @@ html{
     background: var(--white);
     overflow-x: hidden;
     margin: 0;
+    height: 100%;
+    width: 100%;
     font-size: calc(1em + 1vh);
 }
 
@@ -37,7 +39,6 @@ body{
     margin: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
     position: relative;
     height: 100%;
 }
@@ -570,16 +571,15 @@ a:hover::before {
 
 /* FOOTER */
 footer {
+    position: absolute;
+    bottom: 0;
+    margin: 2px auto 0;
     font-size: 0.7rem;
     height: 4rem;
+    width: 100%;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    bottom: 0;
-}
-
-footer p a::before {
-    background: var(--sapphire-25);
+    z-index: 10 !important;
 }
