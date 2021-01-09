@@ -2,12 +2,13 @@
 layout: post
 author: Koen
 tags: Programming
-title: Medical student lost in the world of programming.
+title: Programming adventures
+subtitle: Why I started, what I've done so far and my plans for 2021. 
 ---
 
 
 
-<p>Programming isn’t something I anticipated learning this year. Not a surprise, considering I didn’t anticipate very much of what happened. My travels to both Indonesia and India were scrapped off the agenda and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted. I ended up knowing a little better in which direction I’m headed. </p>
+<p>I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.</p>
 
 <div id='blogbox' markdown="block">
 #### Table of Contents 
@@ -16,7 +17,7 @@ title: Medical student lost in the world of programming.
 {:toc .TOC}
 </div>
 
-<p>It’s the end of November and I’d been contacting researchers for a while to get some experience in doing science, but to no avail. I’d been talking to an interesting researcher and I was pretty hopeful it was going to work out, so I took a couple of weeks off. It was called off again. I was really in need of something challenging at this point.<br> I picked programming for a couple of reasons. </p>
+<p>It’s the end of November and I’d been contacting researchers for a while to get some experience in doing research, but to no avail. I’d been talking to an interesting researcher and I was pretty hopeful it was going to work out, so I took a couple of weeks off. It was called off again. I was really in need of something challenging at this point.<br> I picked programming for a couple of reasons. </p>
 
 #### Reasons to start programming
 {: .post-h4}

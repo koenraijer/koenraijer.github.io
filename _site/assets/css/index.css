@@ -54,13 +54,13 @@ h5 {
 
 /* REST OF WEBSITE */
 
-#section-a, #section-b, #section-c, #section-d, #section-e {
+#section-a {
     text-align: left;
     position: relative;
     padding: 0 0 5vh;
     margin: 5% 10% 0;
     z-index: 1 !important;
-    height: calc(100vh - 9rem);
+    height: auto;
     width: auto;
 }
 
@@ -87,32 +87,39 @@ h5 {
     transform-origin: right-top;
 }
 
-.skew-container {
-    height: 10rem;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    background: transparent;
-    position: relative;
-    overflow: hidden;
-}
-
 svg{
-    display:block; 
+    display:absolute; 
     width:100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
+    z-index: -1;
 }
+
 .first{
   fill:var(--emerald-25);
   position: relative;
   bottom: 0;
   right: 0;
 }
+
 .second{
-  fill:var(--sapphire-25);
+    fill:var(--emerald-50);
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  
+.third{
+  fill:var(--sapphire-50);
   position: relative;
   bottom: 0;
   right: 0;
+}
+
+.fourth {
+    fill:var(--sapphire-twentyfive);
+    position: relative;
+    bottom: 0;
+    right: 0;
 }

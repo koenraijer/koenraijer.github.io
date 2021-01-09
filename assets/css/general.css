@@ -16,6 +16,8 @@
     --black: #1a1e25;
     --sapphire: #3d509f;
     --sapphire-25: rgb(66, 87, 173, 0.25);
+    --sapphire-twentyfive: #c9d0ea;
+    --sapphire-fifty: rgb(66, 87, 173, 0.4);
     --sapphire-50: #acb6df;
     --emerald-25:rgba(98, 195, 112, 0.25);
   }
@@ -47,6 +49,11 @@ body{
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
+}
+
+.all-content-wrapper {
+    min-height: 100%;
+    margin-bottom: -4rem;
 }
 
 
@@ -571,15 +578,13 @@ a:hover::before {
 
 /* FOOTER */
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     margin: 2px auto 0;
     font-size: 0.7rem;
-    height: 4rem;
+    height: 4rem;;
     width: 100%;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    z-index: 10 !important;
 }
