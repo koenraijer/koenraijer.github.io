@@ -52,6 +52,25 @@ h5 {
     width: auto;
 }
 
+@media screen and (max-width: 400px) {
+    .index-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .index-hero h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 600px) {
+    .index-hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .index-hero h5 {
+        font-size: 0.7rem;
+    }
+}
 /* REST OF WEBSITE */
 
 #section-a {
@@ -109,7 +128,7 @@ svg{
     bottom: 0;
     right: 0;
   }
-  
+
 .third{
   fill:var(--sapphire-50);
   position: relative;
