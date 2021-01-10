@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://raijer.me//feed.xml" rel="self" type="application/atom+xml" /><link href="https://raijer.me//" rel="alternate" type="text/html" /><updated>2021-01-09T16:47:20+01:00</updated><id>https://raijer.me//feed.xml</id><title type="html">Koen Raijer</title><subtitle>Blog and personal website about healthcare, science, programming and more.</subtitle><author><name>Koen Raijer</name></author><entry><title type="html">Programming adventures</title><link href="https://raijer.me//2021/01/04/Starting-Programming.html" rel="alternate" type="text/html" title="Programming adventures" /><published>2021-01-04T00:00:00+01:00</published><updated>2021-01-04T00:00:00+01:00</updated><id>https://raijer.me//2021/01/04/Starting-Programming</id><content type="html" xml:base="https://raijer.me//2021/01/04/Starting-Programming.html">&lt;p&gt;I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T19:39:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Koen Raijer’s blog</title><subtitle>Blog and personal website about healthcare, science, programming and more.</subtitle><author><name>Koen Raijer</name></author><entry><title type="html">Programming adventures</title><link href="http://localhost:4000/programming/2021/01/04/Starting-Programming.html" rel="alternate" type="text/html" title="Programming adventures" /><published>2021-01-04T00:00:00+01:00</published><updated>2021-01-04T00:00:00+01:00</updated><id>http://localhost:4000/programming/2021/01/04/Starting-Programming</id><content type="html" xml:base="http://localhost:4000/programming/2021/01/04/Starting-Programming.html">&lt;p&gt;I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.&lt;/p&gt;
 
 &lt;div id=&quot;blogbox&quot;&gt;
   &lt;h4 class=&quot;no_toc post-h4-toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h4&gt;
@@ -54,4 +54,73 @@
   &lt;li&gt;Complete Harvard’s CS50 Introduction to Computer Science. Completing this course will give me a sturdy theoretical basis for programming.&lt;/li&gt;
   &lt;li&gt;Get proficient in data analysis using both Python and R. Get good at interactive data visualization; data exploration, manipulation and analysis. Will probably pick an online course on clinical data analysis.&lt;/li&gt;
   &lt;li&gt;Develop my skills in mathematics. Mathematics are a fundamental tool in programming. Plenty of online courses to choose from.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Koen</name></author><category term="Programming" /><summary type="html">I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Koen</name></author><category term="Programming" /><category term="Programming" /><summary type="html">I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.</summary></entry><entry><title type="html">Book summary: Peter Singer’s Famine, Affluence and Morality</title><link href="http://localhost:4000/philosophy/2020/02/05/Singer-Summary.html" rel="alternate" type="text/html" title="Book summary: Peter Singer’s Famine, Affluence and Morality" /><published>2020-02-05T00:00:00+01:00</published><updated>2020-02-05T00:00:00+01:00</updated><id>http://localhost:4000/philosophy/2020/02/05/Singer-Summary</id><content type="html" xml:base="http://localhost:4000/philosophy/2020/02/05/Singer-Summary.html">&lt;p&gt;This essay, written by Peter Singer in 1971 and published in &lt;em&gt;Philosophy and Public Affairs&lt;/em&gt; in 1972, argues that you and I should probably give way more money to charity. &lt;br /&gt;
+I made this summary, which is perhaps better described as a &lt;em&gt;paraphrase&lt;/em&gt;, as a way to remind myself of the contents of the original text. I encourage everyone to read the full essay!&lt;/p&gt;
+
+&lt;div id=&quot;blogbox&quot;&gt;
+  &lt;h4 class=&quot;no_toc post-h4-toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h4&gt;
+&lt;ul class=&quot;TOC&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#thesis-statement&quot; id=&quot;markdown-toc-thesis-statement&quot;&gt;Thesis statement&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#addressing-possible-objections-to-the-thesis-statement&quot; id=&quot;markdown-toc-addressing-possible-objections-to-the-thesis-statement&quot;&gt;Addressing possible objections to the thesis statement&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#acting-upon-the-main-point&quot; id=&quot;markdown-toc-acting-upon-the-main-point&quot;&gt;Acting upon the main point&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#more-examples&quot; id=&quot;markdown-toc-more-examples&quot;&gt;More examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h4 class=&quot;post-h4&quot; id=&quot;thesis-statement&quot;&gt;Thesis statement&lt;/h4&gt;
+
+&lt;div class=&quot;quotesection-quote&quot;&gt;
+  &lt;p&gt;‘’If I am walking past a shallow pond and see a child drowning in it, I ought to wade in and pull the child out. This will mean getting my clothes muddy, but this is insignificant, while the death of the child would presumably be a very bad thing.’’&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Almost everyone will have a strong intuition that it would be unacceptable to refrain from saving the child. Getting your (new and expensive) clothes muddy is not a valid excuse. This principle can be summarized in the following statement: if it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally to do it.
+&lt;br /&gt;&lt;br /&gt;
+If we accept any principle of impartiality, universalizability, equality, or whatever, we cannot discriminate against someone merely because he is far away from us. It might increase chances that we shall help them, but it doesn’t show that we ought to help them rather than someone who is far away.
+&lt;br /&gt;&lt;br /&gt;
+The principle makes no distinction between cases in which I am the only person who could possibly do anything and cases in which I am just one among millions in the same position. 
+Some people might argue you only need to pay your fair share, but this only holds true if everyone actually does pay their fair share. Otherwise you are merely excusing yourself because other’s aren’t doing the good thing either, an example of follow-the-crowd ethics similar to the kind of ethics that led many Germans to look away when the Nazi atrocities were being committed. We do not excuse them because others were behaving no better. The idea that no one needs to do more than his fair share is a powerful one, but it is not fair to refrain from paying more than your fair share in exchange for deaths that could be prevented.
+&lt;br /&gt;&lt;br /&gt;
+In the example below, ask yourself if it’s acceptable for the people who just rescued a child –knowing they’ve done their fair share– to let half the children drown?&lt;/p&gt;
+
+&lt;div class=&quot;quotesection-quote&quot;&gt;
+  &lt;p&gt;‘’Imagine it is not 1 small child who has fallen in, but 50 children. We are among 50 adults, picnicking on the lawn around the pond. We can easily wade into the pond and rescue the children. Half the picnickers, it turns out, prefer staying clean and dry.’’&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The place where a society tends to draw the line between an act of duty (things we ought to do) and an act of charity (things that are good to do but not bad not to do, also called supererogative), is usually shaped by the minimal needs to keep it functioning. We ought not to kill or steal; an act of duty, but we can give to charity; an act of charity. Actually, we ought not to kill and steal, and we ought to give to charity: they should both be acts of duty.&lt;/p&gt;
+
+&lt;h4 class=&quot;post-h4&quot; id=&quot;addressing-possible-objections-to-the-thesis-statement&quot;&gt;Addressing possible objections to the thesis statement&lt;/h4&gt;
+
+&lt;p&gt;Firstly, one could argue that having a moral code that is far beyond the capacities of the ordinary man could lead to a breakdown of compliance with that moral code, but it seems very unlikely that the spreading of the idea that we ought to relieve famine will lead to a general breakdown of moral behaviour.
+&lt;br /&gt;Secondly, one could argue that giving privately to foreign aid only allows the government to escape their responsibilities, but it seems more plausible that if no one gives voluntarily, the government will assume its citizens are uninterested in foreign aid.
+&lt;br /&gt;Thirdly, one could argue that giving to famine relief is useless unless there is effective population control, but that doesn’t absolve us from the responsibility to help these people, it merely broadens the problem to include population control.
+&lt;br /&gt;&lt;br /&gt;
+Psychologists might tell us that human nature just isn’t sufficiently altruistic to make people sacrifice so much for strangers. This can be explained by looking at our past. Humans have evolved quick but inflexible moral intuitions to common situations, but now that the world has turned into a global village we need to go into manual mode and use our reasoning capacities to find out what we ought to do. Even though this might explain why people don’t intuitively donate more money to charity, it doesn’t mean that it’s not something we ought to do.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Some people feel that having to give away your hard-earned money to charity is unfair, but it’s estimated that more than 90% of the reason they’ve earned that money is due to so-called ‘’social capital’’: the area of the world he’s born in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This problem seems like win-lose situation, but it is probably more like a win-win situation, because we probably don’t need all the ‘’stuff’’ we think we need.&lt;/strong&gt;
+The consumer society would slow down, perhaps disappear entirely, and the shift away from a materialistic point of view might have a positive effect in their goals and sense of purpose.&lt;/p&gt;
+
+&lt;h4 class=&quot;post-h4&quot; id=&quot;acting-upon-the-main-point&quot;&gt;Acting upon the main point&lt;/h4&gt;
+
+&lt;p&gt;Although there does not seem to be a valid reason to disregard the thesis statement, if we were to change it into a more moderate version, which says: ‘’we should prevent bad occurrences unless, to do so, we had to sacrifice something morally significant’’ (formerly it was ‘’of comparable moral significance’’). Even then, great changes in our lives are required.
+&lt;br /&gt;&lt;br /&gt;
+A few examples of things that are probably not of comparable or even significant moral importance: buying new clothes to look ‘well-dressed’, buying a second car, booking the third vacation this year or getting your kitchen replaced even though your current kitchen works just fine.
+&lt;br /&gt;&lt;br /&gt;
+If we pick a reasonable but arbitrary fraction of income that people ought to give based on how much they earn, e.g. 20% for wages above $500,000 and 10% for wages above $100,000, would allow us to easily attain the Millennium Development Goals, set by the UN. When doing the maths, it becomes painfully clear how easily we could totally eradicate poverty.&lt;/p&gt;
+
+&lt;h4 class=&quot;post-h4&quot; id=&quot;more-examples&quot;&gt;More examples&lt;/h4&gt;
+
+&lt;div class=&quot;quotesection-quote&quot;&gt;
+  &lt;p&gt;Dora is a retired schoolteacher who suddenly has an opportunity to pocket $1,000 by persuading a homeless 9-year-old boy to follow her to an address she has been given. (She is told he will be adopted by wealthy foreigners.) She spends it on a television set. Later, she is told by her neighbor that the boy was too old to be adopted – he will be killed and his organs sold for transplantation.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Imagine Dora told her neighbour that it’s a tough world and that other people have nice TV’s, too. She’d be seen like a monster. The average family in the United States spends almost one-third of its income on things that are no more necessary to them than Dora’s new TV was to her. The average family, however, doesn’t need to actively sacrifice a child.&lt;/p&gt;
+
+&lt;div class=&quot;quotesection-quote&quot;&gt;
+  &lt;p&gt;‘’Bob is close to retirement. He has a rare and expensive Bugatti which hasn’t been insured. One day, he parks the car near the end of a railway siding and goes for a walk. As he does so, he sees a runaway train with no one aboard rolling down the railway track. Further down, a child is playing, oblivious to the danger. Bob can throw a switch that will diver the train down the siding to where his Bugatti is parked.’’&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Unlike Dora, Bob didn’t have to look the child in the eyes, he didn’t need to mislead the child and he didn’t need to initiate a chain of events leading to the death of the child. His situation resembles that of people able but unwilling to donate to overseas aid and differs from Dora’s situation.&lt;/p&gt;</content><author><name>Koen</name></author><category term="Philosophy" /><category term="Books" /><summary type="html">This essay, written by Peter Singer in 1971 and published in Philosophy and Public Affairs in 1972, argues that you and I should probably give way more money to charity. I made this summary, which is perhaps better described as a paraphrase, as a way to remind myself of the contents of the original text. I encourage everyone to read the full essay!</summary></entry></feed>

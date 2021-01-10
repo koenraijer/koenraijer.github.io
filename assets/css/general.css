@@ -40,7 +40,7 @@ html{
 body{
     margin: 0;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","Arial",sans-serif;
     position: relative;
     height: 100%;
 }
@@ -91,7 +91,7 @@ section {
 
 .post-h4 {
     font-weight: bold;
-    margin-top: 1rem;
+    margin: 1rem 0;
 
 }
 
@@ -129,10 +129,17 @@ ol {
     border-bottom: 5px solid var(--grey2);
 }
 
-#blogpostpadding div, #blogpostpaddingnoline div, #blogpostpaddingnolineslim div {
+#blogpostpaddingnoline div, #blogpostpaddingnolineslim div {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.posts-title-date {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     padding-bottom: 1rem;
 }
 
@@ -383,6 +390,7 @@ a:hover::before {
     margin: 0px;
     font-weight: normal;
     font-size: 1.1rem;
+    z-index: 1000 !important;
 }
 
 .header__right {
@@ -538,15 +546,15 @@ a:hover::before {
     transition: opacity 0.4s ease;
 }
 
-.menu > div > div > ul > li {
+.menu > div > div > ul  {
     list-style: none;
+    line-height: 3rem;
 }
 
 .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
     color: var(--black);
-    margin-bottom: 1.5rem;
 }
 
 .menu > div > div > ul > li > a:hover {

@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Koen
+category: Programming
 tags: Programming
 title: Programming adventures
 subtitle: Why I started, what I've done so far and my plans for 2021. 
