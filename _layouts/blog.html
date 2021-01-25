@@ -5,22 +5,18 @@ title: Blog
 <div class='content-wrapper'>
   <div id='blogmargins'>
       <h1 class='pagetitle'>Blog</h1>
-      <h2 class='padding-left'>{{ page.title }}</h2>
       <div class='bloggrid'>
           <div class='left-column'>
+            <h6 id="subsubtitle" class='padding-left'>{{ page.title | upcase }}</h6>
               {{ content }}
           </div>
         <div class='right-column'>
           <div id='blogpostpadding'>
-            <ul id='blogmenu'>
-              <li><h4><a href='/blog/'>Posts</a></h4></li>
-              <li><h4><a href='/blog/tags/'>Tags</a></h4></li>
-              <li><h4><a href='/blog/archive/'>Archive</a></h4></li>
-              <li><h4><a href='/feed.xml'>Feed</a></h4></li>
-            </ul>
+            {% include archive.html %} 
+            <h6 style="margin-top: 0.5rem;" id="subsubtitle">FEED</h6>
+            <a id="tagcloud" href="/feed.xml">RSS Feed</a>
           </div>
         </div>
     </div>
   </div>
 </div>
-

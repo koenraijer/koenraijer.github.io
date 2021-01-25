@@ -11,8 +11,8 @@ I made this summary, which is perhaps better described as a _paraphrase_, as a w
 
 
 <div id='blogbox' markdown="block">
-#### Table of Contents 
-{: .no_toc .post-h4-toc}
+###### TABLE OF CONTENTS
+{: .no_toc .post-h6-toc}
 * TOC
 {:toc .TOC}
 </div>
@@ -24,7 +24,7 @@ I made this summary, which is perhaps better described as a _paraphrase_, as a w
  ‘’If I am walking past a shallow pond and see a child drowning in it, I ought to wade in and pull the child out. This will mean getting my clothes muddy, but this is insignificant, while the death of the child would presumably be a very bad thing.’’
 </div>
 
-Almost everyone will have a strong intuition that it would be unacceptable to refrain from saving the child. Getting your (new and expensive) clothes muddy is not a valid excuse. This principle can be summarized in the following statement: if it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally to do it.
+This analogy evokes a strong moral intuition that it is unacceptable <i>not</i> to save the child. <b>Of course you get your clothes muddy.</b> This principle can be summarized in the following statement: if it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally to do it.
 <br><br>
 If we accept any principle of impartiality, universalizability, equality, or whatever, we cannot discriminate against someone merely because he is far away from us. It might increase chances that we shall help them, but it doesn’t show that we ought to help them rather than someone who is far away.
 <br><br>

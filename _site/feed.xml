@@ -1,64 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T19:39:46+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Koen Raijer’s blog</title><subtitle>Blog and personal website about healthcare, science, programming and more.</subtitle><author><name>Koen Raijer</name></author><entry><title type="html">Programming adventures</title><link href="http://localhost:4000/programming/2021/01/04/Starting-Programming.html" rel="alternate" type="text/html" title="Programming adventures" /><published>2021-01-04T00:00:00+01:00</published><updated>2021-01-04T00:00:00+01:00</updated><id>http://localhost:4000/programming/2021/01/04/Starting-Programming</id><content type="html" xml:base="http://localhost:4000/programming/2021/01/04/Starting-Programming.html">&lt;p&gt;I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://raijer.me//feed.xml" rel="self" type="application/atom+xml" /><link href="https://raijer.me//" rel="alternate" type="text/html" /><updated>2021-01-25T11:09:08+01:00</updated><id>https://raijer.me//feed.xml</id><title type="html">Koen Raijer</title><subtitle>Blog and personal website about healthcare, science, programming and more.</subtitle><author><name>Koen Raijer</name></author><entry><title type="html">The plan for 2021</title><link href="https://raijer.me//personal/2021/01/04/Starting-Programming.html" rel="alternate" type="text/html" title="The plan for 2021" /><published>2021-01-04T00:00:00+01:00</published><updated>2021-01-04T00:00:00+01:00</updated><id>https://raijer.me//personal/2021/01/04/Starting-Programming</id><content type="html" xml:base="https://raijer.me//personal/2021/01/04/Starting-Programming.html">&lt;p&gt;This is a short write up of what I plan to do for the year and why.&lt;/p&gt;
 
 &lt;div id=&quot;blogbox&quot;&gt;
-  &lt;h4 class=&quot;no_toc post-h4-toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h4&gt;
+  &lt;h6 class=&quot;no_toc post-h6-toc&quot; id=&quot;table-of-contents&quot;&gt;TABLE OF CONTENTS&lt;/h6&gt;
 &lt;ul class=&quot;TOC&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#reasons-to-start-programming&quot; id=&quot;markdown-toc-reasons-to-start-programming&quot;&gt;Reasons to start programming&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#trying-out-pythons-flask-framework&quot; id=&quot;markdown-toc-trying-out-pythons-flask-framework&quot;&gt;Trying out Python’s Flask framework&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#creating-my-personal-website&quot; id=&quot;markdown-toc-creating-my-personal-website&quot;&gt;Creating my personal website&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-plan-for-2021&quot; id=&quot;markdown-toc-the-plan-for-2021&quot;&gt;The plan for 2021&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#rationalization&quot; id=&quot;markdown-toc-rationalization&quot;&gt;Rationalization&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#reasons-to-get-a-personal-website&quot; id=&quot;markdown-toc-reasons-to-get-a-personal-website&quot;&gt;Reasons to get a personal website&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#the-plan-for-2021&quot; id=&quot;markdown-toc-the-plan-for-2021&quot;&gt;The plan for 2021&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;It’s the end of November and I’d been contacting researchers for a while to get some experience in doing research, but to no avail. I’d been talking to an interesting researcher and I was pretty hopeful it was going to work out, so I took a couple of weeks off. It was called off again. I was really in need of something challenging at this point.&lt;br /&gt; I picked programming for a couple of reasons. &lt;/p&gt;
-
-&lt;h4 class=&quot;post-h4&quot; id=&quot;reasons-to-start-programming&quot;&gt;Reasons to start programming&lt;/h4&gt;
+&lt;h2 class=&quot;post-h2&quot; id=&quot;the-plan-for-2021&quot;&gt;The plan for 2021&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;The gigantic impact technology will have on healthcare is best understood and taken advantage of with some programming knowledge.&lt;/li&gt;
-  &lt;li&gt;Python and R are future proof, versatile and open-source ways of doing data analysis and machine learning, contrary to SPSS.&lt;/li&gt;
-  &lt;li&gt;Programming knowledge allows you to see possibilities you wouldn’t have seen before for improving your workflow or to solve problems you see at work or elsewhere.&lt;/li&gt;
+  &lt;li&gt;Complete Harvard’s CS50 Introduction to Computer Science.&lt;/li&gt;
+  &lt;li&gt;Learn data analysis using Python. Get good at interactive data visualization; data exploration, manipulation and analysis. Will probably choose an online (clinical) data science course for this. Don’t neglect regular statistics in the process.&lt;/li&gt;
+  &lt;li&gt;Do a course in mathematics relevant to programming/data science.&lt;/li&gt;
+  &lt;li&gt;Practice my writing by posting stuff on here.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I decided Python would be the best language to start with for its ease of use and versatility, and I completed several beginner coding exercises. I also fell for a very uninspiring but supposedly sharply priced Udemy course (I only had 19 minutes left or the deal would be gone!). Luckily, I got a refund.&lt;/p&gt;
-&lt;p&gt;I learned that really, learning-by-doing was the best way to get better, so I started thinking of my first project. I made a simple calculator which helps me rebalance my investment portfolio. It taught me about variables, functions and loops and most importantly: StackOverflow.com.&lt;/p&gt;
+&lt;h4 class=&quot;post-h4&quot; id=&quot;rationalization&quot;&gt;Rationalization&lt;/h4&gt;
 
-&lt;h2 class=&quot;post-h2&quot; id=&quot;trying-out-pythons-flask-framework&quot;&gt;Trying out Python’s Flask framework&lt;/h2&gt;
-
-&lt;p&gt;It works, cool, but allowing other people to use it would be even cooler. So I downloaded a web development framework for Python (called Flask), and went on a very confusing endeavour. I set out on a bumpy road with very few beginner-friendly YouTube videos and a lot of jargon-heavy documentation that I couldn’t read. To top it all off, I found out about the hefty price of Python-backed website hosting, right after finishing the website. Don’t make the same mistake!&lt;/p&gt;
-&lt;p&gt;I was ready to leave the confusing world of server-side scripting for the pleasant world of HTML, CSS and a hint of JavaScript: web design. &lt;/p&gt;
-&lt;p&gt;The immediacy of web design is very pleasant; the effect of changing your code is visible most of the time and debugging is pretty easy. This makes it easy to get the website you want, but that did teach me a lesson: I’m very bad at design. I’ve gone through 4 different versions of this website and most of the improvements meant removing excess stuff. When I found out about that one JavaScript library that is able to animate stuff on scroll, for example, I needed everything to move. Less really is more. This website is not meant to showcase all the weird stuff you can do with CSS and JavaScript, it’s meant to be serve a purpose. &lt;/p&gt;
-
-&lt;h2 class=&quot;post-h2&quot; id=&quot;creating-my-personal-website&quot;&gt;Creating my personal website&lt;/h2&gt;
-
-&lt;p&gt;As I was spending more and more time on this website, I had to justify it for myself. What do I need a website for? The answer slowly crystallized in the following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Technology will change healthcare in ways I find very fascinating and also very hard to imagine. Programming knowledge will hopefully allow me to ride that wave.&lt;/li&gt;
+  &lt;li&gt;Python is a more versatile future-proof way of doing data analysis and machine learning, contrary to legacy software like SPSS. I also like the many ways to integrate graphs with websites and make them interactive. Science communication can be made more effective; among professionals, but also towards the general public. Effective data visualizations that work well with phones are crucial for that.&lt;/li&gt;
+  &lt;li&gt;Programming forces me to think in ways I don’t usually need to think. I hope there’s some carry-over to my problem solving skills at large.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h4 class=&quot;post-h4&quot; id=&quot;reasons-to-get-a-personal-website&quot;&gt;Reasons to get a personal website&lt;/h4&gt;
 &lt;ol&gt;
-  &lt;li&gt;It documents your development and collects everything you’ve made as a work of reference. It serves as proof for things like writing skills, critical thinking and consistency.&lt;/li&gt;
-  &lt;li&gt;Maximal freedom in how you want to present yourself. Although LinkedIn is crucial for its traffic, it is not very flexible.&lt;/li&gt;
-  &lt;li&gt;It’s an interesting way to distinguish yourself in fields of work where it’s not common. But, because it’s not a relevant skill, chances are they don’t really care, either.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I tried several different ways of hosting and managing a website, some working  better than others. I started out making a simple static website hosted on Github Pages for free. Then I wanted to add a blog, so I tried WordPress. WordPress ended up being way too much for what I needed. A hard-to-customize, clunky dinosaur which carries loads of excess functionality and useless code for my goals. Then I stumbled upon Jekyll, a static site generator. That’s what I’m still using. I’ll probably write a piece about my experiences using Jekyll.&lt;/p&gt;
-
-&lt;h2 class=&quot;post-h2&quot; id=&quot;the-plan-for-2021&quot;&gt;The plan for 2021&lt;/h2&gt;
-
-&lt;p&gt;During the web design process, I started Harvard’s CS50 Introduction to Computer Science, and I tried my hand at using R for data analysis. I plan on doing the following three things slowly but surely during 2021:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Complete Harvard’s CS50 Introduction to Computer Science. Completing this course will give me a sturdy theoretical basis for programming.&lt;/li&gt;
-  &lt;li&gt;Get proficient in data analysis using both Python and R. Get good at interactive data visualization; data exploration, manipulation and analysis. Will probably pick an online course on clinical data analysis.&lt;/li&gt;
-  &lt;li&gt;Develop my skills in mathematics. Mathematics are a fundamental tool in programming. Plenty of online courses to choose from.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Koen</name></author><category term="Programming" /><category term="Programming" /><summary type="html">I would've been quite surprised had I told myself at the start of 2020 that I would be learning programming now. It definitely wouldn't have been the biggest surprise. My travels to both Indonesia and India were cancelled and my clinical rotations were put on hold. I suddenly had a lot of free time on my hands and I could spend it any way I wanted.</summary></entry><entry><title type="html">Book summary: Peter Singer’s Famine, Affluence and Morality</title><link href="http://localhost:4000/philosophy/2020/02/05/Singer-Summary.html" rel="alternate" type="text/html" title="Book summary: Peter Singer’s Famine, Affluence and Morality" /><published>2020-02-05T00:00:00+01:00</published><updated>2020-02-05T00:00:00+01:00</updated><id>http://localhost:4000/philosophy/2020/02/05/Singer-Summary</id><content type="html" xml:base="http://localhost:4000/philosophy/2020/02/05/Singer-Summary.html">&lt;p&gt;This essay, written by Peter Singer in 1971 and published in &lt;em&gt;Philosophy and Public Affairs&lt;/em&gt; in 1972, argues that you and I should probably give way more money to charity. &lt;br /&gt;
+  &lt;li&gt;A historical document of my writing which serves as a future work of reference.&lt;/li&gt;
+  &lt;li&gt;Maximum freedom, fully customizable. Although there’s no denying the value of LinkedIn’s traffic, it is very limited in its appearance and structure.&lt;/li&gt;
+  &lt;li&gt;Full ownership of my content and independence from the whims of big tech companies. No privacy issues.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Koen</name></author><category term="Personal" /><category term="Personal" /><summary type="html">This is a short write up of what I plan to do for the year and why.</summary></entry><entry><title type="html">Book summary: Peter Singer’s Famine, Affluence and Morality</title><link href="https://raijer.me//philosophy/2020/02/05/Singer-Summary.html" rel="alternate" type="text/html" title="Book summary: Peter Singer’s Famine, Affluence and Morality" /><published>2020-02-05T00:00:00+01:00</published><updated>2020-02-05T00:00:00+01:00</updated><id>https://raijer.me//philosophy/2020/02/05/Singer-Summary</id><content type="html" xml:base="https://raijer.me//philosophy/2020/02/05/Singer-Summary.html">&lt;p&gt;This essay, written by Peter Singer in 1971 and published in &lt;em&gt;Philosophy and Public Affairs&lt;/em&gt; in 1972, argues that you and I should probably give way more money to charity. &lt;br /&gt;
 I made this summary, which is perhaps better described as a &lt;em&gt;paraphrase&lt;/em&gt;, as a way to remind myself of the contents of the original text. I encourage everyone to read the full essay!&lt;/p&gt;
 
 &lt;div id=&quot;blogbox&quot;&gt;
-  &lt;h4 class=&quot;no_toc post-h4-toc&quot; id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h4&gt;
+  &lt;h6 class=&quot;no_toc post-h6-toc&quot; id=&quot;table-of-contents&quot;&gt;TABLE OF CONTENTS&lt;/h6&gt;
 &lt;ul class=&quot;TOC&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#thesis-statement&quot; id=&quot;markdown-toc-thesis-statement&quot;&gt;Thesis statement&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#addressing-possible-objections-to-the-thesis-statement&quot; id=&quot;markdown-toc-addressing-possible-objections-to-the-thesis-statement&quot;&gt;Addressing possible objections to the thesis statement&lt;/a&gt;&lt;/li&gt;
@@ -74,7 +54,7 @@ I made this summary, which is perhaps better described as a &lt;em&gt;paraphrase
   &lt;p&gt;‘’If I am walking past a shallow pond and see a child drowning in it, I ought to wade in and pull the child out. This will mean getting my clothes muddy, but this is insignificant, while the death of the child would presumably be a very bad thing.’’&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Almost everyone will have a strong intuition that it would be unacceptable to refrain from saving the child. Getting your (new and expensive) clothes muddy is not a valid excuse. This principle can be summarized in the following statement: if it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally to do it.
+&lt;p&gt;This analogy evokes a strong moral intuition that it is unacceptable &lt;i&gt;not&lt;/i&gt; to save the child. &lt;b&gt;Of course you get your clothes muddy.&lt;/b&gt; This principle can be summarized in the following statement: if it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally to do it.
 &lt;br /&gt;&lt;br /&gt;
 If we accept any principle of impartiality, universalizability, equality, or whatever, we cannot discriminate against someone merely because he is far away from us. It might increase chances that we shall help them, but it doesn’t show that we ought to help them rather than someone who is far away.
 &lt;br /&gt;&lt;br /&gt;

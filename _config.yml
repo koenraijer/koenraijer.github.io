@@ -14,6 +14,7 @@ webmaster_verifications:
 feed:
   posts_limit: 20
 
+# Generating post pages
 defaults:
   -
     scope:
@@ -22,7 +23,6 @@ defaults:
     values:
       author: Koen
       layout: "default"
-      
 posts:
   permalink: /:categories/:year/:month/:day/:title/
 

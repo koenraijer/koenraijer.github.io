@@ -1,21 +1,7 @@
 ---
 layout: blog
-title: Tags
+title:
 permalink: /blog/tags/
 ---
 
-<div id='blogpostpaddingnoline'>
-  {% for tag in site.tags %}
-  <div id='tagpadding'>
-    <h4><span id='boldspan'>{{ tag[0] }}</span></h4>
-  </div>
-  <ul>
-    {% for post in tag[1] %}
-        <div>
-            <a href="{{ post.url }}"><p>{{ post.title }}</p></a>
-            <p>{{ post.date | date: "%d-%m-%Y" }}</p>
-        </div>
-    {% endfor %}
-  </ul>
-{% endfor %}
-</div>
+{% include archive.html %} 
