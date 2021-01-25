@@ -105,6 +105,10 @@ ol {
 }
 
 /* ------------------------------------ Blog page ----------------------------------------------- */
+.blog-article {
+    border-bottom: 5px dotted var(--grey2);
+}
+
 #blogmargins {
     position: relative;
     margin: 2rem 4rem 2rem;
@@ -116,7 +120,7 @@ ol {
 }
 
 #blogpostpadding {
-    padding: 0 0 1.5rem;
+    padding: 0 0 2.5rem;
 }
 
 #tagpadding {
@@ -405,6 +409,8 @@ a:hover::before {
 
 #subsubtitle {
     color: var(--sapphire);
+    margin-bottom: 0.25rem;
+    font-weight: bold;
 }
 
 #Rubik {
@@ -419,7 +425,7 @@ a:hover::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem 0;
+    margin: 0 4rem 0;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -448,7 +454,7 @@ a:hover::before {
 }
 
 .header__right-1 {
-    margin-right: 0.5rem;
+    margin-right: 1.5rem;
 }
 
 .header__right a {
@@ -686,6 +692,7 @@ h5 {
         font-size: 0.7rem;
     }
 }
+
 
 /* HERO WRAPPER */
 .hero-wrapper {

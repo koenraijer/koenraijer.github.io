@@ -7,13 +7,15 @@ permalink: /blog/
           {% for post in site.posts %}
             <li>
               <div id='blogpostpadding'>
-                  
-                <div class='posts-title-date'>
-                    <h3>{{ post.date | date: "%d-%m-%Y" }} &nbsp;//&nbsp; </span><a id="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+                <div class='blog-article'>
+                  <div class='posts-title-date'>
+                      <h3>{{ post.date | date: "%d-%m-%Y" }} &nbsp;//&nbsp; </span><a id="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+                  </div>
+                  <span id='hr'></span>
+                  <p>{{ post.excerpt }}</p>
+                  <span class='highlight'><a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
                 </div>
-                <span id='hr'></span>
-                <p>{{ post.excerpt }}</p>
-                <span class='highlight'><a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
+                
             </li>
           {% endfor %}
         </ul>  

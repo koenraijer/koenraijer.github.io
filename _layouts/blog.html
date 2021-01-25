@@ -4,16 +4,16 @@ title: Blog
 ---
 <div class='content-wrapper'>
   <div id='blogmargins'>
-      <h1 class='pagetitle'>Blog</h1>
+      <h1 class='pagetitle' style="padding-bottom: 0.5rem;">Blog</h1>
       <div class='bloggrid'>
           <div class='left-column'>
-            <h6 id="subsubtitle" class='padding-left'>{{ page.title | upcase }}</h6>
+            <h5 id="subsubtitle" class='padding-left'>{{ page.title | upcase }}</h5>
               {{ content }}
           </div>
         <div class='right-column'>
           <div id='blogpostpadding'>
             {% include archive.html %} 
-            <h6 style="margin-top: 0.5rem;" id="subsubtitle">FEED</h6>
+            <h5 style="margin-top: 0.5rem;" id="subsubtitle">FEED</h5>
             <a id="tagcloud" href="/feed.xml">RSS Feed</a>
           </div>
         </div>
