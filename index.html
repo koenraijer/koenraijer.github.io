@@ -3,35 +3,35 @@ layout: default
 title: index
 ---
     <div class='content-wrapper'>
-        <section class='hero-wrapper' id='blogmargins'>
+        <section class='hero-wrapper' id='blogmargins' style="padding-bottom: 1rem;">
             <div class='index-image'>
                 <img class="logo2" src="assets/images/magnifyingglassreal.svg">
             </div>
             <div class='index-hero'>
-                <h1 class='subtitle'>Hi! I'm Koen.</h1>
-                <h3 class='subtitle'><span id="hero-sub">A</span> tech-savvy medical student <span id="hero-sub"> on clinical rotations, <br>trying to learn programming.</span></h3>
+                <h1 class='subtitle'>Nice to meet you. I'm Koen!</h1>
+                <h3 class='subtitle'><span id="hero-sub">I'm a</span> medical student <span id="hero-sub"> on clinical rotations. <br>This is where I write about stuff like health, tech, science and philosophy.</span></h3>
                 <div class='button-container'>
                 <button type="button" onclick="mailto:koenraijer@protonmail.com" class="button2"><a href="mailto:koenraijer@protonmail.com">Get in touch</a></button>
+                <button type="button" onclick="mailto:koenraijer@protonmail.com" class="button2"><a href="/about/">More on me</a></button>
                 </div>
             </div>
-            
-            
         </section>   
     </div> 
     <div class='content-wrapper'>
         <div id='blogmargins'>
-            <h5 id="subsubtitle">BLOG POSTS</h5>
+            <h4 style="margin-bottom: 1rem;" id="subsubtitle">LATEST POSTS</h4>
             <ul>
                 {% for post in site.posts %}
                   <li>
                     <div id='blogpostpadding'>
                     <div class='blog-article'>
                         <div class='posts-title-date'>
-                            <h3>{{ post.date | date: "%d-%m-%Y" }} &nbsp;//&nbsp; </span><a id="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <h3>
+                                <a id="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
                         </div>
-                        <span id='hr'></span>
+                        <span style="margin-bottom: 0.5rem;" class='highlight'>{{ post.date | date: "%d-%m-%Y" }}</span>
                         <p>{{ post.excerpt }}</p>
-                        <span class='highlight'><a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
+                        <span style="margin-bottom: 0.5rem;" class='highlight'>Tags: <a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
                     </div>
                   </li>
                 {% endfor %}

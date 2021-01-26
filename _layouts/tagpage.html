@@ -4,11 +4,11 @@ layout: default
 <div class='content-wrapper'>
     <div id="blogmargins">
         <div id="blogpostpadding">
-            <h1>{{ page.tag }}</h1>
-            <h6 id="subsubtitle">BLOG POSTS</h6>
+            <h1 class="pagetitle" style="padding-bottom: 0.5rem;">All posts about {{ page.title | downcase}}</h1>
+            <h4 style="margin-bottom: 1rem;" id="subsubtitle">BLOG POSTS</h4>
             <ul>
             {% for post in site.tags[page.tag] %}
-              <li><h4><span id="hero-sub">{{ post.date | date: "%d-%m-%Y" }}&nbsp // &nbsp </span><a style="font-weight: normal;" href="{{ post.url }}">{{ post.title }}</a></h4><br>
+              <li><h4><span id="hero-sub">{{ post.date | date: "%d-%m-%Y" }}&nbsp | &nbsp </span><a style="font-weight: normal;" href="{{ post.url }}">{{ post.title }}</a></h4><br>
               </li>
             {% endfor %}
             </ul>

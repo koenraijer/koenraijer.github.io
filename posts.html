@@ -9,11 +9,16 @@ permalink: /blog/
               <div id='blogpostpadding'>
                 <div class='blog-article'>
                   <div class='posts-title-date'>
-                      <h3>{{ post.date | date: "%d-%m-%Y" }} &nbsp;//&nbsp; </span><a id="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <div>
+                      <h3>
+                        <a id="post-title" href="{{ post.url }}">{{ post.title }}</a>
+                      </h3>
+                    </div>
+                    <span class='highlight'>{{ post.date | date: "%d-%m-%Y" }} </span>
                   </div>
-                  <span id='hr'></span>
+                  
                   <p>{{ post.excerpt }}</p>
-                  <span class='highlight'><a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
+                  <span style="margin-bottom: 0.5rem;" class='highlight'>Tags: <a href="/tag/{{ post.tags }}">{{ post.tags }}</a></span>
                 </div>
                 
             </li>
