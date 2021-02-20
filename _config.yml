@@ -1,35 +1,63 @@
-baseurl: "" # the base hostname & protocol for your site
-
 title: Koen Raijer
-tagline: An online hub
-description: Blog and personal website about healthcare, science, programming and more.  
-url: "https://raijer.me/"
-author: Koen Raijer
-social: 
+author:
   name: Koen Raijer
-  links:
-    - https://www.linkedin.com/in/koen-raijer-3495a7127/
-webmaster_verifications:
-  google: 
-feed:
-  posts_limit: 20
+  email: koenraijer@protonmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  I'm Koen, a med student in rotations from the Netherlands. This is where I write about technology, psychedelics research and mental health, data science, programming, and ethics. 
 
-# Generating post pages
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      author: Koen
-      layout: "default"
-posts:
-  permalink: /:categories/:year/:month/:day/:title/
+show_excerpts: true # set to true to show excerpts on the homepage
+include: ['_tags']
+relative_permalinks: false
 
-pagination: 5
-paginate_path: "blog/page:num"
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%d-%m-%Y"
+
+  # generate social links in footer
+  social_links:
+    twitter: koenraijer
+    linkedin: https://www.linkedin.com/in/koen-raijer-3495a7127/
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - about.html
+
+# Build settings
+theme: minima
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
+ - jekyll-feed
+ - jekyll-seo-tag
+
+minima:
+  skin: myskin
