@@ -12,6 +12,7 @@ $custom-light:           #F8C162;
 
 $brand-color:           #999999 !default;
 $brand-color-light:     lighten($brand-color, 5%) !default;
+$brand-color-lightest:     lighten($brand-color, 15%) !default;
 $brand-color-dark:      darken($brand-color, 35%) !default;
 
 $site-title-color:      $brand-color-dark !default;

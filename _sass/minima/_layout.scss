@@ -18,7 +18,7 @@
   color: $site-title-color;
 
   @include media-query($on-palm) {
-    padding-right: 45px;
+    padding-right: 0px;
   }
 
   &,
@@ -136,7 +136,7 @@
 }
 
 .contact-list,
-.social-media-list {
+.social-media-list, .tagcloud {
   list-style: none;
   margin-left: 0;
 }
@@ -224,7 +224,11 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $brand-color;
+  color: $brand-color !important;
+}
+
+.post-meta a:hover {
+  color: $brand-color-lightest !important;
 }
 
 .post-link {
@@ -373,7 +377,7 @@
 .hero-title {
   font-size: 2.5rem;
   img {
-    height: 8rem;
+    height: 7rem;
     width: auto;
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
@@ -413,6 +417,7 @@
     border-radius: 50%;
     float: right;
     margin: 0 0.25rem 15px;
+    padding-left: 0.5rem;
   }
 }
 
@@ -434,4 +439,14 @@
 .img-404 {
   max-height: 8rem;
   width: auto;
+}
+
+@media screen and (max-width: $on-palm) {
+  .relatedPosts-parent {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tag {
+  color: $brand-color;
 }

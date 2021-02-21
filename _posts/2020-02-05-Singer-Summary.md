@@ -4,9 +4,10 @@ author: Koen
 category: Philosophy
 tags: Philosophy
 title: "Book summary: Peter Singer's Famine, Affluence and Morality"
+teaser: "A short and concise summary of the essay's main premise, possible objections to it, and Singer's rebuttal."
 ---
 
-This is my summary of Peter Singer's 1971 essay; Famine, Affluence and Morality. It has brought forth movements like <a href="https://www.effectivealtruism.org/">Effective Altruism</a> and is widely regarded as an important piece of Western ethical thinking. You can read the original essay <a href="https://personal.lse.ac.uk/ROBERT49/teaching/mm/articles/Singer_1972Famine.pdf">here</a>. 
+This is my summary of Peter Singer's 1971 essay; Famine, Affluence and Morality. It has brought forth movements like <a target="_blank" href="https://www.effectivealtruism.org/">Effective Altruism</a> and is widely regarded as an important piece of Western ethical thinking. You can read the original essay <a target="_blank" href="https://personal.lse.ac.uk/ROBERT49/teaching/mm/articles/Singer_1972Famine.pdf">here</a>. 
 
 ### The main premise
 The essay was inspired by the famine of regufees that fled after the Bangladesh Liberation War. While millions of people were starving, affluent governments did very little to prevent this. Singer uses this situation as a model to argue that many rich countries' responses to catastrophes are unjustifiable. I have briefly summarized the premises of his reasoning below.
@@ -41,7 +42,7 @@ The <b>take away</b> is that it's just as bad to buy new clothes while a child a
 ### Counter arguments + objections.
 I have summarized some common objections you might have, and Singer's answer to them. 
 
-Even though, <i>psychologically</i> speaking, we may be less inclined to help someone if they live far away, that is not a valid objection if you accept any principle of impartiality, univeralizability or equality. The most widespread contemporary example of such a principe is <a href="https://www.un.org/en/universal-declaration-human-rights/index.html">The Universal Declaration of Human Rights</a>.
+Even though, <i>psychologically</i> speaking, we may be less inclined to help someone if they live far away, that is not a valid objection if you accept any principle of impartiality, univeralizability or equality. The most widespread contemporary example of such a principe is <a target="_blank" href="https://www.un.org/en/universal-declaration-human-rights/index.html">The Universal Declaration of Human Rights</a>.
 
 It does not matter, either, whether other people are present who are also able to help. Imagine you see a child drowning in a pond in a park full of people, does that excuse you from acting?
 

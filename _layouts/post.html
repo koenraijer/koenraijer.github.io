@@ -17,14 +17,15 @@ layout: default
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+      •
+      {% for tag in page.tags %}
+      <a class="post-meta" href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %},{% endif %}
+      {% endfor %}
       </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-    {% for tag in page.tags %}
-      <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %},{% endif %}
-    {% endfor %}
   </div>
   
   <h2>Related posts</h2>
