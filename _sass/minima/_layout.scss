@@ -4,7 +4,8 @@
 .site-header {
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background: $background-color-light;
+  background: $background-color;
+  z-index: 1;
   color: $text-color;
   transition: 0.5s;
 
@@ -15,6 +16,7 @@
 .site-title {
   margin-bottom: 0;
   text-align: center;
+  font-weight: bold;
   color: $site-title-color;
 
   @include media-query($on-palm) {
@@ -23,7 +25,7 @@
 
   &,
   &:visited {
-    color: $background-color;
+    color: $site-title-color;
   }
 }
 
@@ -122,7 +124,7 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 0;
   background: $background-color-light;
 }
 
@@ -223,8 +225,9 @@
 }
 
 .post-meta {
-  font-size: $small-font-size;
-  color: $brand-color !important;
+  font-size: $base-font-size;
+  color: $text-color !important;
+  font-weight: bold;
 }
 
 .post-meta a:hover {
@@ -233,8 +236,17 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  color: $custom;
+  @include relative-font-size(1.7);
+  &:visited {
+    color: $custom;
+  }
+
+  &:hover {
+    color: $custom-light;
+  }
 }
+
 
 
 
@@ -306,6 +318,20 @@
   }
 }
 
+.social-parent {
+  display: table;
+  margin: 0 auto;
+  .social-child {
+    float: left;
+    margin: 5px 10px 5px 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: $spacing-unit / 4;
+      &:hover { opacity: 0.5;}
+    }
+  }
+}
 
 
 /**
@@ -348,18 +374,26 @@
 // CUSTOM STYLES //
 .hero {
   padding: 0 0 2rem;
-  background: $background-color-light;
+  background: $background-color;
   text-align: center;
   color: $text-color;
   h1 {
-    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-family: $p-font-family;
+    color: $text-color;
+    font-weight: normal;
   }
 }
 
 
 
 .header-title {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.05em;
+  color: $text-color;
+  font-family: $header-font-family;
   img {
     height: 1.5rem;
     width: auto;
@@ -375,7 +409,11 @@
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: "Montserrat", $base-font-family;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+  
   img {
     height: 7rem;
     width: auto;
@@ -383,10 +421,21 @@
     transition: transform .3s ease-in-out;
     transform-origin: 35.5% 38.75%;
   }
-
   img:hover {
     -webkit-transform: rotate(3deg);
             transform: rotate(3deg);
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin: auto;
+    height: 1em;
+    width: 1em;
+    margin: 0 -1.25rem 0;
+    transform: translateY(-0.125em);
+    border-radius: 0.5em;
+    background: #F49F0A80;
   }
 }
 
@@ -406,11 +455,12 @@
 }
 
 .text-box {
-  background: $background-color-lighter;
+  background: $background-color-light;
   color: $text-color;
   padding: 1.5rem 1.5rem calc(1.5rem - 15px);
   border-radius: 15px;
   overflow: auto;
+  z-index: -100;
   img {
     max-height: 8rem;
     width: auto;

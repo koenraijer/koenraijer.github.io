@@ -130,8 +130,15 @@ ol li::before{
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: $custom;
+  font-family: $header-font-family;
+  font-weight: bold;
 }
 
+p {
+  font-family: $p-font-family;
+  letter-spacing: 0.075em;
+}
 
 
 /**
@@ -147,6 +154,8 @@ a {
 
   &:hover {
     color: $link-hover-color;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease;
   }
 
   .social-media-list &:hover {
@@ -164,10 +173,10 @@ a {
  */
 blockquote {
   color: $brand-color;
-  border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.25);
   font-style: italic;
+  font-family: $p-font-family;
 
   > :last-child {
     margin-bottom: 0;

@@ -6,25 +6,25 @@ $purple:                #543864;
 $orange:                #ff6363;
 
 
-$custom:                #F49F0A;;
+$custom:                #5465FF;
 
-$custom-light:           #F8C162;
+$custom-light:           #8f9aff !default;
 
 $brand-color:           #999999 !default;
 $brand-color-light:     lighten($brand-color, 5%) !default;
 $brand-color-lightest:     lighten($brand-color, 15%) !default;
 $brand-color-dark:      darken($brand-color, 35%) !default;
 
-$site-title-color:      $brand-color-dark !default;
+$site-title-color:      $custom !default;
 
-$text-color:            #bbbbbb !default;
-$background-color:      #202040 !default;
+$text-color:            #c5c5c5 !default;
+$background-color:       #1f1f1f !default; 
 $background-color-light: lighten($background-color, 3.5%) !default;
 $background-color-lighter: lighten($background-color, 7%) !default;
 $background-color-lightest: lighten($background-color, 15%) !default;
 $code-background-color:  $background-color-lighter !default;
 
-$link-base-color:       $custom !default;
+$link-base-color:       $custom-light !default;
 $link-visited-color:    $link-base-color !default;
 $link-hover-color:      $text-color !default;
 
@@ -40,7 +40,7 @@ $table-border-color:    $border-color-01 !default;
 
 $header-color:          $yellow;
 
-
+// paars 171738 oranje F49F0A; #bbbbbb #E6AF2E 5465FF BACKGROUND #171738
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // List of tokens: https://github.com/rouge-ruby/rouge/wiki/List-of-tokens
 // Some colors come from Material Theme Darker:

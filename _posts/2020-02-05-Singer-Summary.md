@@ -1,8 +1,8 @@
 ---
 layout: post
 author: Koen
-category: Philosophy
-tags: Philosophy
+category: Filosofie
+tags: Filosofie
 title: "Book summary: Peter Singer's Famine, Affluence and Morality"
 teaser: "A short and concise summary of the essay's main premise, possible objections to it, and Singer's rebuttal."
 ---

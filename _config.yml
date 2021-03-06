@@ -3,7 +3,7 @@ author:
   name: Koen Raijer
   email: koenraijer@protonmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  👋 I'm a 22-year old fifth year medicine student from the Netherlands. I write about health tech, mental health and psychedelics research, data science, programming, and ethics. I like working out, playing music, reading books and getting sucked into internet deep dives.
+  👋 Hoi! Als geneeskundestudent ben ik de komende twee jaar nog druk aan de gang met coschappen lopen. In de tussentijd zal ik hier stukjes schrijven over mijn kijk op gezondheid, technologie en filosofie. Het is een work in progress, dus de precieze invulling van dit blog zal blijken! Heb je aanvullingen, ben je het niet met me eens of wil je gewoon hoi zeggen, let me know!
 
 show_excerpts: true # set to true to show excerpts on the homepage
 include: ['_tags']
