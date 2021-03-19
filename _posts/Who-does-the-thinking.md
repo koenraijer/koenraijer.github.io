@@ -61,3 +61,5 @@ Begin artikel met:
 Wat is bekend:
 
 Wat is nieuw?
+
+18. Allen Buchanan - Genetic enhancement, moetje tbv klimaatopwarming? (tegen warmere temp kunnen / meer voedselbronnen kunnen benutten) Kloof tussen arm/rijk? (genetically enhanced en non-genetically enhanced?)? Waar ligt de grens tussen genetic enhancemen.

@@ -1,0 +1,16 @@
+{% if page.url == "/" %}
+    {% capture words %}
+    {{ post.content | number_of_words | minus: 360}}
+    {% endcapture %}
+{% else %}
+    {% capture words %}
+    {{ page.content | number_of_words | minus: 360}}
+    {% endcapture %}
+{% endif %}
+
+{% if words contains '-' %}
+1 minuut
+{% else %}
+{{ words | plus: 360 | divided_by: 180 | append: ' minuten' }}
+{% endif %} leestijd
+

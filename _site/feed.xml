@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-06T14:37:42+01:00</updated><id>/feed.xml</id><title type="html">Koen Raijer</title><subtitle>👋 Hoi! Als geneeskundestudent ben ik de komende twee jaar nog druk aan de gang met coschappen lopen. In de tussentijd zal ik hier stukjes schrijven over mijn kijk op gezondheid, technologie en filosofie. Het is een work in progress, dus de precieze invulling van dit blog zal blijken! Heb je aanvullingen, ben je het niet met me eens of wil je gewoon hoi zeggen, let me know!
-</subtitle><author><name>Koen Raijer</name><email>koenraijer@protonmail.com</email></author><entry><title type="html">Arts en automatisering</title><link href="/gezondheid/2020/02/25/Valkuilen-digitalisering.html" rel="alternate" type="text/html" title="Arts en automatisering" /><published>2020-02-25T00:00:00+01:00</published><updated>2020-02-25T00:00:00+01:00</updated><id>/gezondheid/2020/02/25/Valkuilen-digitalisering</id><content type="html" xml:base="/gezondheid/2020/02/25/Valkuilen-digitalisering.html">&lt;p&gt;Ziekenhuissoftware doet steeds meer zelf. Erg handig voor artsen die moe worden van administratie, maar wat lastiger voor digibeten. Hoe zit het met coassistenten? Is automatisering eigenlijk goed als je nog arts moet wórden?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-19T20:01:28+01:00</updated><id>/feed.xml</id><title type="html">Koen Raijer</title><subtitle>Persoonlijke website en blog van Koen Raijer. Hier leer ik schrijvenderwijs meer over de toekomst van de gezondheidszorg, technologie en filosofie. 
+</subtitle><author><name>Koen Raijer</name><email>koenraijer@protonmail.com</email></author><entry><title type="html">Arts en automatisering</title><link href="/gezondheid/2021/02/25/Valkuilen-digitalisering.html" rel="alternate" type="text/html" title="Arts en automatisering" /><published>2021-02-25T00:00:00+01:00</published><updated>2021-02-25T00:00:00+01:00</updated><id>/gezondheid/2021/02/25/Valkuilen-digitalisering</id><content type="html" xml:base="/gezondheid/2021/02/25/Valkuilen-digitalisering.html">&lt;p&gt;Ziekenhuissoftware doet steeds meer zelf. Erg handig voor artsen die moe worden van administratie, maar wat lastiger voor digibeten. Hoe zit het met coassistenten? Is automatisering eigenlijk goed als je nog arts moet wórden?&lt;/p&gt;
 
 &lt;h3 id=&quot;administratie&quot;&gt;Administratie&lt;/h3&gt;
 &lt;p&gt;Veel artsen zitten meerdere uren per dag te typen. Blij worden ze daar niet van, maar zonder goede verslaglegging geen heldere communicatie naar collega’s, geen vergoeding vanuit de verzekeraar en geen bewijsmateriaal als er iets misgaat. Al dat getyp is niet leuk en kost bovendien een hoop geld. Een noodzakelijk kwaad om goede zorg te kunnen leveren, &lt;i&gt;toch&lt;/i&gt;?&lt;/p&gt;
@@ -28,14 +28,20 @@ Zo kunnen artsen zelf &lt;i&gt;standaardteksten&lt;/i&gt; aanmaken, een soort sj
     &lt;li&gt;
       &lt;p&gt;If you are able to prevent something bad from happening, without sacrificing anything of comparable moral importance, you ought to do it.&lt;/p&gt;
 
-      &lt;p&gt;&lt;i&gt;You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.&lt;/i&gt; 
- &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+      &lt;details&gt;
+ &lt;summary&gt;&lt;span class=&quot;information&quot;&gt;&lt;/span&gt;Expand&lt;/summary&gt;
+     &lt;p&gt;You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.&lt;/p&gt;
+ &lt;/details&gt;
+      &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;p&gt;We &lt;b&gt;are&lt;/b&gt; able to prevent the bad thing, without sacrificying anything of comparable moral importance or significance.&lt;/p&gt;
 
-      &lt;p&gt;&lt;i&gt;Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.&lt;/i&gt;
- &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+      &lt;details&gt;
+ &lt;summary&gt;&lt;span class=&quot;information&quot;&gt;&lt;/span&gt;Expand&lt;/summary&gt;
+     &lt;p&gt;Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.&lt;/p&gt;
+ &lt;/details&gt;
+      &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;p&gt;We ought to give to charity maximally, or at least way much more than we do now.

@@ -19,14 +19,19 @@ The essay was inspired by the famine of regufees that fled after the Bangladesh 
 
 2. If you are able to prevent something bad from happening, without sacrificing anything of comparable moral importance, you ought to do it. 
 
-    <i>You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.</i> 
-    <br><br>
+    <details>
+	<summary><span class="information"></span>Expand</summary>
+	    <p>You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.</p>
+    </details>
+    <br>
 
 3. We <b>are</b> able to prevent the bad thing, without sacrificying anything of comparable moral importance or significance.
 
-    <i>Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.</i>
-    <br><br>
-
+    <details>
+	<summary><span class="information"></span>Expand</summary>
+	    <p>Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.</p>
+    </details>
+    <br>
 4. We ought to give to charity maximally, or at least way much more than we do now.
 <br><br>
 </div>

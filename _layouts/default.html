@@ -7,12 +7,10 @@
 
     {%- include header.html -%}
 
-    
-    {% if page.url == "/" %}
-    {% include hero.html %}
-    {% endif %}
     <main class="page-content" aria-label="Content">
-
+      {% if page.url == "/" %}
+      {% include hero.html %}
+      {% endif %}
     <div class="anythingafterhero">
 
       <div class="wrapper">
@@ -23,6 +21,7 @@
       {%- include footer.html -%}
     </div>
     
+    {% include text-expand.html %}
     {% if page.url == "/" %}
     <script text="text/javascript">
       // Hide header-image if on homepage 

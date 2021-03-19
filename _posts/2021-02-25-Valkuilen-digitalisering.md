@@ -4,7 +4,6 @@ author: Koen
 category: Gezondheid
 tags: Gezondheid
 title: "Arts en automatisering"
-
 ---
 
 Ziekenhuissoftware doet steeds meer zelf. Erg handig voor artsen die moe worden van administratie, maar wat lastiger voor digibeten. Hoe zit het met coassistenten? Is automatisering eigenlijk goed als je nog arts moet wórden?

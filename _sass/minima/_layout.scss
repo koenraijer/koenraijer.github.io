@@ -17,7 +17,7 @@
   margin-bottom: 0;
   text-align: center;
   font-weight: bold;
-  color: $site-title-color;
+  color: $text-color;
 
   @include media-query($on-palm) {
     padding-right: 0px;
@@ -25,7 +25,11 @@
 
   &,
   &:visited {
-    color: $site-title-color;
+    color: $text-color;
+  }
+
+  &:hover {
+    color: $custom-light;
   }
 }
 
@@ -75,11 +79,19 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $custom-light;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
     font-size: 1.1rem;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease;
+    
+    &:hover {
+      color: $text-color;
+      transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease;
+    }
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -218,16 +230,16 @@
 .post-list {
   margin-left: 0;
   list-style: none;
-
+  position: relative;
   > li {
     margin-bottom: $spacing-unit;
   }
+
 }
 
 .post-meta {
   font-size: $base-font-size;
   color: $text-color !important;
-  font-weight: bold;
 }
 
 .post-meta a:hover {
@@ -236,14 +248,14 @@
 
 .post-link {
   display: block;
-  color: $custom;
+  color: $custom-light;
   @include relative-font-size(1.7);
   &:visited {
-    color: $custom;
+    color: $custom-light;
   }
 
   &:hover {
-    color: $custom-light;
+    color: $text-color;
   }
 }
 
@@ -375,7 +387,7 @@
 .hero {
   padding: 0 0 2rem;
   background: $background-color;
-  text-align: center;
+  text-align: left;
   color: $text-color;
   h1 {
     margin-bottom: 0;
@@ -392,7 +404,6 @@
 .header-title {
   font-size: 1.3rem;
   letter-spacing: -0.05em;
-  color: $text-color;
   font-family: $header-font-family;
   img {
     height: 1.5rem;
@@ -409,11 +420,14 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
   font-family: "Montserrat", $base-font-family;
-  font-weight: normal;
-  letter-spacing: -0.05em;
+  font-weight: bold;
+  letter-spacing: -0.03em;
   
+  &:hover {
+    color: $custom-light;
+  }
+
   img {
     height: 7rem;
     width: auto;
@@ -500,3 +514,77 @@
 .tag {
   color: $brand-color;
 }
+
+details {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.15s background linear;
+}
+
+summary {
+  list-style: none;
+  margin: 0.25em 0.25em 0.75em;
+  vertical-align: center;
+  background: transparent;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.information {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border: $text-color 2px solid;
+  border-radius: 1em;
+  margin: 0.1em 0.25em 0 0.1em;
+  top: 0.5em;
+  width: 23px;
+  height: 23px;
+}
+
+details .information::before {
+  position: absolute;
+  font-weight: bold;
+  content: '+';
+  top: -0.1em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+details[open] .information::before {
+  position: absolute;
+  content: '-';
+  top: -0.1em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+details p {
+  margin-left: 10.5px;
+  padding: 0.75em;
+  top: 0.5em;
+  background: $background-color-lighter;
+  position: relative;
+  border-radius: 0 7.5px 7.5px 7.5px;
+}
+
+details p::before {
+  content: "";
+  border-bottom: 12px solid $background-color-lighter;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  height: 0;
+  left: 0px;
+  position: absolute;
+  top: -12.5px;
+  width: 0;
+}
+

@@ -3,9 +3,10 @@ author:
   name: Koen Raijer
   email: koenraijer@protonmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  👋 Hoi! Als geneeskundestudent ben ik de komende twee jaar nog druk aan de gang met coschappen lopen. In de tussentijd zal ik hier stukjes schrijven over mijn kijk op gezondheid, technologie en filosofie. Het is een work in progress, dus de precieze invulling van dit blog zal blijken! Heb je aanvullingen, ben je het niet met me eens of wil je gewoon hoi zeggen, let me know!
+  Persoonlijke website en blog van Koen Raijer. Hier leer ik schrijvenderwijs meer over de toekomst van de gezondheidszorg, technologie en filosofie. 
+  
 
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: false # set to true to show excerpts on the homepage
 include: ['_tags']
 relative_permalinks: false
 
