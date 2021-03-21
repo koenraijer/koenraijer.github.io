@@ -34,13 +34,12 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-  
-  Meer over: {% for tag in page.tags %}
-          <a class="post-meta" href="/tags/{{ tag }}">{{ tag | downcase }}</a>{% if forloop.last %}{% else %},{% endif %}
-          {% endfor %}
 
-  <h2>Verder lezen</h2>
-  <div class="relatedPosts-parent">    
+  <p><b>Meer over:</b> {% for tag in page.tags %}
+          <a href="/tags/{{ tag }}">{{ tag | downcase }}</a>{% if forloop.last %}{% else %},{% endif %}
+          {% endfor %}
+  </p>
+  
     {% assign maxRelated = 4 %}
     {% assign minCommonTags =  1 %}
     {% assign maxRelatedCounter = 0 %}
@@ -61,19 +60,18 @@ layout: default
         {% endfor %}
     
         {% if sameTagCount >= minCommonTags %}
-          <div class="relatedPosts-child">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-          <p>{{ post.excerpt }}</p>
-          </div>
+          <ul>
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+
           {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
           {% if maxRelatedCounter >= maxRelated %}
             {% break %}
           {% endif %}
         {% endif %}
+          </ul>
     
       {% endfor %}
     
-    </div>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

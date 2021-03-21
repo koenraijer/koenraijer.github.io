@@ -280,10 +280,6 @@ table tr:first-child > th { font-weight: bold; }
 
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 16px; color: #c5c5c5 !important; }
-
-.post-meta a:hover { color: #bfbfbf !important; }
-
 .post-link { display: block; color: #8f9aff; font-size: 1.7rem; }
 
 .post-link:visited { color: #8f9aff; }
@@ -377,13 +373,13 @@ table tr:first-child > th { font-weight: bold; }
 
 .header-image-visible { visibility: visible; }
 
-.text-box { background: #282828; color: #c5c5c5; padding: 1.5rem 1.5rem calc(1.5rem - 15px); border-radius: 15px; overflow: auto; z-index: -100; }
+.text-box { background: #282828; color: #c5c5c5; padding: 1.5em; border-radius: 15px; overflow: auto; z-index: -100; }
 
 .text-box img { max-height: 8rem; width: auto; border-radius: 50%; float: right; margin: 0 0.25rem 15px; padding-left: 0.5rem; }
 
-.relatedPosts-parent { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto; grid-auto-flow: column; grid-gap: 1em; }
+.text-box ul, .text-box ol { margin-left: 30px; }
 
-.relatedPosts-child { background: #313131; border-radius: 25px; padding: 1.5rem 1.5rem calc(1.5rem - 15px); border-radius: 15px; }
+.relatedPosts-parent { background: #313131; }
 
 .img-404 { max-height: 8rem; width: auto; }
 
@@ -393,7 +389,7 @@ table tr:first-child > th { font-weight: bold; }
 
 details { position: relative; display: inline-block; cursor: pointer; border-radius: 3px; transition: 0.15s background linear; }
 
-summary { list-style: none; margin: 0.25em 0.25em 0.75em; vertical-align: center; background: transparent; }
+summary { list-style: none; margin: 0.25em 0 0.75em; vertical-align: center; background: transparent; }
 
 summary:focus { outline: none; }
 
@@ -405,8 +401,10 @@ details .information::before { position: absolute; font-weight: bold; content: '
 
 details[open] .information::before { position: absolute; content: '-'; top: -0.1em; left: 50%; transform: translate(-50%); }
 
-details p { margin-left: 10.5px; padding: 0.75em; top: 0.5em; background: #313131; position: relative; border-radius: 0 7.5px 7.5px 7.5px; }
+details p { margin-left: 0; padding: 0.75em; top: 0.5em; background: #313131; position: relative; border-radius: 0 7.5px 7.5px 7.5px; }
 
-details p::before { content: ""; border-bottom: 12px solid #313131; border-left: 8px solid transparent; border-right: 8px solid transparent; height: 0; left: 0px; position: absolute; top: -12.5px; width: 0; }
+details p::before { content: ""; border-bottom: 15px solid #313131; border-left: 0.75em solid transparent; border-right: 0.75em solid transparent; height: 0; left: 0px; position: absolute; top: -15px; width: 0; }
+
+.post .full-bleed { width: 100vw; margin-left: calc( (100vw - min(65ch, 100vw)) * (.2 / 1.2) * (-1) - 30px); }
 
 /*# sourceMappingURL=style.css.map */

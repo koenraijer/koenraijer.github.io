@@ -234,16 +234,6 @@
   > li {
     margin-bottom: $spacing-unit;
   }
-
-}
-
-.post-meta {
-  font-size: $base-font-size;
-  color: $text-color !important;
-}
-
-.post-meta a:hover {
-  color: $brand-color-lightest !important;
 }
 
 .post-link {
@@ -471,7 +461,7 @@
 .text-box {
   background: $background-color-light;
   color: $text-color;
-  padding: 1.5rem 1.5rem calc(1.5rem - 15px);
+  padding: 1.5em;
   border-radius: 15px;
   overflow: auto;
   z-index: -100;
@@ -483,21 +473,13 @@
     margin: 0 0.25rem 15px;
     padding-left: 0.5rem;
   }
+  ul, ol {
+    margin-left: $spacing-unit;
+  }
 }
 
 .relatedPosts-parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-auto-flow: column;
-    grid-gap: 1em;
-}
-
-.relatedPosts-child {
-    background: $code-background-color;
-    border-radius: 25px;
-    padding: 1.5rem 1.5rem calc(1.5rem - 15px);
-    border-radius: 15px;
+    background: $background-color-lighter;
 }
 
 .img-404 {
@@ -525,7 +507,7 @@ details {
 
 summary {
   list-style: none;
-  margin: 0.25em 0.25em 0.75em;
+  margin: 0.25em 0 0.75em;
   vertical-align: center;
   background: transparent;
 }
@@ -568,7 +550,7 @@ details[open] .information::before {
 }
 
 details p {
-  margin-left: 10.5px;
+  margin-left: 0;
   padding: 0.75em;
   top: 0.5em;
   background: $background-color-lighter;
@@ -578,13 +560,17 @@ details p {
 
 details p::before {
   content: "";
-  border-bottom: 12px solid $background-color-lighter;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+  border-bottom: 15px solid $background-color-lighter;
+  border-left: 0.75em solid transparent;
+  border-right: 0.75em solid transparent;
   height: 0;
   left: 0px;
   position: absolute;
-  top: -12.5px;
+  top: -15px;
   width: 0;
 }
 
+.post .full-bleed {
+  width: 100vw;
+  margin-left: calc( (100vw - min(65ch, 100vw)) * (.2 / 1.2) * (-1) - 30px);
+}
