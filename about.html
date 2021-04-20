@@ -1,26 +1,30 @@
 ---
-layout: page
-title: Over mij
-permalink: /over/
+layout: default
+title: Info
+permalink: /info/
 ---
-<div class="text-box">
-    <img src="/assets/images/profilepic.jpeg">
-    <p>👋 Hoi, ik ben Koen! Hier leer ik schrijvenderwijs meer over de toekomst van de gezondheidszorg, technologie en filosofie. Ik loop momenteel coschappen als onderdeel van mijn master geneeskunde aan de Universiteit Maastricht.</p>
+
+{% include hero.html %}
+
+<div class="wrapper">
+    <p>Geneeskundestudent sinds 2016. Enthousiast over psychiatrie en technologie. Groot voorstander van een pseudoniem internet. Stuur ouderwets een <a class="u-email" href="mailto:{{ site.author.email }}">mailtje</a>!</p>
+
+    <details>
+        <summary><span class="information"></span>Waarom in het Nederlands?</summary>
+            <p>Door mijn grotendeels Engelstalige mediadieet gaat mijn Nederlandse vocabulaire achteruit. Dat vind ik zonde. Wij Nederlanders mogen best wat tegenwicht bieden aan de opkomst van dat Angelsaksisch gebrabbel.</p>
+    </details>
+    <br>
+    <details>
+        <summary><span class="information"></span>Hoe is deze website gemaakt?</summary>
+            <p>Deze website gebruikt <a href="https://jekyllrb.com/">Jekyll</a>, een "static site generator" die makkelijk te leren is met een beetje voorkennis van HTML en CSS. Hosting is gratis via <a href="https://pages.github.com/">Github Pages</a>. Alleen de domeinnaam kost dus een paar euro per jaar!</p>
+    </details>  
+    <ul class="contact-list">
+        {% if site.author.email -%}
+          <br>
+          <li><a href="{{ 'feed.xml' | relative_url }}"> RSS Feed</a> ⬩ <a href="{{ 'sitemap.xml' | relative_url }}">Sitemap</a></li>
+        {%- endif %}
+      </ul> 
 </div>
-
-
-<h3>Waarom een blog?</h3>
-<p>
-    Ik hou al een hele tijd lijstjes met ideeën bij die ik verder wil uitdiepen, maar daar deed ik vervolgens niks mee. Dat is zonde, dus daar probeer ik nu verandering in te brengen! 
-</p>
-
-<h3>Waarom in het Nederlands?</h3>
-<p>
-    Daar heb ik even over na moeten denken. Engelstalig schrijven heeft natuurlijk een groter potentieel publiek, maar verzuipt tegelijkertijd in de concurrentie. De onderwerpen waar ik over zal schrijven zijn alleen weinig relevant voor niet-Nederlandse lezers. Omdat mijn mediadieet grotendeels Engelstalig is, denk ik dat dit blog een goede oefening voor me zal zijn.
-</p>
-<h3>Hoe ik deze website heb gemaakt</h3>
-
-<p>Deze website gebruikt <a href="https://jekyllrb.com/">Jekyll</a>, een "static site generator" die makkelijk te leren is met een beetje voorkennis van HTML en CSS. Hosting is gratis via <a href="https://pages.github.com/">Github Pages</a>. Alleen de domeinnaam kost dus een paar euro per jaar!</p>
 
 <!--
     <div class="text-box">

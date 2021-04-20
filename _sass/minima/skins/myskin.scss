@@ -9,7 +9,7 @@ $orange:                #ff6363;
 $custom:               #5465FF;
 
 
-$custom-light:           #8f9aff !default;
+$custom-light:           #FF4000 !default;
 
 $brand-color:           #999999 !default;
 $brand-color-light:     lighten($brand-color, 5%) !default;
@@ -18,8 +18,9 @@ $brand-color-dark:      darken($brand-color, 35%) !default;
 
 $site-title-color:      $custom !default;
 
-$text-color:            #c5c5c5 !default;
-$background-color:       #1f1f1f !default; 
+$text-color:             #1f1f1f !default;
+$background-color:       #d5d5d5 !default; 
+
 $background-color-light: lighten($background-color, 3.5%) !default;
 $background-color-lighter: lighten($background-color, 7%) !default;
 $background-color-lightest: lighten($background-color, 15%) !default;

@@ -1,9 +1,9 @@
-title: Koen Raijer
+title: Weetgraag
 author:
-  name: Koen Raijer
-  email: koenraijer@protonmail.com
+  name: Weetgraag
+  email: weetgraag@protonmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Persoonlijke website en blog van Koen Raijer. Hier leer ik schrijvenderwijs meer over de toekomst van de gezondheidszorg, technologie en filosofie. 
+  Schrijvenderwijs leren over futurisme, geneeskunde en wetenschap. 
 
 show_excerpts: false # set to true to show excerpts on the homepage
 include: ['_tags']
@@ -16,8 +16,8 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: koenraijer
-    linkedin: https://www.linkedin.com/in/koen-raijer-3495a7127/
+    # twitter: jekyll
+    # linkedin: jekyll
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -51,6 +51,7 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - about.html
+  - tags.html
 
 # Build settings
 theme: minima

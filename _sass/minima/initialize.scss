@@ -1,11 +1,18 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
+@font-face {
+  font-family: "color-emoji";
+  src: local("Apple Color Emoji"),
+       local("Segoe UI Emoji"), 
+       local("Segoe UI Symbol"),
+       local("Noto Color Emoji");
+}
 
-$base-font-family: "Merriweather", serif;
-$p-font-family: "Merriweather", serif;
-$header-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-family: "Merriweather", serif, color-emoji;
+$p-font-family: "Merriweather", serif, color-emoji;
+$header-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, color-emoji;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace, color-emoji;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
