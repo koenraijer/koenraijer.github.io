@@ -12,22 +12,18 @@
         {% if page.url == "/" %}
         <div style="padding-bottom: 2rem;">
           {% include hero.html %}
-          <div class="wrapper">
-          <p>Geneeskundestudent sinds 2016. Enthousiast over psychiatrie en technologie. Groot voorstander van een pseudoniem internet. Stuur ouderwets een <a class="u-email" href="mailto:{{ site.author.email }}">mailtje</a>!</p>
-          </div>
         </div>
         
         {% endif %}
-      </div>
       
-    <div class="anythingafterhero">
+      <div class="anythingafterhero">
 
-      <div class="wrapper">
         {{ content }}
+      </div>
       </div>
       </main>
 
-    </div>
+
     
     {% include text-expand.html %}
     {% if page.url == "/" or page.url == "/info/" %}

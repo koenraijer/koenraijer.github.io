@@ -170,7 +170,7 @@ a:hover { color: #1f1f1f; transition: all .4s ease-in-out; -webkit-transition: a
 .social-media-list a:hover .username, .pagination a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #999999; padding-left: 15px; font-size: 1.25rem; font-style: italic; font-family: "Merriweather", serif, color-emoji; }
+blockquote { color: #999999; padding-left: 15px; font-size: 1.1rem; font-style: italic; font-family: "Merriweather", serif, color-emoji; }
 
 blockquote > :last-child { margin-bottom: 0; }
 

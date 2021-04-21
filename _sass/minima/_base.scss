@@ -176,7 +176,7 @@ a {
 blockquote {
   color: $brand-color;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.25);
+  @include relative-font-size(1.1);
   font-style: italic;
   font-family: $p-font-family;
 

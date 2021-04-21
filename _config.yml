@@ -3,7 +3,7 @@ author:
   name: Weetgraag
   email: weetgraag@protonmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Schrijvenderwijs leren over futurisme, geneeskunde en wetenschap. 
+  Blog over futurisme, geneeskunde en wetenschap. 
 
 show_excerpts: false # set to true to show excerpts on the homepage
 include: ['_tags']
