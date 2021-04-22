@@ -516,7 +516,7 @@ summary:focus {
   outline: none;
 }
 
-summary::-webkit-details-marker {
+summary::marker {
   display: none;
 }
 
