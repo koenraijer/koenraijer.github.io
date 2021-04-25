@@ -66,3 +66,5 @@ minima:
 
 posts:
   permalink: /:title/
+
+baseurl: /weetgraag
