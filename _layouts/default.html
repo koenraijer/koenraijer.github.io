@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html data-theme="dark" lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
 
@@ -23,9 +23,6 @@
       </div>
       </main>
 
-
-    
-    {% include text-expand.html %}
     {% if page.url == "/" or page.url == "/info/" %}
     <script text="text/javascript">
       // Hide header-image if on homepage 
@@ -52,10 +49,10 @@
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
         })
-
     </script>
     {% endunless %}
-    <script data-goatcounter="https://koenraijer.goatcounter.com/count"
+
+    <script data-goatcounter="https://weetgraag.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
   </body>

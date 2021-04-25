@@ -65,4 +65,4 @@ minima:
   skin: myskin
 
 posts:
-  permalink: /:categories/:year/:month/:day/:title/
+  permalink: /:title/

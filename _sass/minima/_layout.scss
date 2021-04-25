@@ -22,14 +22,11 @@
   @include media-query($on-palm) {
     padding-right: 0px;
   }
-
-  &,
   &:visited {
     color: $text-color;
   }
-
   &:hover {
-    color: $custom-light;
+    color: $accent;
   }
 }
 
@@ -37,8 +34,6 @@
   position: absolute;
   top: 9px;
   right: $spacing-unit / 2;
-  background-color: $background-color;
-  border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
 
@@ -55,8 +50,16 @@
     text-align: center;
 
     > svg path {
-      fill: $border-color-03;
+      fill: $text-color;
     }
+
+    &:hover > svg path {
+      fill: $accent;
+      transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease;
+    }
+
+    
   }
 
   label[for="nav-trigger"] {
@@ -78,8 +81,26 @@
     padding-bottom: 5px;
   }
 
+  .trigger {
+    background: $background-color-lighter;
+    border-radius: 7.5px 0 7.5px 7.5px;
+    transform: translate(-7.5px, 10px);
+  }
+
+  .trigger::before {
+    content: "";
+    border-bottom: 15px solid $background-color-lighter;
+    border-left: 0.75em solid transparent;
+    border-right: 0.75em solid transparent;
+    height: 0;
+    right: 0px;
+    position: absolute;
+    top: -15px;
+    width: 0;
+  }  
+
   .page-link {
-    color: $custom-light;
+    color: $accent;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
@@ -116,6 +137,11 @@
 
     input ~ .trigger {
       display: block;
+    }
+
+    .trigger {
+      display: none;
+      background: transparent;
     }
 
     .page-link {
@@ -238,10 +264,10 @@
 
 .post-link {
   display: block;
-  color: $custom-light;
+  color: $accent;
   @include relative-font-size(1.7);
   &:visited {
-    color: $custom-light;
+    color: $accent;
   }
 
   &:hover {
@@ -273,8 +299,8 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h1, h2, h3 { margin-top: $spacing-unit * 2; color: $text-color;}
-  h4, h5, h6 { margin-top: $spacing-unit; color: $text-color;}
+  h1, h2, h3 { margin-top: $spacing-unit; color: $text-color;}
+  h4, h5, h6 { margin-top: $spacing-unit / 2; color: $text-color;}
 
   h2 {
     @include relative-font-size(1.75);
@@ -415,7 +441,7 @@
   letter-spacing: -0.03em;
   
   &:hover {
-    color: $custom-light;
+    color: $accent;
   }
 
   img {
@@ -459,7 +485,7 @@
 }
 
 .text-box {
-  background: $background-color-light;
+  background: $background-color-lighter;
   color: $text-color;
   padding: 1.5em;
   border-radius: 15px;
@@ -500,7 +526,6 @@
 details {
   position: relative;
   display: inline-block;
-  cursor: pointer;
   border-radius: 3px;
   transition: 0.15s background linear;
 }
@@ -509,6 +534,7 @@ summary {
   list-style: none;
   margin: 0.25em 0 0.75em;
   vertical-align: center;
+  cursor: pointer;
   background: transparent;
 }
 
@@ -523,7 +549,7 @@ summary::marker {
 .information {
   position: relative;
   display: inline-block;
-  background-color: transparent;
+  background-color: $background-color-light;
   border: $text-color 2px solid;
   border-radius: 1em;
   margin: 0.1em 0.25em 0 0.1em;
@@ -549,7 +575,7 @@ details[open] .information::before {
   transform: translate(-50%);
 }
 
-details p {
+.details-content {
   margin-left: 0;
   padding: 0.75em;
   top: 0.5em;
@@ -558,7 +584,7 @@ details p {
   border-radius: 0 7.5px 7.5px 7.5px;
 }
 
-details p::before {
+details .details-content::before {
   content: "";
   border-bottom: 15px solid $background-color-lighter;
   border-left: 0.75em solid transparent;
@@ -573,4 +599,43 @@ details p::before {
 .post .full-bleed {
   width: 100vw;
   margin-left: calc( (100vw - min(65ch, 100vw)) * (.2 / 1.2) * (-1) - 30px);
+}
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+  content: "Inhoudsopgave";
+  font-weight: bold;
+  top: 1.5em;
+  position: absolute;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+  list-style: decimal;
+}
+
+#markdown-toc {
+  border: 1px solid #aaa;
+  padding: 4.5em 1.5em 1.5em 3em;
+  list-style: decimal;
+  display: inline-block;
+  position: relative;
+  margin-left: 0;
+}
+
+// Images 
+img {
+  max-width: 80%;
+  vertical-align: middle;
+  margin: $spacing-unit * 1.5 auto auto;
+  display: block;
+}
+
+figcaption {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+  font-style: italic;
+  margin-bottom: $spacing-unit * 1.5;
 }

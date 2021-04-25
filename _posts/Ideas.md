@@ -63,3 +63,5 @@ Wat is bekend:
 Wat is nieuw?
 
 18. Allen Buchanan - Genetic enhancement, moetje tbv klimaatopwarming? (tegen warmere temp kunnen / meer voedselbronnen kunnen benutten) Kloof tussen arm/rijk? (genetically enhanced en non-genetically enhanced?)? Waar ligt de grens tussen genetic enhancemen.
+
+Zoek op: neural scaling laws and gpt-3 van Physics Meets ML op YT. 

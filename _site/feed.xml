@@ -1,5 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-22T09:05:31+02:00</updated><id>/feed.xml</id><title type="html">Weetgraag</title><subtitle>Blog over futurisme, geneeskunde en wetenschap. 
-</subtitle><author><name>Weetgraag</name><email>weetgraag@protonmail.com</email></author><entry><title type="html">All zwarte scenario’s are equal, but some zwarte scenario’s are more equal than others?</title><link href="/gezondheid/2021/04/01/GGZ-capaciteit.html" rel="alternate" type="text/html" title="All zwarte scenario’s are equal, but some zwarte scenario’s are more equal than others?" /><published>2021-04-01T00:00:00+02:00</published><updated>2021-04-01T00:00:00+02:00</updated><id>/gezondheid/2021/04/01/GGZ-capaciteit</id><content type="html" xml:base="/gezondheid/2021/04/01/GGZ-capaciteit.html">&lt;p&gt;In deze post trek ik een parallel tussen twee zwarte scenario’s: op de IC’s en in de jeugd-GGZ, die op heel andere manieren behandeld worden.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-25T21:55:19+02:00</updated><id>/feed.xml</id><title type="html">Weetgraag</title><subtitle>Blog over futurisme, geneeskunde en wetenschap. 
+</subtitle><author><name>Weetgraag</name><email>weetgraag@protonmail.com</email></author><entry><title type="html">GPT-3: veredelde chatbot én call to action.</title><link href="/gezondheid/2021/04/23/GPT3.html" rel="alternate" type="text/html" title="GPT-3: veredelde chatbot én call to action." /><published>2021-04-23T00:00:00+02:00</published><updated>2021-04-23T00:00:00+02:00</updated><id>/gezondheid/2021/04/23/GPT3</id><content type="html" xml:base="/gezondheid/2021/04/23/GPT3.html">&lt;h2 id=&quot;inleiding&quot;&gt;Inleiding&lt;/h2&gt;
+&lt;p&gt;Ik luisterde nietsvermoedend naar een &lt;a target=&quot;_blank&quot; href=&quot;https://open.spotify.com/episode/782joccUG2sI8i063zOwfT?si=Mek5vJXkTtefRstBGpYR0Q&quot;&gt;podcast&lt;/a&gt;, toen me verteld werd dat ik niet naar mensen had geluisterd, maar naar een AI: GPT-3. GPT-3 is een uit de kluiten gewassen chatbot: de grootste, de beste, de nieuwste. &lt;br /&gt;Ik voelde me bedreigd. Is de Singulariteit dan toch nabij? Wanneer gaat GPT-3 mijn baan overnemen? Er flitst een duister toekomstscenario voorbij waarin medische R2D2’s te midden van nasmeulende ruïnes met valse menselijkheid gevoelsreflecties rondstrooien. Niet-biologisch medische specialisten, noemen zij zichzelf. Chatbot vinden ze denigrerend, maar voor sommigen is het een geuzennaam. De verzekeraars vinden het allemaal best.&lt;/p&gt;
+
+&lt;p&gt;“Onzin”, zeiden de dokters in het panel van het “AI op de IC”-congres, wat ik laatst bezocht. “Een klinisch probleem is bijna niet in data uit te drukken; zieke en kwetsbare patiënten zullen nooit door een robot behandeld kunnen worden”, zei een van de panelleden.&lt;br /&gt; Hoewel ik denk dat daar een kern van waarheid in schuilt, is de kous daarmee niet af. Ik verwacht namelijk dat de transitie naar AI in de gezondheidszorg veel geleidelijker zal verlopen. Kunstmatige intelligentie zal ons eerst simpele taken uit handen nemen, die stukje bij beetje complexer worden. Dat geldt ook voor taalmodellen zoals GPT-3. Die zullen eerst hun sporen verdienen in gebieden zoals screening, monitoring of lichte triage, en veel later pas bij consultvoering of diagnostiek. Omdat niemand achter de feiten wil aanlopen, moeten we nu al op zoek gaan naar de vragen die we moeten stellen.&lt;/p&gt;
+
+&lt;p&gt;In deze post onderzoek ik wát GPT-3 precies is, hoe het werkt, wat het kan (en niet kan) en waar we het voor kunnen gebruiken, allemaal vanuit een medische invalshoek.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#inleiding&quot; id=&quot;markdown-toc-inleiding&quot;&gt;Inleiding&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#beschrijving-en-werking&quot; id=&quot;markdown-toc-beschrijving-en-werking&quot;&gt;Beschrijving en werking&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#het-algoritme-trainen&quot; id=&quot;markdown-toc-het-algoritme-trainen&quot;&gt;Het algoritme trainen&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#in-de-zorg&quot; id=&quot;markdown-toc-in-de-zorg&quot;&gt;In de zorg&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#in-het-wild&quot; id=&quot;markdown-toc-in-het-wild&quot;&gt;In het wild&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#de-scaling-hypothesis-en-de-türing-test&quot; id=&quot;markdown-toc-de-scaling-hypothesis-en-de-türing-test&quot;&gt;De Scaling Hypothesis en de Türing test&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusie&quot; id=&quot;markdown-toc-conclusie&quot;&gt;Conclusie&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bronnen&quot; id=&quot;markdown-toc-bronnen&quot;&gt;Bronnen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beschrijving-en-werking&quot;&gt;Beschrijving en werking&lt;/h2&gt;
+&lt;p&gt;GPT-3 is een deep learning algoritme dat getraind is met grote hoeveelheden tekst van het internet. Denk hierbij aan code, filmtranscripts, tweets en Wikipedia-artikelen. Daardoor leert het om te voorspellen wat het meest waarschijnlijke vervolg is van de input die je het voert. Het is een statistisch model, het kan dus niet denken en het heeft ook geen bewustzijn. GPT-3 is nadrukkelijk niet getraind om de waarheid te zeggen, het is getraind om het meest &lt;i&gt;plausibele&lt;/i&gt; antwoord te geven.&lt;/p&gt;
+
+&lt;p&gt;Deep learning algoritmes worden ook vaak neural networks genoemd. Alle deep learning valt onder machine learning, en alle machine learning valt weer onder artificial intelligence (maar niet andersom). Alle machine learning algoritmes moeten getraind worden voordat je ze kunt gebruiken. Wat GPT-3 &lt;i&gt;deep learning&lt;/i&gt; maakt is de wijze waarop de parameters geordend zijn: in 96 lagen. Elke laag bevat parameters waarmee “tussenuitkomsten” worden gegenereerd die de volgende laag weer als input kan gebruiken.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/gpt-3.png&quot; /&gt;
+  &lt;figcaption&gt;Visuele weergave van de architectuur van GPT-3. Bron: &lt;a href=&quot;https://www.youtube.com/watch?v=MQnJZuBGmSQ&amp;amp;t=325s&quot; target=&quot;_blank&quot;&gt;dit filmpje&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Om een deep learning model te trainen is veel computerkracht, tijd en geld nodig. GPT-3 heeft 4,6 miljoen euro gekost om te trainen. Die kosten groeien mee met het aantal parameters. Om efficiënt toepassingen te kunnen ontwikkelen voor GPT-3 maakt gebruikt men een techniek die &lt;i&gt;transfer learning&lt;/i&gt; heet. Daarbij worden bijna alle lagen gerecycled, ongeacht de toepassing. Om GPT-3 toe te spitsen, fine te tunen, voor specifieke toepassingen, worden de bovenste paar lagen gebruikt. Om de podcast uit de inleiding te genereren, hebben ze GPT-3 bijvoorbeeld gefinetuned door het een transcript van een andere aflevering te voeren. Transfer learning maakt GPT-3 ontzettend breed inzetbaar.&lt;/p&gt;
+
+&lt;h2 id=&quot;het-algoritme-trainen&quot;&gt;Het algoritme trainen&lt;/h2&gt;
+&lt;p&gt;Het trainen van een deep learning algoritme is gemakkelijk te begrijpen. Neem de zin: “mitochondria are the powerhouse of the cell”. De zin wordt opgebroken in woorden, en wordt vervolgens woord voor woord aan het algoritme gevoerd. Het algoritme probeert dan het volgende woord te voorspellen.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Voorbeeld&lt;/th&gt;
+&lt;th&gt;Input&lt;/th&gt;
+&lt;th&gt;Gegeven output&lt;/th&gt;
+&lt;th&gt;Correcte output&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;Mitochondria&lt;/th&gt;
+&lt;th&gt;apple&lt;/th&gt;
+&lt;th&gt;are&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;th&gt;Mitochondria are&lt;/th&gt;
+&lt;th&gt;oranges&lt;/th&gt;
+&lt;th&gt;the&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th&gt;3&lt;/th&gt;
+&lt;th&gt;Mitochondria are the&lt;/th&gt;
+&lt;th&gt;powerhouse&lt;/th&gt;
+&lt;th&gt;powerhouse&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th&gt;4&lt;/th&gt;
+&lt;th&gt;Mitochondria are the powerhouse&lt;/th&gt;
+&lt;th&gt;kind&lt;/th&gt;
+&lt;th&gt;of &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Bij de eerste input “Mitochondria” is de juiste output “are” maar omdat GPT-3 nooit biologie gehad heeft denkt het dat het antwoord “apple” is. Dat blijkt fout te zijn. Het algoritme berekent dan hoe ver “apple” van “are” afzat en stelt haar eigen parameters bij. Dat maakt het dus &lt;i&gt;zelflerend&lt;/i&gt;; het wordt bij elke input een klein beetje beter.&lt;/p&gt;
+
+&lt;p&gt;175 miljard parameters, die aanvankelijk uit willekeurige getallen bestaan, worden op deze wijze gevuld met informatie die wél hout snijdt.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-de-zorg&quot;&gt;In de zorg&lt;/h2&gt;
+&lt;p&gt;Ik hintte er eerder in de post al naar: GPT-3 is geen vervanging voor de dokter. OpenAI waarschuwt daar expliciet voor in hun GPT-3 richtlijnen. Vrij vertaald staat daar dat &lt;cite&gt;er in de gezondheidszorg veel op het spel staat; patiënten vertrouwen immers op de feitelijke juistheid van medische informatie. Fouten kunnen tot ernstige schade leiden.&lt;/cite&gt; Verstandige woorden, waar ik me volledig bij aansluit. Feitelijke juistheid is namelijk niet het sterkste punt van GPT-3.&lt;/p&gt;
+
+&lt;p&gt;Dat kunnen ze natuurlijk wel zeggen, maar toch konden 2 machine learning experts en een vaatchirurg het niet laten. Zij hebben de medische vaardigheden van GPT-3 getest op de volgende gebieden: het plannen van een doktersafspraak, controleren van dezorgverzekering, psychologische hulp bieden, medische documentatie, medische vragen en antwoorden en het stellen van diagnoses. De antwoorden zijn vooral heel komisch. Neem de volgende afbeelding als voorbeeld en lees vooral hun &lt;a href=&quot;https://www.nabla.com/blog/gpt-3/&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/assets/images/gpt-3-medical.jpg&quot; /&gt;
+  &lt;figcaption&gt;Voorbeeld van GPT-3 in de rol van psycholoog. Bron: &lt;a href=&quot;https://www.nabla.com/blog/gpt-3/&quot; target=&quot;_blank&quot;&gt;https://www.nabla.com/blog/gpt-3/&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;in-het-wild&quot;&gt;In het wild&lt;/h2&gt;
+&lt;p&gt;Enkele toepassingen van GPT-3 die me fascineren:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://open.spotify.com/episode/782joccUG2sI8i063zOwfT?si=Mek5vJXkTtefRstBGpYR0Q&quot;&gt;De podcastaflevering&lt;/a&gt; uit de inleiding van Podcast over Media, waarvan  de eerste 20 minuten door GPT-3 gegenereerd zijn. &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; Dit gratis &lt;a target=&quot;_blank&quot; href=&quot;https://play.aidungeon.io/&quot;&gt;text-based spel&lt;/a&gt; waar je letterlijk álle kanten mee opkan. Kies een setting of bedenk er zelf een: de mogelijkheden zijn eindeloos. Er is geen limiet aan wat je kunt doen of zeggen. 
+&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://debuild.co/&quot;&gt;Debuild.co&lt;/a&gt;, beschrijf in normaal Engels hoe je wil dat je website eruit ziet en deze app de benodigde code. Het demo-filmpje op de website zegt genoeg!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;de-scaling-hypothesis-en-de-türing-test&quot;&gt;De Scaling Hypothesis en de Türing test&lt;/h2&gt;
+&lt;p&gt;De grootte van taalmodellen neemt in rap tempo toe. In 2018 had het grootste model 355 miljoen parameters (BERT-Large), in 2019 waren dat er al 1.5 miljard (GPT-2) en in datzelfde jaar nog 11 miljard parameters (T5). GPT-3 zorgt opnieuw voor een factor 10 schaalvergroting met 175 miljard parameters. Tegelijkertijd is de architectuur van deze modellen niet wezenlijk veranderd. Er zijn alleen meer lagen, bredere lagen, en meer data om op te trainen. Wat levert al die extra capaciteit ons op?&lt;/p&gt;
+
+&lt;p&gt;De Scaling Hypothesis stelt dat de prestatie van neurale netwerken zoals GPT-3 zal blijven schalen met het aantal parameters, oftewel de grootte van het model. GPT-3 lijkt die hypothese opnieuw te bevestigen.&lt;/p&gt;
+
+&lt;p&gt;OpenAI, het bedrijf achter GPT-3, heeft de verschillende versies van hun model dezelfde opdracht gegeven: genereer artikelen van 200 woorden op basis van een titel en een subtitel. Vervolgens moeten mensen zeggen of ze denken dat het artikel door GPT-3 of door een mens is geschreven. De resultaten zijn verbluffend.&lt;/p&gt;
+
+&lt;p&gt;Artikelen die door het kleine broertje van GPT-3, met 125 miljoen parameters, geschreven zijn, worden in 76% als artificieel beoordeeld. Niet erg inspirerend dus. Maar toen de GPT-3 met 175 miljard parameters artikelen genereerde, werden die in 52% van de gevallen als artificeel beoordeeld. Met andere woorden: een verwaarloosbaar verschil ten opzichte van totale willekeur (50%). Met andere woorden: GPT-3 passeert soort van de Türing test! En dat alles dankzij een “simpele” schaalvergroting?&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&quot;The big story about GPT-3 is not that it is smart - it is dumb as a pile of rocks - but that piles of rocks can do many things we thought you needed to be smart for.&quot;
+– Anders Sandberg, Senior Research Fellow bij Oxford University&lt;/blockquote&gt;
+&lt;p&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusie&quot;&gt;Conclusie&lt;/h2&gt;
+&lt;p&gt;GPT-3 scoort slecht op waarheidsgehalte, coherentie en samenhang en is vatbaar voor suggestieve vragen: geen ideale combinatie voor een arts. Toch denk ik dat het belangrijk is om juist nu deze vragen te stellen, ook al lijkt het allemaal toekomstmuziek. GPT-3 illustreert namelijk mooi hoe ontzettend snel dit vakgebied zich ontwikkelt. Als de huidige trend van schaalvergroting zich voortzet bereiken we overstijgen we binnen een aantal jaar het geschatte aantal synapsen in het menselijk brein, dat geschat wordt tussen de 100 triljard en 1 quadriljoen. Het is goed denkbaar dat we een groot gedeelte van onze intelligentie aan ons sterk associatieve geheugen te danken hebben;  een gebied waarin GPT-&lt;b&gt;n&lt;/b&gt; nog wel eens erg goed in zou kunnen worden. Bovendien zijn significante verbeteringen denkbaar als OpenAI klanten toestaat software te bouwen die GPT-3 enigszins inperkt, daarmee het waarheidsgehalte en de coherentie ten goede komend.&lt;/p&gt;
+
+&lt;h2 id=&quot;bronnen&quot;&gt;Bronnen&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Chuan Li (03-06-2020). OpenAI’s GPT-3 Language Model: A Technical Overview. &lt;a href=&quot;https://lambdalabs.com/blog/demystifying-gpt-3/&quot; target=&quot;_blank&quot;&gt;Link&lt;/a&gt;. Bezocht op 20-04-2021. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Sandberg, Anders (@anderssandberg). “For me, the big story about #gpt3 is not that it is smart - it is dumb as a pile of rocks - but that piles of rocks can do many things we thought you needed to be smart for. Fake intelligence may be dominant over real intelligence in many domains.” 20-07-2020, 8:49 AM. &lt;a href=&quot;https://twitter.com/anderssandberg/status/1285104499531698176?s=20&quot; target=&quot;_blank&quot;&gt;Link&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Koen</name></author><category term="Gezondheid" /><category term="Gezondheid" /><category term="Technologie" /><summary type="html">Inleiding Ik luisterde nietsvermoedend naar een podcast, toen me verteld werd dat ik niet naar mensen had geluisterd, maar naar een AI: GPT-3. GPT-3 is een uit de kluiten gewassen chatbot: de grootste, de beste, de nieuwste. Ik voelde me bedreigd. Is de Singulariteit dan toch nabij? Wanneer gaat GPT-3 mijn baan overnemen? Er flitst een duister toekomstscenario voorbij waarin medische R2D2’s te midden van nasmeulende ruïnes met valse menselijkheid gevoelsreflecties rondstrooien. Niet-biologisch medische specialisten, noemen zij zichzelf. Chatbot vinden ze denigrerend, maar voor sommigen is het een geuzennaam. De verzekeraars vinden het allemaal best.</summary></entry><entry><title type="html">All zwarte scenario’s are equal, but some zwarte scenario’s are more equal than others?</title><link href="/gezondheid/2021/04/01/GGZ-capaciteit.html" rel="alternate" type="text/html" title="All zwarte scenario’s are equal, but some zwarte scenario’s are more equal than others?" /><published>2021-04-01T00:00:00+02:00</published><updated>2021-04-01T00:00:00+02:00</updated><id>/gezondheid/2021/04/01/GGZ-capaciteit</id><content type="html" xml:base="/gezondheid/2021/04/01/GGZ-capaciteit.html">&lt;p&gt;In deze post trek ik een parallel tussen twee zwarte scenario’s: op de IC’s en in de jeugd-GGZ, die op heel andere manieren behandeld worden.&lt;/p&gt;
 
 &lt;p&gt;De gemiddelde bezetting op crisisafdelingen in de geestelijke gezondheidszorg voor kinderen is 86 procent en sommige plekken zijn helemaal vol, aldus &lt;a href=&quot;https://www.medischcontact.nl/nieuws/laatste-nieuws/nieuwsartikel/psychische-zorg-jongeren-volledig-overgelopen-in-coronacrisis.htm&quot; target=&quot;_blank&quot;&gt;dit stuk&lt;/a&gt; uit Medisch Contact. De toestand is nijpend. Zo nijpend dat er keuzes gemaakt moeten worden. Dat blijkt uit een citaat van een psychiatrisch verpleegkundige uit een recent &lt;a href=&quot;https://www.nrc.nl/nieuws/2021/03/23/de-laatste-plek-is-s-ochtends-al-vergeven-a4036983 &quot; target=&quot;_blank&quot;&gt;NRC-artikel&lt;/a&gt;:&lt;/p&gt;
 
@@ -64,7 +191,9 @@ Zo kunnen artsen zelf &lt;i&gt;standaardteksten&lt;/i&gt; aanmaken, een soort sj
 
       &lt;details&gt;
  &lt;summary&gt;&lt;span class=&quot;information&quot;&gt;&lt;/span&gt;Expand&lt;/summary&gt;
+     &lt;div class=&quot;details-content&quot;&gt;
      &lt;p&gt;You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.&lt;/p&gt;
+     &lt;/div&gt;
  &lt;/details&gt;
       &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
     &lt;/li&gt;
@@ -73,7 +202,9 @@ Zo kunnen artsen zelf &lt;i&gt;standaardteksten&lt;/i&gt; aanmaken, een soort sj
 
       &lt;details&gt;
  &lt;summary&gt;&lt;span class=&quot;information&quot;&gt;&lt;/span&gt;Expand&lt;/summary&gt;
+     &lt;div class=&quot;details-content&quot;&gt;
      &lt;p&gt;Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.&lt;/p&gt;
+     &lt;/div&gt;
  &lt;/details&gt;
       &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
     &lt;/li&gt;

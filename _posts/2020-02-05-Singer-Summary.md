@@ -21,7 +21,9 @@ The essay was inspired by the famine of regufees that fled after the Bangladesh 
 
     <details>
 	<summary><span class="information"></span>Expand</summary>
+        <div class="details-content">
 	    <p>You must prevent something bad from happening, unless that would mean causing something comparably bad to happen, or if it would fail to cause something good of comparable weight.</p>
+        </div>
     </details>
     <br>
 
@@ -29,7 +31,9 @@ The essay was inspired by the famine of regufees that fled after the Bangladesh 
 
     <details>
 	<summary><span class="information"></span>Expand</summary>
+        <div class="details-content">
 	    <p>Lack of food, shelter and medicine can be solved by donating to charity. Many people in affluent Western nations would not need to sacrifice anything important. We can do without the latest electronics, expensive clothing or jewelry if that means preventing someone dying from starvation.</p>
+        </div>
     </details>
     <br>
 4. We ought to give to charity maximally, or at least way much more than we do now.
