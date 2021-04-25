@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.weetgraag.nl//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.weetgraag.nl//" rel="alternate" type="text/html" /><updated>2021-04-25T22:13:49+02:00</updated><id>https://www.weetgraag.nl//feed.xml</id><title type="html">Weetgraag</title><subtitle>Blog over futurisme, geneeskunde en wetenschap. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.weetgraag.nl//feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.weetgraag.nl//" rel="alternate" type="text/html" /><updated>2021-04-25T22:32:06+02:00</updated><id>https://www.weetgraag.nl//feed.xml</id><title type="html">Weetgraag</title><subtitle>Blog over futurisme, geneeskunde en wetenschap. 
 </subtitle><author><name>Weetgraag</name><email>weetgraag@protonmail.com</email></author><entry><title type="html">GPT-3: veredelde chatbot én call to action.</title><link href="https://www.weetgraag.nl//gezondheid/2021/04/23/GPT3.html" rel="alternate" type="text/html" title="GPT-3: veredelde chatbot én call to action." /><published>2021-04-23T00:00:00+02:00</published><updated>2021-04-23T00:00:00+02:00</updated><id>https://www.weetgraag.nl//gezondheid/2021/04/23/GPT3</id><content type="html" xml:base="https://www.weetgraag.nl//gezondheid/2021/04/23/GPT3.html">&lt;h2 id=&quot;inleiding&quot;&gt;Inleiding&lt;/h2&gt;
 &lt;p&gt;Ik luisterde nietsvermoedend naar een &lt;a target=&quot;_blank&quot; href=&quot;https://open.spotify.com/episode/782joccUG2sI8i063zOwfT?si=Mek5vJXkTtefRstBGpYR0Q&quot;&gt;podcast&lt;/a&gt;, toen me verteld werd dat ik niet naar mensen had geluisterd, maar naar een AI: GPT-3. GPT-3 is een uit de kluiten gewassen chatbot: de grootste, de beste, de nieuwste. &lt;br /&gt;Ik voelde me bedreigd. Is de Singulariteit dan toch nabij? Wanneer gaat GPT-3 mijn baan overnemen? Er flitst een duister toekomstscenario voorbij waarin medische R2D2’s te midden van nasmeulende ruïnes met valse menselijkheid gevoelsreflecties rondstrooien. Niet-biologisch medische specialisten, noemen zij zichzelf. Chatbot vinden ze denigrerend, maar voor sommigen is het een geuzennaam. De verzekeraars vinden het allemaal best.&lt;/p&gt;
 
@@ -22,9 +22,8 @@
 
 &lt;p&gt;Deep learning algoritmes worden ook vaak neural networks genoemd. Alle deep learning valt onder machine learning, en alle machine learning valt weer onder artificial intelligence (maar niet andersom). Alle machine learning algoritmes moeten getraind worden voordat je ze kunt gebruiken. Wat GPT-3 &lt;i&gt;deep learning&lt;/i&gt; maakt is de wijze waarop de parameters geordend zijn: in 96 lagen. Elke laag bevat parameters waarmee “tussenuitkomsten” worden gegenereerd die de volgende laag weer als input kan gebruiken.&lt;/p&gt;
 
-&lt;figure&gt;
-  ![Visuele weergave van de architectuur van GPT-3. Bron: &lt;a href=&quot;https://www.youtube.com/watch?v=MQnJZuBGmSQ&amp;amp;t=325s&quot; target=&quot;_blank&quot;&gt;dit filmpje&lt;/a&gt;][/assets/images/gpt-3.png]
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-23-GPT3/gpt-3.png&quot; alt=&quot;Voorbeeld van GPT-3 in de rol van psycholoog.&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Voorbeeld van GPT-3 in de rol van psycholoog. Bron: &lt;a href=&quot;https://www.nabla.com/blog/gpt-3/&quot; target=&quot;_blank&quot;&gt;https://www.nabla.com/blog/gpt-3/&lt;/a&gt;.&lt;/figcaption&gt;
 
 &lt;p&gt;Om een deep learning model te trainen is veel computerkracht, tijd en geld nodig. GPT-3 heeft 4,6 miljoen euro gekost om te trainen. Die kosten groeien mee met het aantal parameters. Om efficiënt toepassingen te kunnen ontwikkelen voor GPT-3 maakt gebruikt men een techniek die &lt;i&gt;transfer learning&lt;/i&gt; heet. Daarbij worden bijna alle lagen gerecycled, ongeacht de toepassing. Om GPT-3 toe te spitsen, fine te tunen, voor specifieke toepassingen, worden de bovenste paar lagen gebruikt. Om de podcast uit de inleiding te genereren, hebben ze GPT-3 bijvoorbeeld gefinetuned door het een transcript van een andere aflevering te voeren. Transfer learning maakt GPT-3 ontzettend breed inzetbaar.&lt;/p&gt;
 
@@ -77,10 +76,8 @@
 
 &lt;p&gt;Dat kunnen ze natuurlijk wel zeggen, maar toch konden 2 machine learning experts en een vaatchirurg het niet laten. Zij hebben de medische vaardigheden van GPT-3 getest op de volgende gebieden: het plannen van een doktersafspraak, controleren van dezorgverzekering, psychologische hulp bieden, medische documentatie, medische vragen en antwoorden en het stellen van diagnoses. De antwoorden zijn vooral heel komisch. Neem de volgende afbeelding als voorbeeld en lees vooral hun &lt;a href=&quot;https://www.nabla.com/blog/gpt-3/&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;/https://www.weetgraag.nl//assets/images/gpt-3-medical.jpg&quot; /&gt;
-  &lt;figcaption&gt;Voorbeeld van GPT-3 in de rol van psycholoog. Bron: &lt;a href=&quot;https://www.nabla.com/blog/gpt-3/&quot; target=&quot;_blank&quot;&gt;https://www.nabla.com/blog/gpt-3/&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-23-GPT3/gpt-3-medisch.jpg&quot; alt=&quot;Visuele weergave van de architectuur van GPT-3.&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Visuele weergave van de architectuur van GPT-3. Bron: &lt;a href=&quot;https://www.youtube.com/watch?v=MQnJZuBGmSQ&amp;amp;t=325s&quot; target=&quot;_blank&quot;&gt;dit filmpje&lt;/a&gt;.&lt;/figcaption&gt;
 
 &lt;h2 id=&quot;in-het-wild&quot;&gt;In het wild&lt;/h2&gt;
 &lt;p&gt;Enkele toepassingen van GPT-3 die me fascineren:&lt;/p&gt;
