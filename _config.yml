@@ -63,5 +63,4 @@ plugins:
 minima:
   skin: myskin
 
-posts:
-  permalink: /:title/
+permalink: /:title/
