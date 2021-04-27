@@ -302,7 +302,7 @@ table tr:first-child > th { font-weight: bold; }
 
 .post-list { margin-left: 0; list-style: none; position: relative; }
 
-.post-list > li { margin-bottom: 30px; background: #e7e7e7; padding: 15px; border-radius: 15px; }
+.post-list > li { margin-bottom: 30px; background: #e7e7e7; padding: 15px; border-radius: 15px; box-shadow: 0 0 10px 0.5px #d2d2d2, inset 0 0 0.5px 0 #d2d2d2; }
 
 .post-link { display: block; color: #FF4000; font-size: 1.7rem; }
 
