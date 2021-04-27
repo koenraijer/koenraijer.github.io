@@ -89,7 +89,6 @@
     width: 100vw;
     top: 0;
     right: 0;
-    z-index: -1;
     position: relative;
     .page-link {
       display: block;
@@ -109,10 +108,10 @@
   .trigger::after {
     position: absolute;
     content: '';
-    width: 20vw;
+    width: 5vw;
     height: 110vh;
     top: -10vh;
-    right: -20vw;
+    right: -5vw;
     background: linear-gradient(180deg, $background-color-dark 0,$background-color 80%,hsla(0,0%,100%,0));
   }
 
