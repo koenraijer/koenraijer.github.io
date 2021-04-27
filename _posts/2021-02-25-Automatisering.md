@@ -2,11 +2,11 @@
 layout: post
 author: Koen
 category: Gezondheid
-tags: Gezondheid
+tags: Gezondheid Technologie
 title: "Arts en automatisering"
 ---
 
-Ziekenhuissoftware doet steeds meer zelf. Erg handig voor artsen die moe worden van administratie, maar wat lastiger voor digibeten. Hoe zit het met coassistenten? Is automatisering eigenlijk goed als je nog arts moet wórden?
+Ziekenhuissoftware doet steeds meer zelf. Erg handig voor artsen die moe worden van administratie, maar wat lastiger voor digibeten. Hoe zit het met coassistenten? Is automatisering eigenlijk goed als je nog arts moet wórden?<!--more-->
 
 ### Administratie
 Veel artsen zitten meerdere uren per dag te typen. Blij worden ze daar niet van, maar zonder goede verslaglegging geen heldere communicatie naar collega's, geen vergoeding vanuit de verzekeraar en geen bewijsmateriaal als er iets misgaat. Al dat getyp is niet leuk en kost bovendien een hoop geld. Een noodzakelijk kwaad om goede zorg te kunnen leveren, <i>toch</i>?

@@ -5,7 +5,9 @@ author:
 description: > # this means to ignore newlines until "show_excerpts:"
   Blog over futurisme, geneeskunde en wetenschap. 
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
+excerpt_separator: <!--more-->
+
 include: ['_tags']
 
 # Minima date format

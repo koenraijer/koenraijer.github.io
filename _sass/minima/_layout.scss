@@ -5,7 +5,7 @@
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   background: $background-color-light;
-  z-index: 1;
+  z-index: 100 !important;
   color: $text-color;
   transition: 0.5s;
 
@@ -48,6 +48,8 @@
     line-height: 0;
     padding-top: 10px;
     text-align: center;
+    position: relative;
+    z-index: 100 !important;
 
     > svg path {
       fill: $text-color;
@@ -58,8 +60,6 @@
       transition: all .4s ease-in-out;
       -webkit-transition: all .4s ease;
     }
-
-    
   }
 
   label[for="nav-trigger"] {
@@ -74,35 +74,63 @@
   input ~ .trigger {
     clear: both;
     display: none;
+    transition: all 0.2s ease-in-out;
   }
 
   input:checked ~ .trigger {
     display: block;
     padding-bottom: 5px;
+    transition: all 0.2s ease-in-out;
   }
 
   .trigger {
-    background: $background-color-lighter;
-    border-radius: 7.5px 0 7.5px 7.5px;
-    transform: translate(-7.5px, 10px);
-  }
+    background: linear-gradient(200deg, $background-color-dark 0,$background-color 35%,hsla(0,0%,100%,0));
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    position: relative;
+    .page-link {
+      display: block;
+    }
+  } 
 
   .trigger::before {
-    content: "";
-    border-bottom: 15px solid $background-color-lighter;
-    border-left: 0.75em solid transparent;
-    border-right: 0.75em solid transparent;
-    height: 0;
-    right: 0px;
     position: absolute;
-    top: -15px;
-    width: 0;
-  }  
+    content: '';
+    width: 100%;
+    height: 20vh;
+    top: -20vh;
+    left: 0;
+    background: $background-color-dark;
+  }
+
+  .trigger::after {
+    position: absolute;
+    content: '';
+    width: 20vw;
+    height: 110vh;
+    top: -10vh;
+    right: -20vw;
+    background: linear-gradient(180deg, $background-color-dark 0,$background-color 80%,hsla(0,0%,100%,0));
+  }
+
+  .regular-menu {
+    .page-link {
+      display: none;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: auto;
+    }
+  }
 
   .page-link {
     color: $accent;
     line-height: $base-line-height;
-    display: block;
     padding: 5px 10px;
     font-size: 1.1rem;
     transition: all .4s ease-in-out;
@@ -136,23 +164,23 @@
     }
 
     input ~ .trigger {
-      display: block;
+      display: none;
     }
 
     .trigger {
       display: none;
       background: transparent;
-    }
-
-    .page-link {
-      display: inline;
-      padding: 0;
-
-      &:not(:last-child) {
-        margin-right: 20px;
+      .page-link {
+        display: none;
       }
-      margin-left: auto;
     }
+
+    .regular-menu {
+      .page-link {
+        display: inline;
+      }
+    }
+
   }
 }
 
@@ -259,6 +287,9 @@
   position: relative;
   > li {
     margin-bottom: $spacing-unit;
+    background: $background-color-lighter;
+    padding: $spacing-unit / 2;
+    border-radius: 15px;
   }
 }
 
@@ -473,7 +504,8 @@
   position: sticky;
   top: 0;
   transform-origin: top;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in;
+  background: $background-color-dark;
 }
 
 .header-image-hidden {
