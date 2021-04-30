@@ -56,9 +56,10 @@
         <div class="regular-menu"><a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Onderwerpen/">Onderwerpen</a></div>
 
         <div class="trigger">
-          <div class="trigger-menu"><a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Onderwerpen/">Onderwerpen</a></div>
+            <div class="trigger-wrapper">
+                <div class="trigger-menu"><a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Onderwerpen/">Onderwerpen</a></div>
+              </div>
         </div>
-
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -191,15 +192,15 @@
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > rt);
       logo.classList.toggle("header-image-visible", window.scrollY > rt);
-      })
+      }) 
 
      
 
-    </script>
-    
+    </script> 
+     
 
     
-
+     
     <script data-goatcounter="https://weetgraag.goatcounter.com/count"
         async src="http://gc.zgo.at/count.js"></script>
 
