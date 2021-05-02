@@ -3,7 +3,7 @@ author:
   name: Koen
   email: weetgraag@protonmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Blog over futurisme, geneeskunde en wetenschap. 
+  Blog over technologie, geneeskunde en wetenschap. 
 
 show_excerpts: true # set to true to show excerpts on the homepage
 excerpt_separator: <!--more-->
@@ -57,16 +57,9 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-sitemap
- - jekyll-responsive-image
+ - jekyll-minifier
 
 minima:
   skin: myskin
 
 permalink: /:title/
-
-responsive_image:
-  template: _includes/responsive-image.html
-  sizes:
-    - width: 320
-    - width: 480
-    - width: 800
