@@ -226,7 +226,7 @@ table th { background-color: #d5d5d5; }
 table tr:first-child > th { font-weight: bold; }
 
 /** Site header */
-.site-header { min-height: 55.95px; line-height: 57.6px; background: #dedede; z-index: 100 !important; color: #1f1f1f; transition: 0.5s; position: relative; }
+.site-header { min-height: 55.95px; line-height: 57.6px; background: #dedede; z-index: 100 !important; color: #1f1f1f; transition: 0.5s; position: sticky; }
 
 .site-title { margin-bottom: 0; text-align: center; font-weight: bold; color: #1f1f1f; }
 
@@ -387,7 +387,7 @@ table tr:first-child > th { font-weight: bold; }
 
 .hero-title span { display: inline-block; vertical-align: text-bottom; margin: auto; height: 1em; width: 1em; margin: 0 -1.25rem 0; transform: translateY(-0.125em); border-radius: 0.5em; background: #F49F0A80; }
 
-.sticky { position: sticky; top: 0; transform-origin: top; transition: 0.3s all ease-in; background: #d2d2d2; }
+.sticky { position: sticky; background: #d2d2d2; }
 
 .header-image-hidden { visibility: hidden; }
 
