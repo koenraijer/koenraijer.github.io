@@ -10,12 +10,8 @@ excerpt_separator: <!--more-->
 
 include: ['_tags']
 
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%d-%m-%Y"
-
-  # generate social links in footer
   social_links:
     # twitter: jekyll
     # linkedin: jekyll
@@ -61,8 +57,16 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-sitemap
+ - jekyll-responsive-image
 
 minima:
   skin: myskin
 
 permalink: /:title/
+
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800

@@ -25,9 +25,9 @@
 
     {% if page.url == "/" or page.url == "/Info/" %}
     <script text="text/javascript">
-           // Hide header-image if on homepage 
-           var logo = document.querySelector(".header-image");
-      logo.classList.add("header-image-hidden");
+      // Hide header-image if on homepage 
+      var logo = document.querySelector(".header-title");
+      logo.classList.add("hidden");
 
       // Determine offset of hero
       var rect = document.querySelector(".hero");
@@ -37,12 +37,11 @@
       window.addEventListener("scroll", function(){
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > rt);
-      logo.classList.toggle("header-image-visible", window.scrollY > rt);
+      logo.classList.toggle("visible", window.scrollY > rt);
       }) 
 
      
 
-    
     </script> 
     {% endif %} 
 
