@@ -278,11 +278,6 @@
     background: transparent;
     padding: $spacing-unit / 2;
     border-radius: 15px;
-
-    &:hover {
-      background: $background-color-dark;
-      box-shadow: 0 0 10px 0.5px $background-color-dark, inset 0 0 0.5px 0 $background-color-dark;
-    } 
   }
 }
 

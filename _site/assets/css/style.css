@@ -307,8 +307,6 @@ table tr:first-child > th { font-weight: bold; }
 
 .post-list > li { margin-bottom: 30px; background: transparent; padding: 15px; border-radius: 15px; }
 
-.post-list > li:hover { background: #eeeeee; box-shadow: 0 0 10px 0.5px #eeeeee, inset 0 0 0.5px 0 #eeeeee; }
-
 .post-link { display: block; font-size: 2rem; text-decoration: none; }
 
 /** Posts */
