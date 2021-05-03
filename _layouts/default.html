@@ -9,53 +9,36 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {% if page.url == "/" %}
         <div style="padding-bottom: 2rem;">
           {% include hero.html %}
         </div>
         
-        {% endif %}
-      
       <div class="anythingafterhero">
 
         {{ content }}
       </div>
       </div>
       </main>
-
-    {% if page.url == "/" or page.url == "/Info/" %}
+    
+    {% unless page.url == "/" %}
     <script text="text/javascript">
       // Hide header-image if on homepage 
-      var logo = document.querySelector(".header-title");
-      logo.classList.add("hidden");
-
-      // Determine offset of hero
-      var rect = document.querySelector(".hero");
-      var rt = window.scrollY + rect.getBoundingClientRect().bottom;
-          
-      // Add sticky to header on scroll and make header-image visible
-      window.addEventListener("scroll", function(){
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > rt);
-      logo.classList.toggle("visible", window.scrollY > rt);
-      }) 
-
-     
-
-    </script> 
-    {% endif %} 
-
-    {% unless page.url == "/" or page.url == "/info/" %}
-    <script text="text/javascript">
-      window.addEventListener("scroll", function(){
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-      })
+      var logo = document.querySelector(".anythingafterhero");
+      logo.classList.add("margins");
     </script>
     {% endunless %}
-     
+
+    <script src="/assets/js/search-script.js"></script>
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json'
+      })
+      </script>
     <script data-goatcounter="https://weetgraag.goatcounter.com/count"
-        async src="http://gc.zgo.at/count.js"></script>
+        async src="/assets/js/count.js">
+    </script>
 
   </body>
 

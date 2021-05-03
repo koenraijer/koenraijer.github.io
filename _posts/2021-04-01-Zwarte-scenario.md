@@ -3,7 +3,7 @@ layout: post
 author: Koen
 category: Gezondheid
 tags: Gezondheid
-title: "All zwarte scenario's are equal, but some zwarte scenario's are more equal than others?"
+title: "Rechtvaardigheid voor zwarte scenario's"
 ---
 In deze post trek ik een parallel tussen twee zwarte scenario's: op de IC's en in de jeugd-GGZ, die op heel andere manieren behandeld worden. 
 

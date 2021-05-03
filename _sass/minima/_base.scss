@@ -11,17 +11,17 @@ $brand-color-lightest:      lighten($brand-color, 15%) !default;
 $brand-color-dark:          darken($brand-color, 25%) !default;
 
 $text-color:             #1f1f1f !default;
-$background-color:       #d5d5d5 !default; 
+$background-color:       #fbfbfb !default; 
 
-$background-color-dark:   darken($background-color, 1%) !default;
+$background-color-dark:   darken($background-color, 5%) !default;
 $background-color-light: lighten($background-color, 3.5%) !default;
 $background-color-lighter: lighten($background-color, 7%) !default;
 $background-color-lightest: lighten($background-color, 15%) !default;
 $code-background-color:  $background-color-lighter !default;
 
-$link-base-color:       $accent !default;
+$link-base-color:       $text-color !default;
 $link-visited-color:    $link-base-color !default;
-$link-hover-color:      $text-color !default;
+$link-hover-color:      $accent !default;
 
 $border-color-01:       $brand-color-dark !default;
 $border-color-02:       $brand-color-light !default;
@@ -95,6 +95,7 @@ $table-border-color:    $border-color-01 !default;
   .il    { color: #F78C6C } // Literal.Number.Integer.Long
 }
 
+// Old background: d5d5d5
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
                                                                       LAYOUT
 ---------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -121,7 +122,7 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color-light;
+  background-color: $background-color-lightest;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -166,7 +167,10 @@ main {
  */
 img {
   max-width: 100%;
+  max-height: 85vh;
   vertical-align: middle;
+  margin: auto;
+  display: block;
 }
 
 
@@ -246,7 +250,7 @@ p {
  */
 a {
   color: $link-base-color;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease;
 
@@ -338,8 +342,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {

@@ -4,30 +4,12 @@
 .site-header {
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background: $background-color-light;
+  background: transparent;
   z-index: 100 !important;
   color: $text-color;
-  transition: 0.5s;
-
+  transition: 0.1s;
   // Positioning context for the mobile navigation icon
   position: relative;
-}
-
-.site-title {
-  margin-bottom: 0;
-  text-align: center;
-  font-weight: bold;
-  color: $text-color;
-
-  @include media-query($on-palm) {
-    padding-right: 0px;
-  }
-  &:visited {
-    color: $text-color;
-  }
-  &:hover {
-    color: $accent;
-  }
 }
 
 .site-nav {
@@ -126,7 +108,7 @@
   }
 
   .page-link {
-    color: $accent;
+    color: $text-color;
     line-height: $base-line-height;
     
     font-size: 1.1rem;
@@ -134,7 +116,7 @@
     -webkit-transition: all .4s ease;
     
     &:hover {
-      color: $text-color;
+      color: $accent;
       transition: all .4s ease-in-out;
       -webkit-transition: all .4s ease;
     }
@@ -181,6 +163,14 @@
   }
 }
 
+.anythingafterhero {
+  display: block;
+}
+
+.margins {
+  margin-left: $spacing-unit / 2;
+  margin-right: $spacing-unit / 2;
+}
 
 
 /**
@@ -284,24 +274,21 @@
   position: relative;
   > li {
     margin-bottom: $spacing-unit;
-    background: $background-color-lighter;
+    background: transparent;
     padding: $spacing-unit / 2;
     border-radius: 15px;
-    box-shadow: 0 0 10px 0.5px $background-color-dark, inset 0 0 0.5px 0 $background-color-dark;
+
+    &:hover {
+      background: $background-color-dark;
+      box-shadow: 0 0 10px 0.5px $background-color-dark, inset 0 0 0.5px 0 $background-color-dark;
+    } 
   }
 }
 
 .post-link {
   display: block;
-  color: $accent;
-  @include relative-font-size(1.7);
-  &:visited {
-    color: $accent;
-  }
-
-  &:hover {
-    color: $text-color;
-  }
+  @include relative-font-size(2);
+  text-decoration: none;
 }
 
 
@@ -319,13 +306,15 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1.15;
-
   @media screen and (min-width: $on-large) {
     @include relative-font-size(3);
   }
+
 }
 
 .post-content {
+  margin-left: $spacing-unit / 2;
+  margin-right: $spacing-unit / 2;
   margin-bottom: $spacing-unit;
 
   h1, h2, h3 { margin-top: $spacing-unit; color: $text-color;}
@@ -430,7 +419,7 @@
 
 // CUSTOM STYLES //
 .hero {
-  padding: 0;
+  padding: $spacing-unit / 2;
   background: $background-color-light;
   text-align: left;
   color: $text-color;
@@ -444,64 +433,27 @@
   }
 }
 
-
-
-.header-title {
-  font-size: 1.3rem;
-  letter-spacing: -0.05em;
-  font-family: $header-font-family;
-  z-index: 100 !important;
-}
-
 .hero-title {
-  font-family: "Montserrat", $base-font-family;
+  @include relative-font-size(3);
+  font-family: $header-font-family;
   font-weight: bold;
   letter-spacing: -0.03em;
+  text-decoration: none;
+  @media screen and (min-width: $on-medium) {
+    @include relative-font-size(4);
+  }
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(5);
+  }
   
   &:hover {
     color: $accent;
   }
 
-  img {
-    height: 7rem;
-    width: auto;
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transform-origin: 35.5% 38.75%;
-  }
-  img:hover {
-    -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
-  }
-
-  span {
-    display: inline-block;
-    vertical-align: text-bottom;
-    margin: auto;
-    height: 1em;
-    width: 1em;
-    margin: 0 -1.25rem 0;
-    transform: translateY(-0.125em);
-    border-radius: 0.5em;
-    background: #F49F0A80;
-  }
+  
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  transform-origin: top;
-  transition: 0.3s all ease-in;
-  background: $background-color-dark;
-}
 
-.hidden {
-  visibility: hidden;
-}
-
-.visible {
-  visibility: visible;
-}
 
 .text-box {
   background: $background-color-lighter;
@@ -647,8 +599,9 @@ details .details-content::before {
 
 
 figcaption {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
+  text-align: center;
   display: block;
   font-style: italic;
   margin-bottom: $spacing-unit * 1.5;

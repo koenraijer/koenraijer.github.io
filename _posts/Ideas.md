@@ -6,6 +6,10 @@ tags: Technology
 title: "Who's doing the thinking in healthcare?"
 teaser: "A synergy between Peter Singer's essay on philantropy and the minimalist movement."
 ---
+TO DO:
+- Add search
+- Add section menu that shifts on scroll
+- Add guides section? 
 
 VOEG TOE: CICERO VOORBEELD GEHEUGEN UIT GEHEUGENPALEIS
 

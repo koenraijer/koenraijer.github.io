@@ -58,6 +58,7 @@ plugins:
  - jekyll-seo-tag
  - jekyll-sitemap
  - jekyll-minifier
+ - jekyll-spaceship
 
 minima:
   skin: myskin
