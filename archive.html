@@ -1,0 +1,30 @@
+---
+layout: default
+title: Archief
+permalink: /Archief/
+---
+<div class="archive-grid">
+    <div class="search">
+        <h2>Zoek je iets?</h2>
+        <div class="search-line">
+            <input type="text" id="search-input" placeholder="Zoeken...">
+        </div>
+        <ul id="results-container"></ul>
+    </div>
+    <div class="tagcloud-child">
+        <h2>Alles op een rijtje</h2>
+        {% include tagcloud.html %}
+    </div>
+    <div class="archive-child">
+        <h1 class="post-title">Archief</h1>
+        <ul>
+            {% for post in site.posts %}
+            <li>{{ post.date | date: "%d-%m-%Y" }} | <a href="{{ post.url }}">{{ post.title }}</a><br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+

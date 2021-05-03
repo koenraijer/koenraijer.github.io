@@ -59,16 +59,13 @@
         </label>
 
         <div class="regular-menu">
-<a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Onderwerpen/">Onderwerpen</a><div class="page-link">
-            <input type="text" id="search-input" placeholder="Search blog posts..">
-            <ul id="results-container"></ul>
-          </div>
-      </div>
+<a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Archief/">Archief</a>
+</div>
 
         <div class="trigger">
             <div class="trigger-wrapper">
                 <div class="trigger-menu">
-<a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Onderwerpen/">Onderwerpen</a>
+<a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Archief/">Archief</a>
 </div>
               </div>
         </div>
@@ -88,31 +85,6 @@
 
           <div class="home">
 <ul class="post-list">
-<li>
-          <span class="post-meta">
-            
-            2
-            mei,
-                
-  
-            2021
-            
-            
-            <span class="reading-time">⬩
-
-
-4 minuten
- leestijd
-
-</span></span>
-          <h2>
-            <a class="post-link" href="/Scaling-hypothesis/">
-              Scaling hypothesis
-            </a>
-          </h2>
-<p></p>
-<p>Tijdens het schrijven van mijn post over GPT-3, raakte ik gefascineerd door de Scaling Hypothesis. Die stelt dat de prestaties van neurale netwerken zal blijven stijgen met de grootte van het model. Dat riep veel vragen op. Is dat echt zo? Wil dat zeggen dat steeds grotere modellen ook steeds dichter bij artificial general intelligence komen? Of zit er toch een plafond aan, en blijft de “soort” intelligentie van neurale netwerken beperkt?</p>
-</li>
 <li>
           <span class="post-meta">
             
@@ -231,7 +203,9 @@
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '/search.json'
+        json: '/search.json',
+        fuzzy: true,
+        limit: 10
       })
       </script>
     <script data-goatcounter="https://weetgraag.goatcounter.com/count" async src="/assets/js/count.js">

@@ -3,6 +3,7 @@
  */
 .site-header {
   min-height: $spacing-unit * 1.865;
+  max-height: 7.5vh;
   line-height: $base-line-height * $base-font-size * 2.25;
   background: transparent;
   z-index: 100 !important;
@@ -299,6 +300,8 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  margin-left: $spacing-unit / 2;
+  margin-right: $spacing-unit / 2;
 }
 
 .post-title,
@@ -605,4 +608,66 @@ figcaption {
   display: block;
   font-style: italic;
   margin-bottom: $spacing-unit * 1.5;
+}
+
+// Search
+
+.search {
+  width: 100%;
+}
+
+#search-input {
+  border: none;
+  font-family: $p-font-family;
+  font-size: 1em;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-line {
+  padding-left: 1.5em;
+  width: calc(100% - 1em);
+  position: relative;
+  padding-bottom: $spacing-unit;
+}
+
+.search-line::before {
+  position: absolute;
+  content: '🔎';
+  height: 1em;
+  width: 1em;
+  left: 0;
+  top: 0;
+}
+
+#results-container {
+  display: fixed;
+  background: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.icon {
+  display: inline-block;
+  height: 1em;
+}
+
+// ARCHIVE
+.archive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  padding-bottom: $spacing-unit;
+}
+
+.tagcloud-child { 
+  padding-bottom: $spacing-unit;
+}
+.archive-child {
+  grid-row: 2/3;
+  grid-column: 1/3;
 }
