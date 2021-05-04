@@ -9,9 +9,8 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div style="padding-bottom: 2rem;">
+        
           {% include hero.html %}
-        </div>
         
       <div class="anythingafterhero">
 
@@ -20,13 +19,13 @@
       </div>
       </main>
     
-    {% unless page.url == "/" %}
+    {% if page.url == "/Info/" %}
     <script text="text/javascript">
       // Hide header-image if on homepage 
       var logo = document.querySelector(".anythingafterhero");
       logo.classList.add("margins");
     </script>
-    {% endunless %}
+    {% endif %}
 
     <script src="/assets/js/search-script.js"></script>
     <script>
