@@ -8,8 +8,11 @@ teaser: "A synergy between Peter Singer's essay on philantropy and the minimalis
 ---
 TO DO:
 - Add section menu that shifts on scroll
-- Clean up citations / recommended 
+- Clean up citations recommende
 PM Add guides section
+
+Done:
+- Added sidenotes in the margin
 
 VOEG TOE: CICERO VOORBEELD GEHEUGEN UIT GEHEUGENPALEIS
 

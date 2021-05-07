@@ -20,6 +20,7 @@
 {"@type":"WebSite","headline":"Weetgraag","url":"/","author":{"@type":"Person","name":"Koen"},"description":"Blog over technologie, geneeskunde en wetenschap.","name":"Weetgraag","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
@@ -34,19 +35,9 @@
 
 
 </head>
-<script>
-  if (theme === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	sessionStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.documentElement.setAttribute('data-theme', 'light');
-	sessionStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
-</script>
 <body>
-<header class="site-header">
+
+    <main class="page-content" aria-label="Content"><header class="site-header">
 
   <div class="wrapper"><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger">
@@ -63,22 +54,23 @@
 </div>
 
         <div class="trigger">
-            <div class="trigger-wrapper">
-                <div class="trigger-menu">
+              <div class="trigger-menu">
 <a class="page-link" href="/Info/">Info</a><a class="page-link" href="/Archief/">Archief</a>
 </div>
-              </div>
         </div>
       </nav></div>
 </header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
+<div class="wrapper">
+
           <div class="hero">
     <h1><a class="hero-title post-title" rel="author" href="/">Weetgraag</a></h1>
-      <h2>✍️ Blog over technologie, geneeskunde en wetenschap. 
-</h2>
+      <h2>[w<span style="text-decoration: underline;">ee</span>t·graag] - <b>bnw</b>. (...grager, -st), gaarne studeerende; de weetgrage jeugd.</h2>
+      
+        <div class="text-box">👋 Hoi, ik ben Koen, hier duik ik in allerlei onderwerpen en schrijf erover. Een blog dus; over wetenschap, technologie, geneeskunde, filosofie en futurisme. <a href="/info/">Lees meer...</a>
 </div>
+      
+  </div>
+  <hr>
         
       <div class="anythingafterhero">
 
@@ -107,7 +99,7 @@
             </a>
           </h2>
 <p></p>
-<p>Ik luisterde nietsvermoedend naar een <a target="_blank" href="https://open.spotify.com/episode/782joccUG2sI8i063zOwfT?si=Mek5vJXkTtefRstBGpYR0Q">podcast</a> die door een computer gegenereerd bleek te zijn en ik voelde me bedreigd. De boosdoener is GPT-3, een uit de kluiten gewassen chatbot: de grootste, de beste, de nieuwste. Een neural network, een AI, een deep learning algoritme. Grote woorden.</p>
+<p>Ik luisterde nietsvermoedend naar een <a target="_blank" rel="noopener" href="https://open.spotify.com/episode/782joccUG2sI8i063zOwfT?si=Mek5vJXkTtefRstBGpYR0Q">podcast</a> die door een computer gegenereerd bleek te zijn en ik voelde me bedreigd. De boosdoener is GPT-3, een uit de kluiten gewassen chatbot: de grootste, de beste, de nieuwste. Een neural network, een AI, een deep learning algoritme. Grote woorden.</p>
 </li>
 <li>
           <span class="post-meta">
@@ -134,7 +126,7 @@
 <p></p>
 <p>In deze post trek ik een parallel tussen twee zwarte scenario’s: op de IC’s en in de jeugd-GGZ, die op heel andere manieren behandeld worden.</p>
 
-<p>De gemiddelde bezetting op crisisafdelingen in de geestelijke gezondheidszorg voor kinderen is 86 procent en sommige plekken zijn helemaal vol, aldus <a href="https://www.medischcontact.nl/nieuws/laatste-nieuws/nieuwsartikel/psychische-zorg-jongeren-volledig-overgelopen-in-coronacrisis.htm" target="_blank">dit stuk</a> uit Medisch Contact. De toestand is nijpend. Zo nijpend dat er keuzes gemaakt moeten worden.</p>
+<p>De gemiddelde bezetting op crisisafdelingen in de geestelijke gezondheidszorg voor kinderen is 86 procent en sommige plekken zijn helemaal vol, aldus <a href="https://www.medischcontact.nl/nieuws/laatste-nieuws/nieuwsartikel/psychische-zorg-jongeren-volledig-overgelopen-in-coronacrisis.htm" target="_blank" rel="noopener">dit stuk</a> uit Medisch Contact. De toestand is nijpend. Zo nijpend dat er keuzes gemaakt moeten worden.</p>
 </li>
 <li>
           <span class="post-meta">
@@ -184,7 +176,7 @@
             </a>
           </h2>
 <p></p>
-<p>This is my summary of Peter Singer’s 1971 essay; Famine, Affluence and Morality. It has brought forth movements like <a target="_blank" href="https://www.effectivealtruism.org/">Effective Altruism</a> and is widely regarded as an important piece of Western ethical thinking. You can read the original essay <a target="_blank" href="https://personal.lse.ac.uk/ROBERT49/teaching/mm/articles/Singer_1972Famine.pdf">here</a>.</p>
+<p>This is my summary of Peter Singer’s 1971 essay; Famine, Affluence and Morality. It has brought forth movements like <a target="_blank" rel="noopener" href="https://www.effectivealtruism.org/">Effective Altruism</a> and is widely regarded as an important piece of Western ethical thinking. Read <a target="_blank" rel="noopener" href="https://personal.lse.ac.uk/ROBERT49/teaching/mm/articles/Singer_1972Famine.pdf">Famine, Affluence and Morality</a>.</p>
 </li>
 </ul>
   
@@ -194,8 +186,6 @@
       </div>
       </div>
       </main>
-    
-    
 
     <script src="/assets/js/search-script.js"></script>
     <script>

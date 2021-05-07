@@ -5,9 +5,8 @@
 
   <body>
 
-    {%- include header.html -%}
-
     <main class="page-content" aria-label="Content">
+      {%- include header.html -%}
       <div class="wrapper">
 
           {% include hero.html %}
@@ -18,14 +17,6 @@
       </div>
       </div>
       </main>
-    
-    {% if page.url == "/Info/" %}
-    <script text="text/javascript">
-      // Hide header-image if on homepage 
-      var logo = document.querySelector(".anythingafterhero");
-      logo.classList.add("margins");
-    </script>
-    {% endif %}
 
     <script src="/assets/js/search-script.js"></script>
     <script>

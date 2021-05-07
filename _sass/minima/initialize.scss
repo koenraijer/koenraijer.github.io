@@ -71,6 +71,7 @@ $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.75 !default;
+$short-line-height: 1.75 * 0.875 !default;
 
 $spacing-unit:     30px !default;
 
@@ -108,5 +109,5 @@ $on-large:         $on-laptop !default;
 // Import pre-styling-overrides hook and style-partials.
 @import
   "minima/base",             // Defines element resets.
-  "minima/layout"           // Defines structure and style based on CSS selectors.
+  "minima/layout"            // Defines structure and style based on CSS selectors.
 ;
