@@ -336,9 +336,8 @@
 }
 
 .text-box {
-  background: $background-color-dark;
-  color: $text-color;
-  padding: 1.5em;
+  background: $accent-color-light;
+  padding: $spacing-unit / 2;
   margin-bottom: $spacing-unit;
   z-index: -100;
   img {
@@ -396,7 +395,7 @@
   border: 1px solid #aaa;
   padding: 3.5em 1em 1em 2em;
   @media screen and (min-width: $on-medium) {
-    padding: 4.5em 1.5em 1.5em 3em;
+    padding: 4.5em 3em 1.5em 3em;
   }
   list-style: decimal;
   display: inline-block;

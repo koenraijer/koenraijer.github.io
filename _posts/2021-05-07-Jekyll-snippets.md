@@ -1,11 +1,11 @@
 ---
 layout: post
 author: Koen
-category: Technologie
-tags: Technologie
-title: "Jekyll code snippet collection"
+category: Programmeren
+tags: Programmeren Jekyll
+title: "Jekyll snippet collection"
 ---
-This posts includes code snippets to create the following elements: a tagcloud, tagpages, reading time, related posts and a simple archive. None of these require any plugins and all of them work on Github Pages. 
+This post is a collection of code snippets I've sourced from around the internet and flavoured to my liking or to make them work. It currently includes the following: a tagcloud, tagpages, reading time, related posts and a simple archive. None of these require any plugins and all of them work on Github Pages. Post will be updated as I find and implement new features. 
 <!--more-->
 
 

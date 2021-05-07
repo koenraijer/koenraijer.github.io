@@ -7,9 +7,10 @@ title: "Who's doing the thinking in healthcare?"
 teaser: "A synergy between Peter Singer's essay on philantropy and the minimalist movement."
 ---
 TO DO:
-- Add section menu that shifts on scroll
-- Clean up citations recommende
-PM Add guides section
+- Improve recommended section
+- Add to top arrow
+- Add emoji / slogan to hero. (optionally, "sidenote" to reveal weetgraag definition)
+PM Add guides section, section menu that shifts on scroll.
 
 Done:
 - Added sidenotes in the margin

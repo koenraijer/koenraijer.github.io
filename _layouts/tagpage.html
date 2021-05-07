@@ -2,7 +2,14 @@
 layout: default
 ---
 
-<h1>Alles over {{ page.title | downcase}}</h1>
+<h1>Alles over 
+    {% if page.title == "Jekyll" %}
+    {{ page.title | capitalize }}
+    {% else %}
+    {{ page.title | downcase}}
+    {% endif %}
+</h1>
+
 <ul>
 {% for post in site.tags[page.tag] %}
 <li>{{ post.date | date: "%d-%m-%Y" }} | <a href="{{ post.url }}">{{ post.title }}</a><br>

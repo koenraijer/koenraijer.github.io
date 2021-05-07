@@ -36,7 +36,7 @@ layout: default
 
     <hr>
     <p><b>Meer over:</b> {% for tag in page.tags %}
-      <a href="/Onderwerpen/{{ tag }}">{{ tag | downcase }}</a>{% if forloop.last %}{% else %},{% endif %}
+      <code><a href="/Onderwerpen/{{ tag }}">{{ tag | downcase }}</a></code>&nbsp;
       {% endfor %}
 </p>
 

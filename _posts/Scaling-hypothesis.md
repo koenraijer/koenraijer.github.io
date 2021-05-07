@@ -54,11 +54,12 @@ Van eerdere generaties modellen weten we bovendien dat architectuur absoluut een
        class="margin-toggle"/>
 <span class="sidenote">Een subtype recurrent neural network. LSTM staat voor Long short-term memory.</span> als functie van het aantal tokens, asymptotisch af, totdat de lijn nagenoeg vlak is en er geen prestatieverbetering meer optreedt. Een groter model presteert dan wel beter, maar investeren in een verbeterde architectuur is op dat punt een slimmere keuze. 
 
-Want die lichte afbuiging die GPT-3 (de gele lijn) laat zien, weg van de trendlijn? Is het een artefact, of een daadwerkelijke afvlakking? En is dat een toevalligheid, of toch het begin van de bottleneck van transformer modellen? Het blijft gissen. Dit zou natuurlijk best een klein stukje kunnen zijn van een veel grotere asymptotische curve. 
+Want die lichte afbuiging die GPT-3 (de gele lijn) laat zien, weg van de trendlijn? Is het een artefact, of een daadwerkelijke afvlakking? En is dat een toevalligheid, of toch het begin van de bottleneck van transformer modellen? Dit zou natuurlijk best een klein stukje kunnen zijn van een veel grotere asymptotische curve. Het blijft gissen. 
 
 
 ## Hoe belangrijk is associatief geheugen?
-Bovendien is het belangrijk om na te denken over hetgeen we eigenlijk meten. Wat ik in deze post telkens prestatie noem, is eigenlijk <i>test loss</i>. Test loss is een maat die het verschil meet tussen de output die mijn model genereert, en de correcte output. Hoe kleiner het verschil, hoe accurater het model is, in het voorspellen wat het correcte antwoord is. Maar die accuraatheid kan slechts zo goed worden als die van mijn dataset. Als we die dataset van internet halen, zoals bij GPT-3 het geval was, kunnen we daar dus niet zonder meer vanuit gaan.      
+Bovendien is het belangrijk om na te denken over wát ze eigenlijk meten als ik het over "prestatie" heb. Eigenlijk meten ze de <i>test loss</i>. Test loss is een maat die het verschil meet tussen de output die mijn model genereert, en de correcte output. Hoe kleiner het verschil, hoe accurater het model is, in het voorspellen wat het correcte antwoord is. Maar die accuraatheid kan slechts zo goed worden als de juistheid van mijn dataset. Als we die dataset van internet halen, zoals bij GPT-3 het geval was, kunnen we daar dus niet zonder meer vanuit gaan. 
+Neurale netwerken,
 Ik heb een idee. 
 
 Associatief geheugen is zowel een eigenschap van de huidige generatie neurale netwerken, als van ons brein. 
@@ -67,4 +68,4 @@ Neurale netwerken zijn niet consistent, ze geven niet altijd hetzelfde antwoord,
 
 Hoeveel van menselijke intelligentie bestaat uit associatief geheugen? Hoe ver kun je daarmee komen? 
 
-{{site.baseurl}}
+Judea Pearl: a machine can only fake the Türing Test if it is real. Causal models need to represent the assumed workings of reality virtually, like we do. We have a model of the body for example, and we can imagine tweaking one knob, say blood pressure, to see what happens. 

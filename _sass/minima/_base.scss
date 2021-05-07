@@ -3,7 +3,8 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------*/
 @charset "utf-8";
 
-$accent:                  #FF4000 !default;
+$accent:                  #A3320B !default;
+$accent-color-light:      lighten($accent, 55%) !default;
 
 $brand-color:             #999999 !default;
 $brand-color-light:         lighten($brand-color, 5%) !default;
@@ -33,7 +34,7 @@ $table-header-bg-color: lighten($background-color, 10%) !default;
 $table-header-border:   lighten($background-color, 21%) !default;
 $table-border-color:    $border-color-01 !default;
 
-// Old background: d5d5d5
+// Old background: d5d5d5, old accent: #ff4000
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
                                                                       LAYOUT
 ---------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -466,7 +467,7 @@ details .details-content::before {
   content: counter(sidenote-counter);
   font-size: 1rem;
   top: -0.5rem;
-  left: 0;
+  left: 0.15rem;
 }
 
 .sidenote:before {

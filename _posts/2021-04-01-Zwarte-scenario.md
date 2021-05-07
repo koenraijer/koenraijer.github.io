@@ -5,7 +5,7 @@ category: Gezondheid
 tags: Gezondheid
 title: "Rechtvaardigheid voor zwarte scenario's"
 ---
-In deze post trek ik een parallel tussen twee zwarte scenario's: op de IC's en in de jeugd-GGZ, die op heel andere manieren behandeld worden. 
+Ik trek een parallel tussen twee zwarte scenario's: op de IC's en in de jeugd-GGZ, die op heel andere manieren behandeld worden. 
 
 De gemiddelde bezetting op crisisafdelingen in de geestelijke gezondheidszorg voor kinderen is 86 procent en sommige plekken zijn helemaal vol, aldus <a href="https://www.medischcontact.nl/nieuws/laatste-nieuws/nieuwsartikel/psychische-zorg-jongeren-volledig-overgelopen-in-coronacrisis.htm" target="_blank" rel="noopener">dit stuk</a> uit Medisch Contact. De toestand is nijpend. Zo nijpend dat er keuzes gemaakt moeten worden.<!--more--> Dat blijkt uit een citaat van een psychiatrisch verpleegkundige uit een recent <a href="https://www.nrc.nl/nieuws/2021/03/23/de-laatste-plek-is-s-ochtends-al-vergeven-a4036983 " target="_blank">NRC-artikel</a>:
 
